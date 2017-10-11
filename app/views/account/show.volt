@@ -46,12 +46,12 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    {% for account in accounts %}
-                                                        <tr  onclick="window.document.location='{{ url.get('account/' ~ account.getId() ~ '/edit') }}';">
-                                                            <th class="v-align-middle text-center">{{ account.getName() }}</th>
-                                                            <th class="v-align-middle text-center"> {{ account.getCurrency().getName() }} </th>
-                                                        </tr>
-                                                    {% endfor %}
+                                                    {#{% for account in accounts %}#}
+                                                        {#<tr  onclick="window.document.location='{{ url.get('account/' ~ account.getId() ~ '/edit') }}';">#}
+                                                            {#<th class="v-align-middle text-center">{{ account.getName() }}</th>#}
+                                                            {#<th class="v-align-middle text-center"> {{ account.getCurrency().getName() }} </th>#}
+                                                        {#</tr>#}
+                                                    {#{% endfor %}#}
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -129,4 +129,6 @@
     </div>
 
     {{ assets.outputJs() }}
+    </div>
+    </div>
 </body>

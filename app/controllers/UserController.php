@@ -52,7 +52,8 @@ class UserController extends \Phalcon\Mvc\Controller
             $success = $user->create($data);
             if ($success) {
                 $this->session->set("user_id", $user->getId());
-                return $this->response->redirect("/account/show");
+                return $this->response->redirect("/");
+//                return $this->response->redirect("/account/show");
             } else {
                 $messages = $user->getMessages();
                 if ($messages) {

@@ -11,7 +11,7 @@ class User extends \Phalcon\Mvc\Model
     protected $name;
     protected $email;
     protected $password;
-    protected $selected_account_id;
+//    protected $selected_account_id;
 
     public function validation()
     {
@@ -33,9 +33,9 @@ class User extends \Phalcon\Mvc\Model
             ]
         );
 
-        $this->hasOne('selected_account_id', Account::class, 'id', [
-            'alias' => 'SelectedAccount'
-        ]);
+//        $this->hasOne('selected_account_id', Account::class, 'id', [
+//            'alias' => 'SelectedAccount'
+//        ]);
     }
 
     public function getId()
@@ -58,8 +58,8 @@ class User extends \Phalcon\Mvc\Model
         return $this->password;
     }
 
-    public function getSelectedAccountId()
-    {
-        return $this->selected_account_id;
-    }
+//    public function getSelectedAccountId()
+//    {
+//        return $this->selected_account_id;
+//    }
 }

@@ -90,18 +90,37 @@ try {
         ->addJs('assets/plugins/jquery-1.8.3.min.js')
         ->addJs('assets/plugins/bootstrap/js/bootstrap.min.js')
         ->addJs('assets/plugins/pace/pace.min.js')
-
-        ->addJs('assets/plugins/pace/pace.min.js')
-
-        ->addCss('vendors/bootstrap/dist/css/bootstrap.min.css')
-        ->addCss('vendors/font-awesome/css/font-awesome.min.css')
-        ->addCss('vendors/nprogress/nprogress.css')
-        ->addCss('vendors/iCheck/skins/flat/green.css')
-        ->addCss('vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css')
-        ->addCss('vendors/jqvmap/dist/jqvmap.min.css')
-        ->addCss('build/css/custom.min.css')
-
-    ;
+        ->addJs('assets/vendors/jquery/dist/jquery.min.js')
+        ->addJs('assets/vendors/bootstrap/dist/js/bootstrap.min.js')
+        ->addJs('assets/vendors/fastclick/lib/fastclick.js')
+        ->addJs('assets/vendors/nprogress/nprogress.js')
+        ->addJs('assets/vendors/Chart.js/dist/Chart.min.js')
+        ->addJs('assets/vendors/gauge.js/dist/gauge.min.js')
+        ->addJs('assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js')
+        ->addJs('assets/vendors/iCheck/icheck.min.js')
+        ->addJs('assets/vendors/skycons/skycons.js')
+        ->addJs('assets/vendors/Flot/jquery.flot.js')
+        ->addJs('assets/vendors/Flot/jquery.flot.pie.js')
+        ->addJs('assets/vendors/Flot/jquery.flot.time.js')
+        ->addJs('assets/vendors/Flot/jquery.flot.stack.js')
+        ->addJs('assets/vendors/Flot/jquery.flot.resize.js')
+        ->addJs('assets/vendors/flot.orderbars/js/jquery.flot.orderBars.js')
+        ->addJs('assets/vendors/flot-spline/js/jquery.flot.spline.min.js')
+        ->addJs('assets/vendors/flot.curvedlines/curvedLines.js')
+        ->addJs('assets/vendors/DateJS/build/date.js')
+        ->addJs('assets/vendors/jqvmap/dist/jquery.vmap.js')
+        ->addJs('assets/vendors/jqvmap/dist/maps/jquery.vmap.world.js')
+        ->addJs('assets/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')
+        ->addJs('assets/js/moment/moment.min.js')
+        ->addJs('assets/js/datepicker/daterangepicker.js')
+        ->addJs('assets/build/js/custom.min.js')
+        ->addCss('assets/vendors/bootstrap/dist/css/bootstrap.min.css')
+        ->addCss('assets/vendors/font-awesome/css/font-awesome.min.css')
+        ->addCss('assets/vendors/nprogress/nprogress.css')
+        ->addCss('assets/vendors/iCheck/skins/flat/green.css')
+        ->addCss('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css')
+        ->addCss('assets/vendors/jqvmap/dist/jqvmap.min.css')
+        ->addCss('assets/build/css/custom.min.css');
 
     // Настраиваем сервис для работы с БД
     $di->set('db', function () {
@@ -110,7 +129,7 @@ try {
             "port"     => "4040",
             "username" => "root",
             "password" => "314",
-            "dbname"   => "account",
+            "dbname"   => "eledmanage",
             "charset" => "utf8"
         ));
     });

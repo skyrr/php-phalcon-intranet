@@ -34,14 +34,7 @@ class AccountController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $user);
         $this->user = $user;
 
-        $selected_account_id = $user->getSelectedAccountId();
-        if (!$selected_account_id) {
-            $accounts = $user->getAccount();
-            if (!$accounts) {
-                return $this->response->redirect("/account/show");
-            }
-            $selectedAccount = $accounts->offsetGet(0);
-        }
+
 
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
@@ -59,20 +52,6 @@ class AccountController extends \Phalcon\Mvc\Controller
             }
         }
 
-        if (empty($selectedAccount)) {
-            $selectedAccount = $user->getSelectedAccount();
-        }
-
-        $transactions = $selectedAccount->getTransaction(["order" => "created_at DESC", "limit" => 5]);
-        $this->view->transactions = $transactions;
-
-        $result = $selectedAccount->getOutcomeGroupedByCategory();
-
-        $amounts = array_column($result, 0);
-        $amounts_string = implode(', ', $amounts);
-
-        $this->view->selectedAccount = $selectedAccount;
-        $this->view->amounts_string = $amounts_string;
     }
 
     public function createAction()
