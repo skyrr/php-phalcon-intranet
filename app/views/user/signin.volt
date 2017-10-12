@@ -1,59 +1,45 @@
-<body class="error-body no-top">
-<div class="container">
-    <div class="row login-container column-seperation">
-        <div class="col-md-4 col-md-offset-4 "> <br>
-            <h1>Реєстрація</h1>
-            <form id="login-form" class="login-form" method="post">
-                {% if error is defined %}
-                    <div class="alert alert-error">
-                        <button class="close" data-dismiss="alert"></button>
-                        {{ error }}
+
+<body class="login">
+<div>
+    <a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
+
+    <div class="login_wrapper">
+        <div id="register" class="animate form registration_form">
+            <section class="login_content">
+                <form method="post">
+                    <h1>Create Account</h1>
+                    <div>
+                        <input name="name" id="txtusername"  type="text" class="form-control" placeholder="Username" required="" />
                     </div>
-                {% endif %}
-                <div class="row">
-                    <div class="form-group col-md-10">
-                        <label class="form-label">Email</label>
-                        <div class="controls">
-                            <div class="input-with-icon  right">
-                                <i class=""></i>
-                                <input type="text" name="email" id="txtusername" class="form-control">
-                            </div>
+                    <div>
+                        <input name="email" id="txtusername"  type="text" class="form-control" placeholder="Email" required="" />
+                    </div>
+                    <div>
+                        <input  name="password" id="txtpassword" type="password" class="form-control" placeholder="Password" required="" />
+                    </div>
+                    <div>
+                        <button class="btn btn-default submit" type="submit">Submit</button>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="separator">
+                        <p class="change_link">Already a member ?
+                            <a href="{{ url.get("/") }}" class="to_register"> Log in </a>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div>
+                            <p>© 2017 All Rights Reserved. eLED DESIGN s.r.o. </p>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-10">
-                        <label class="form-label">Ім’я користувача</label>
-                        <div class="controls">
-                            <div class="input-with-icon  right">
-                                <i class=""></i>
-                                <input type="text" name="name" id="txtusername" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-10">
-                        <label class="form-label">Password</label>
-                        <span class="help"></span>
-                        <div class="controls">
-                            <div class="input-with-icon  right">
-                                <i class=""></i>
-                                <input type="password" name="password" id="txtpassword" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-10">
-                        <button class="btn btn-primary btn-cons pull-right" type="submit">Зареєструватись</button>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </section>
         </div>
-
         {{ content() }}
-
     </div>
 </div>
 {{ assets.outputJs() }}

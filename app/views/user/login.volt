@@ -1,70 +1,77 @@
-<body class="error-body no-top">
-<div class="container">
-    <div class="row login-container column-seperation">
-        <div class="col-md-5 col-md-offset-1">
-            <h2>Sign in to webarch</h2>
-            <p>Use Facebook, Twitter or your email to sign in.<br>
-                <a href="#">Sign up Now!</a> for a webarch account,It's free and always will be..</p>
-            <br>
+<body class="login">
+<div>
+    <a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
 
-            <button class="btn btn-block btn-info col-md-8" type="button">
-                <span class="pull-left"><i class="icon-facebook"></i></span>
-                <span class="bold">Login with Facebook</span> </button>
-            <button class="btn btn-block btn-success col-md-8" type="button">
-                <span class="pull-left"><i class="icon-twitter"></i></span>
-                <span class="bold">Login with Twitter</span>
-            </button>
-        </div>
-        <div class="col-md-5 "> <br>
-            <form id="login-form" class="login-form" method="post">
-                {% if error is defined %}
-                    <div class="alert alert-error">
-                        <button class="close" data-dismiss="alert"></button>
-                        {{ error }}
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <form method="post">
+                    <h1>Login Form</h1>
+                    <div>
+                        <input name="email" id="txtusername"  type="text" class="form-control" placeholder="Username" required="" />
                     </div>
-                {% endif %}
-                <div class="row">
-                    <div class="form-group col-md-10">
-                        <label class="form-label">Email</label>
-                        <div class="controls">
-                            <div class="input-with-icon  right">
-                                <i class=""></i>
-                                <input type="text" name="email" id="txtusername" class="form-control">
-                            </div>
+                    <div>
+                        <input  name="password" id="txtpassword" type="password" class="form-control" placeholder="Password" required="" />
+                    </div>
+                    <div>
+                        <button class="btn btn-default submit" type="submit">Log in</button>
+                        <a class="reset_pass" href="#">Lost your password?</a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="separator">
+                        <p class="change_link">New to site?
+                            <a href="{{ url.get("/user/signin") }}" class="to_register"> Create Account </a>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div>
+                            <p>©2017 All Rights Reserved. eLED DESIGN s.r.o. </p>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-10">
-                        <label class="form-label">Password</label>
-                        <span class="help"></span>
-                        <div class="controls">
-                            <div class="input-with-icon  right">
-                                <i class=""></i>
-                                <input type="password" name="password" id="txtpassword" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="control-group  col-md-10">
-                        <div class="checkbox checkbox check-success"> <a href="#">Trouble login in?</a>&nbsp;&nbsp;
-                            <input type="checkbox" id="checkbox1" value="1">
-                            <label for="checkbox1">Keep me reminded </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-10">
-                        <button class="btn btn-primary btn-cons pull-right" type="submit">Login</button>
-                        <a href="{{ url.get("/user/signin") }}" class="btn btn-primary btn-cons pull-right" type="submit">Зареєструватись</a>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </section>
         </div>
 
+        <div id="register" class="animate form registration_form">
+            <section class="login_content">
+                <form method="post">
+                    <h1>Create Account</h1>
+                    <div>
+                        <input name="name" id="txtusername"  type="text" class="form-control" placeholder="Username" required="" />
+                    </div>
+                    <div>
+                        <input name="email" id="txtusername"  type="text" class="form-control" placeholder="Email" required="" />
+                    </div>
+                    <div>
+                        <input  name="password" id="txtpassword" type="password" class="form-control" placeholder="Password" required="" />
+                    </div>
+                    <div>
+                        <a class="btn btn-default submit" href="index.php">Submit</a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="separator">
+                        <p class="change_link">Already a member ?
+                            <a href="#signin" class="to_register"> Log in </a>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div>
+                            <p>© 2017 All Rights Reserved. eLED DESIGN s.r.o. </p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
         {{ content() }}
-
     </div>
 </div>
 {{ assets.outputJs() }}

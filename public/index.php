@@ -56,6 +56,16 @@ try {
         "action" => "remove"
     ]);
 
+    $router->add("/account/calendar1", [
+        "controller" => "account",
+        "action" => "calendar1"
+    ]);
+
+    $router->add("/account/calendar2", [
+        "controller" => "account",
+        "action" => "calendar2"
+    ]);
+
     $router->add("/account/show", [
         "controller" => "account",
         "action" => "show"

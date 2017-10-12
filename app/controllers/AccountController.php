@@ -54,6 +54,74 @@ class AccountController extends \Phalcon\Mvc\Controller
 
     }
 
+    public function calendar1Action()
+    {
+        if (!$this->session->has("user_id")) {
+            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+        }
+
+        $user_id = $this->session->get("user_id");
+        $user = User::findFirst($user_id);
+        $this->view->setVar('user', $user);
+        $this->user = $user;
+
+
+
+        if ($this->request->isPost()) {
+            $data = $this->request->getPost();
+            //$user = new User($data);
+            $success = $user->update($data);
+            if ($success) {
+                return $this->response->redirect();
+            } else {
+                $messages = $user->getMessages();
+                if ($messages) {
+                    foreach ($messages as $message) {
+                        $this->flash->error($message);
+                    }
+                }
+            }
+        }
+
+    }
+
+    public function calendar2Action()
+    {
+        $this->assets->addJs('assets/plugins/jquery-sparkline/jquery-sparkline.js');
+        $this->assets->addJs('assets/js/charts.js');
+        $this->assets->addInlineJs('jQuery(document).ready(function($) {
+                               $(".clickable-row").click(function() {
+                               window.document.location = $(this).data("href");});});');
+
+        if (!$this->session->has("user_id")) {
+            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+        }
+
+        $user_id = $this->session->get("user_id");
+        $user = User::findFirst($user_id);
+        $this->view->setVar('user', $user);
+        $this->user = $user;
+
+
+
+        if ($this->request->isPost()) {
+            $data = $this->request->getPost();
+            //$user = new User($data);
+            $success = $user->update($data);
+            if ($success) {
+                return $this->response->redirect();
+            } else {
+                $messages = $user->getMessages();
+                if ($messages) {
+                    foreach ($messages as $message) {
+                        $this->flash->error($message);
+                    }
+                }
+            }
+        }
+
+    }
+
     public function createAction()
     {
 
