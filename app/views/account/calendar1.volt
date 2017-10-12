@@ -4,7 +4,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="{{ url.get("/") }}" class="site_title"><img src="assets/images/eLEDdesign-logo.svg" height="50" alt="..."> </a>
+                    <a href="{{ url.get("/") }}" class="site_title"><img src="/assets/images/eLEDdesign-logo.svg" height="50" alt="..."> </a>
                     <!--<span>eLED Design.cz s.r.o.</span>-->
                 </div>
 
@@ -13,7 +13,7 @@
                 <!-- menu profile quick info -->
                 <div class="profile">
                     <div class="profile_pic">
-                        <img src="assets/images/img.jpg" alt="..." class="img-circle profile_img">
+                        <img src="/assets/images/img.jpg" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
                         <span>Welcome,</span>
@@ -31,8 +31,8 @@
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-edit"></i> Scheduler <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="calendar1.php">1st floor</a></li>
-                                    <li><a href="calendar2.php">2nd floor</a></li>
+                                    <li><a href="{{ url.get("account/calendar1") }}">1st floor</a></li>
+                                    <li><a href="{{ url.get("account/calendar2") }}">2nd floor</a></li>
                                 </ul>
                             </li>
                             </li>
@@ -53,7 +53,7 @@
                     <a data-toggle="tooltip" data-placement="top" title="Lock">
                         <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
                     </a>
-                    <a data-toggle="tooltip" data-placement="top" title="Logout">
+                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="{{ url.get("user/logout") }}">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                     </a>
                 </div>
@@ -72,7 +72,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/images/img.jpg" alt="">John Doe
+                                <img src="/assets/images/img.jpg" alt="">John Doe
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -84,7 +84,7 @@
                                     </a>
                                 </li>
                                 <li><a href="javascript:;">Help</a></li>
-                                <li><a href="login.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                <li><a href="{{ url.get("user/logout") }}"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                             </ul>
                         </li>
 
@@ -96,7 +96,7 @@
                             <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                                 <li>
                                     <a>
-                                        <span class="image"><img src="assets/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="/assets/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -108,7 +108,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="assets/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="/assets/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -120,7 +120,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="assets/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="/assets/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -132,7 +132,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="assets/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="/assets/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -157,7 +157,7 @@
             </div>
         </div>
         <!-- /top navigation -->
-
+        {{ content() }}
         <!-- page content -->
         <div class="right_col" role="main">
             <div class="">
@@ -270,19 +270,19 @@
 <!-- /calendar modal -->
 
 <!-- jQuery -->
-<script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+<script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="assets/vendors/fastclick/lib/fastclick.js"></script>
+<script src="/assets/vendors/fastclick/lib/fastclick.js"></script>
 <!-- NProgress -->
-<script src="assets/vendors/nprogress/nprogress.js"></script>
+<script src="/assets/vendors/nprogress/nprogress.js"></script>
 <!-- FullCalendar -->
-<script src="assets/vendors/moment/min/moment.min.js"></script>
-<script src="assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="/assets/vendors/moment/min/moment.min.js"></script>
+<script src="/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
 
 <!-- Custom Theme Scripts -->
-<script src="assets/build/js/custom.min.js"></script>
+<script src="/assets/build/js/custom.min.js"></script>
 
 <!-- FullCalendar -->
 <script>

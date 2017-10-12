@@ -19,8 +19,6 @@ class AccountController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
-        $this->assets->addJs('assets/plugins/jquery-sparkline/jquery-sparkline.js');
-        $this->assets->addJs('assets/js/charts.js');
         $this->assets->addInlineJs('jQuery(document).ready(function($) {
                                $(".clickable-row").click(function() {
                                window.document.location = $(this).data("href");});});');
@@ -56,6 +54,24 @@ class AccountController extends \Phalcon\Mvc\Controller
 
     public function calendar1Action()
     {
+        $this->assets->addCss('assets/vendors/bootstrap/dist/css/bootstrap.min.css');
+        $this->assets->addCss('assets/vendors/font-awesome/css/font-awesome.min.css');
+        $this->assets->addCss('assets/vendors/nprogress/nprogress.css');
+        $this->assets->addCss('assets/vendors/iCheck/skins/flat/green.css');
+        $this->assets->addCss('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css');
+        $this->assets->addCss('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css');
+        $this->assets->addCss('assets/build/css/custom.min.css');
+
+//        $this->assets->addJs('assets/vendors/jquery/dist/jquery.min.js');
+//        $this->assets->addJs('assets/vendors/bootstrap/dist/js/bootstrap.min.js');
+//        $this->assets->addJs('assets/vendors/fastclick/lib/fastclick.js');
+//        $this->assets->addJs('assets/vendors/nprogress/nprogress.js');
+//        $this->assets->addJs('assets/vendors/moment/min/moment.min.js');
+//        $this->assets->addJs('assets/vendors/fullcalendar/dist/fullcalendar.min.js');
+//        $this->assets->addJs('assets/build/js/custom.min.js');
+//        $this->assets->addJs('');
+//        $this->assets->addJs('');
+
         if (!$this->session->has("user_id")) {
             return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
         }

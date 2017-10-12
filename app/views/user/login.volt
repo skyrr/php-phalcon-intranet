@@ -36,41 +36,6 @@
                 </form>
             </section>
         </div>
-
-        <div id="register" class="animate form registration_form">
-            <section class="login_content">
-                <form method="post">
-                    <h1>Create Account</h1>
-                    <div>
-                        <input name="name" id="txtusername"  type="text" class="form-control" placeholder="Username" required="" />
-                    </div>
-                    <div>
-                        <input name="email" id="txtusername"  type="text" class="form-control" placeholder="Email" required="" />
-                    </div>
-                    <div>
-                        <input  name="password" id="txtpassword" type="password" class="form-control" placeholder="Password" required="" />
-                    </div>
-                    <div>
-                        <a class="btn btn-default submit" href="index.php">Submit</a>
-                    </div>
-
-                    <div class="clearfix"></div>
-
-                    <div class="separator">
-                        <p class="change_link">Already a member ?
-                            <a href="#signin" class="to_register"> Log in </a>
-                        </p>
-
-                        <div class="clearfix"></div>
-                        <br />
-
-                        <div>
-                            <p>© 2017 All Rights Reserved. eLED DESIGN s.r.o. </p>
-                        </div>
-                    </div>
-                </form>
-            </section>
-        </div>
         {{ content() }}
     </div>
 </div>

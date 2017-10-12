@@ -5,7 +5,7 @@
     <a class="hiddenanchor" id="signin"></a>
 
     <div class="login_wrapper">
-        <div id="register" class="animate form registration_form">
+        <div id="register" >
             <section class="login_content">
                 <form method="post">
                     <h1>Create Account</h1>

@@ -1,17 +1,17 @@
 <!-- jQuery -->
-<script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+<script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="assets/vendors/fastclick/lib/fastclick.js"></script>
+<script src="/assets/vendors/fastclick/lib/fastclick.js"></script>
 <!-- NProgress -->
-<script src="assets/vendors/nprogress/nprogress.js"></script>
+<script src="/assets/vendors/nprogress/nprogress.js"></script>
 <!-- FullCalendar -->
-<script src="assets/vendors/moment/min/moment.min.js"></script>
-<script src="assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="/assets/vendors/moment/min/moment.min.js"></script>
+<script src="/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
 
 <!-- Custom Theme Scripts -->
-<script src="build/js/custom.min.js"></script>
+<script src="/build/js/custom.min.js"></script>
 
 
 <!-- FullCalendar -->
