@@ -1,14 +1,5 @@
-<body class="nav-md">
-<div class="container body">
-    <div class="main_container">
-        <div class="col-md-3 left_col">
-            <div class="left_col scroll-view">
-                <div class="navbar nav_title" style="border: 0;">
-                    <a href="{{ url.get("/") }}" class="site_title"><img src="/assets/images/eLEDdesign-logo.svg" height="50" alt="..."> </a>
-                    <!--<span>eLED Design.cz s.r.o.</span>-->
-                </div>
+{{ partial('bodystart') }}
 
-                <div class="clearfix"></div>
 
                 <!-- menu profile quick info -->
                 {{ partial('quick') }}
@@ -378,45 +369,45 @@
 </div>
 
 <!-- jQuery -->
-<script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+<script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="assets/vendors/fastclick/lib/fastclick.js"></script>
+<script src="/assets/vendors/fastclick/lib/fastclick.js"></script>
 <!-- NProgress -->
-<script src="assets/vendors/nprogress/nprogress.js"></script>
+<script src="/assets/vendors/nprogress/nprogress.js"></script>
 <!-- Chart.js -->
-<script src="assets/vendors/Chart.js/dist/Chart.min.js"></script>
+<script src="/assets/vendors/Chart.js/dist/Chart.min.js"></script>
 <!-- gauge.js -->
-<script src="assets/vendors/gauge.js/dist/gauge.min.js"></script>
+<script src="/assets/vendors/gauge.js/dist/gauge.min.js"></script>
 <!-- bootstrap-progressbar -->
-<script src="assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<script src="/assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 <!-- iCheck -->
-<script src="assets/vendors/iCheck/icheck.min.js"></script>
+<script src="/assets/vendors/iCheck/icheck.min.js"></script>
 <!-- Skycons -->
-<script src="assets/vendors/skycons/skycons.js"></script>
+<script src="/assets/vendors/skycons/skycons.js"></script>
 <!-- Flot -->
-<script src="assets/vendors/Flot/jquery.flot.js"></script>
-<script src="assets/vendors/Flot/jquery.flot.pie.js"></script>
-<script src="assets/vendors/Flot/jquery.flot.time.js"></script>
-<script src="assets/vendors/Flot/jquery.flot.stack.js"></script>
-<script src="assets/vendors/Flot/jquery.flot.resize.js"></script>
+<script src="/assets/vendors/Flot/jquery.flot.js"></script>
+<script src="/assets/vendors/Flot/jquery.flot.pie.js"></script>
+<script src="/assets/vendors/Flot/jquery.flot.time.js"></script>
+<script src="/assets/vendors/Flot/jquery.flot.stack.js"></script>
+<script src="/assets/vendors/Flot/jquery.flot.resize.js"></script>
 <!-- Flot plugins -->
-<script src="assets/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-<script src="assets/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-<script src="assets/vendors/flot.curvedlines/curvedLines.js"></script>
+<script src="/assets/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+<script src="/assets/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+<script src="/assets/vendors/flot.curvedlines/curvedLines.js"></script>
 <!-- DateJS -->
-<script src="assets/vendors/DateJS/build/date.js"></script>
+<script src="/assets/vendors/DateJS/build/date.js"></script>
 <!-- JQVMap -->
-<script src="assets/vendors/jqvmap/dist/jquery.vmap.js"></script>
-<script src="assets/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-<script src="assets/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+<script src="/assets/vendors/jqvmap/dist/jquery.vmap.js"></script>
+<script src="/assets/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+<script src="/assets/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
 <!-- bootstrap-daterangepicker -->
-<script src="assets/js/moment/moment.min.js"></script>
-<script src="assets/js/datepicker/daterangepicker.js"></script>
+<script src="/assets/js/moment/moment.min.js"></script>
+<script src="/assets/js/datepicker/daterangepicker.js"></script>
 
 <!-- Custom Theme Scripts -->
-<script src="assets/build/js/custom.min.js"></script>
+<script src="/assets/build/js/custom.min.js"></script>
 
 <!-- Flot -->
 <script>
@@ -677,4 +668,3 @@
     gauge.setTextField(document.getElementById("gauge-text"));
 </script>
 <!-- /gauge.js -->
-</body>
