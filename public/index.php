@@ -56,14 +56,23 @@ try {
         "action" => "remove"
     ]);
 
-    $router->add("/account/calendar1", [
-        "controller" => "account",
-        "action" => "calendar1"
+    $router->add("/calendar1/index", [
+        "controller" => "calendar1",
+        "action" => "index"
     ]);
 
-    $router->add("/account/calendar2", [
-        "controller" => "account",
-        "action" => "calendar2"
+    $router->add("/calendar2/index", [
+        "controller" => "calendar2",
+        "action" => "index"
+    ]);
+    $router->add("/calendar1/show", [
+        "controller" => "calendar1",
+        "action" => "show"
+    ]);
+
+    $router->add("/calendar2/show", [
+        "controller" => "calendar2",
+        "action" => "show"
     ]);
 
     $router->add("/account/show", [
@@ -130,6 +139,8 @@ try {
         ->addCss('/assets/vendors/iCheck/skins/flat/green.css')
         ->addCss('/assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css')
         ->addCss('/assets/vendors/jqvmap/dist/jqvmap.min.css')
+        ->addCss('/assets/plugins/fullcalendar/fullcalendar.min.css')
+        ->addCss('/assets/plugins/fullcalendar/fullcalendar.print.css')
         ->addCss('/assets/build/css/custom.min.css');
 
     // Настраиваем сервис для работы с БД

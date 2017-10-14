@@ -1,4 +1,3 @@
-<body class="login">
 <div>
     <a class="hiddenanchor" id="signup"></a>
     <a class="hiddenanchor" id="signin"></a>
@@ -39,5 +38,4 @@
         {{ content() }}
     </div>
 </div>
-{{ assets.outputJs() }}
-</body>
+{#{{ assets.outputJs() }}#}

@@ -9,6 +9,8 @@
 
     <title>eLED Design Management page </title>
 
+    {#{{ assets.outputJs() }}#}
+
     <!-- Bootstrap -->
     <link href="/assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -31,114 +33,17 @@
     <link rel="stylesheet" href="/assets/plugins/fullcalendar/fullcalendar.print.css" media="print">
     <!-- Theme style -->
 
+    {#<link href="/assets/temp/bootstrap/css/bootstrap.min1.css" rel="stylesheet" media="screen">#}
+    <link href="/assets/temp/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!-- bootstrap-daterangepicker -->
+    <link href="/assets/temp/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- bootstrap-datetimepicker -->
+    <link href="/assets/temp/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+
 </head>
 <body class="nav-md">
 {{ content() }}
 
-
-<!-- FullCalendar -->
-<script>
-    $(window).load(function() {
-        var date = new Date(),
-                d = date.getDate(),
-                m = date.getMonth(),
-                y = date.getFullYear(),
-                started,
-                categoryClass;
-
-        var calendar = $('#calendar').fullCalendar({
-            header: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'month,agendaWeek,agendaDay'
-            },
-            selectable: true,
-            selectHelper: true,
-            select: function(start, end, allDay) {
-                $('#fc_create').click();
-
-                started = start;
-                ended = end;
-
-                $(".antosubmit").on("click", function() {
-                    var title = $("#title").val();
-                    if (end) {
-                        ended = end;
-                    }
-
-                    categoryClass = $("#event_type").val();
-
-                    if (title) {
-                        calendar.fullCalendar('renderEvent', {
-                                    title: title,
-                                    start: started,
-                                    end: end,
-                                    allDay: allDay
-                                },
-                                true // make the event "stick"
-                        );
-                    }
-
-                    $('#title').val('');
-
-                    calendar.fullCalendar('unselect');
-
-                    $('.antoclose').click();
-
-                    return false;
-                });
-            },
-            eventClick: function(calEvent, jsEvent, view) {
-                $('#fc_edit').click();
-                $('#title2').val(calEvent.title);
-
-                categoryClass = $("#event_type").val();
-
-                $(".antosubmit2").on("click", function() {
-                    calEvent.title = $("#title2").val();
-
-                    calendar.fullCalendar('updateEvent', calEvent);
-                    $('.antoclose2').click();
-                });
-
-                calendar.fullCalendar('unselect');
-            },
-            editable: true,
-            events: [{
-                title: 'All Day Event',
-                start: new Date(y, m, 1)
-            }, {
-                title: 'Long Event',
-                start: new Date(y, m, d - 5),
-                end: new Date(y, m, d - 2)
-            }, {
-                title: 'Meeting',
-                start: new Date(y, m, d, 10, 30),
-                allDay: false
-            }, {
-                title: 'Lunch',
-                start: new Date(y, m, d + 14, 12, 0),
-                end: new Date(y, m, d, 14, 0),
-                allDay: false
-            }, {
-                title: 'Birthday Party',
-                start: new Date(y, m, d + 1, 19, 0),
-                end: new Date(y, m, d + 1, 22, 30),
-                allDay: false
-            }, {
-                title: 'Birthday Party2',
-                start: new Date(y, m, d + 1, 11, 0),
-                end: new Date(y, m, d + 1, 12, 30),
-                allDay: false
-            }, {
-                title: 'Click for Google',
-                start: new Date(y, m + 1, 28),
-                end: new Date(y, m + 2, 29),
-                url: 'http://google.com/'
-            }]
-        });
-    });
-</script>
-<!-- /FullCalendar -->
 </body>
 </html>
