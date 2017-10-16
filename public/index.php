@@ -56,8 +56,8 @@ try {
         "action" => "remove"
     ]);
 
-    $router->add("/calendar1/index", [
-        "controller" => "calendar1",
+    $router->add("/calendar/index", [
+        "controller" => "calendar",
         "action" => "index"
     ]);
 
@@ -65,8 +65,8 @@ try {
         "controller" => "calendar2",
         "action" => "index"
     ]);
-    $router->add("/calendar1/show", [
-        "controller" => "calendar1",
+    $router->add("/calendar/show", [
+        "controller" => "calendar",
         "action" => "show"
     ]);
 
@@ -148,8 +148,8 @@ try {
         return new DbAdapter(array(
             "host"     => "localhost",
             "port"     => "4040",
-            "username" => "root",
-            "password" => "314",
+            "username" => "user",
+            "password" => "314159Aa",
             "dbname"   => "eledmanage",
             "charset" => "utf8"
         ));

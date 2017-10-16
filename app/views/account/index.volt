@@ -25,10 +25,11 @@
         <div class="right_col" role="main">
             <br />
             <div class="row">
+                <!-- Start to do list -->
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>Recent Activities <small>Sessions</small></h2>
+                            <h2>Reservations <small>Sample tasks</small></h2>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -47,70 +48,45 @@
                             <div class="clearfix"></div>
                         </div>
                         <div class="x_content">
-                            <div class="dashboard-widget-content">
 
-                                <ul class="list-unstyled timeline widget">
+                            <div class="">
+                                <ul class="to_do">
                                     <li>
-                                        <div class="block">
-                                            <div class="block_content">
-                                                <h2 class="title">
-                                                    <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                                </h2>
-                                                <div class="byline">
-                                                    <span>13 hours ago</span> by <a>Jane Smith</a>
-                                                </div>
-                                                <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                                                </p>
-                                            </div>
-                                        </div>
+                                        <p>
+                                            <input type="checkbox" class="flat"> Schedule meeting with new client </p>
                                     </li>
                                     <li>
-                                        <div class="block">
-                                            <div class="block_content">
-                                                <h2 class="title">
-                                                    <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                                </h2>
-                                                <div class="byline">
-                                                    <span>13 hours ago</span> by <a>Jane Smith</a>
-                                                </div>
-                                                <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                                                </p>
-                                            </div>
-                                        </div>
+                                        <p>
+                                            <input type="checkbox" class="flat"> Create email address for new intern</p>
                                     </li>
                                     <li>
-                                        <div class="block">
-                                            <div class="block_content">
-                                                <h2 class="title">
-                                                    <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                                </h2>
-                                                <div class="byline">
-                                                    <span>13 hours ago</span> by <a>Jane Smith</a>
-                                                </div>
-                                                <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                                                </p>
-                                            </div>
-                                        </div>
+                                        <p>
+                                            <input type="checkbox" class="flat"> Have IT fix the network printer</p>
                                     </li>
                                     <li>
-                                        <div class="block">
-                                            <div class="block_content">
-                                                <h2 class="title">
-                                                    <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                                </h2>
-                                                <div class="byline">
-                                                    <span>13 hours ago</span> by <a>Jane Smith</a>
-                                                </div>
-                                                <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                                                </p>
-                                            </div>
-                                        </div>
+                                        <p>
+                                            <input type="checkbox" class="flat"> Copy backups to offsite location</p>
                                     </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat"> Have IT fix the network printer</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat"> Copy backups to offsite location</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
+                                    </li>
+                                    <div align="right"><a href="{{ url.get('calendar/show') }}"> ...more </a></div>
+
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End to do list -->
 
 
                 <div class="col-md-8 col-sm-8 col-xs-12">
