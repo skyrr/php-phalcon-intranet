@@ -57,10 +57,11 @@ class CalendarController extends \Phalcon\Mvc\Controller
         if ($this->request->ispost()) {
             $data = $this->request->getPost();
             $user_id = $this->user->getId();
-            $floor_id = 1;
+            $id = $this->dispatcher->getParam('id');
+            $floor_id = $id;
             $calendar = new Calendar(['user_id' => $user_id, 'floor_id' => $floor_id]);
             $success = $calendar->create($data);
-            return $this->response->redirect("calendar/index");
+            return $this->response->redirect("calendar/$id/index");
         }
 
     }

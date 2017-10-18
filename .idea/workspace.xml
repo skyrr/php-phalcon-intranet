@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3579e6-71d5-4b75-a613-ed17ff88942b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Calendar.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/Calendar1Controller.php" afterPath="$PROJECT_DIR$/app/controllers/CalendarController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/calendar1/index.volt" afterPath="$PROJECT_DIR$/app/views/calendar/index.volt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/calendar1/show.volt" afterPath="$PROJECT_DIR$/app/views/calendar/show.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/CalendarController.php" afterPath="$PROJECT_DIR$/app/controllers/CalendarController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Calendar.php" afterPath="$PROJECT_DIR$/app/models/Calendar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/index.volt" afterPath="$PROJECT_DIR$/app/views/account/index.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calendar/index.volt" afterPath="$PROJECT_DIR$/app/views/calendar/index.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/sidebar.volt" afterPath="$PROJECT_DIR$/app/views/partial/sidebar.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
     </list>
@@ -33,8 +32,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+            <state relative-caret-position="130">
+              <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -50,41 +49,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="88" column="74" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="show.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/calendar/show.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+            <state relative-caret-position="166">
+              <caret line="297" column="20" selection-start-line="297" selection-start-column="20" selection-end-line="297" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.volt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/calendar2/index.volt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1152">
-              <caret line="64" column="73" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalendarController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CalendarController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/CalendarController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
+            <state relative-caret-position="199">
+              <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -93,8 +82,28 @@
       <file leaf-file-name="TransactionController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/TransactionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-370">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-324">
+              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-717">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/account/index.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="81" column="84" selection-start-line="81" selection-start-column="76" selection-end-line="81" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -113,22 +122,10 @@
       <file leaf-file-name="Calendar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Calendar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="738">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
-                <marker date="1508147306062" expanded="true" signature="1286:1459" ph="SELECT SUM(a... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Account.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1472801475000" expanded="true" signature="1390:1563" ph="SELECT SUM(a... " />
+                <marker date="1508325125225" expanded="true" signature="1607:1780" ph="SELECT SUM(a... " />
               </folding>
             </state>
           </provider>
@@ -182,12 +179,13 @@
         <option value="$PROJECT_DIR$/app/views/calendar2/show.volt" />
         <option value="$PROJECT_DIR$/app/views/calendar2/index.volt" />
         <option value="$PROJECT_DIR$/app/controllers/Calendar2Controller.php" />
-        <option value="$PROJECT_DIR$/app/views/account/index.volt" />
         <option value="$PROJECT_DIR$/app/controllers/Calendar1Controller.php" />
+        <option value="$USER_HOME$/Documents/gantellela2/gentelella-master/production/form_advanced.html" />
         <option value="$PROJECT_DIR$/app/models/Calendar.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/app/controllers/CalendarController.php" />
         <option value="$PROJECT_DIR$/app/views/calendar/index.volt" />
+        <option value="$PROJECT_DIR$/app/views/account/index.volt" />
+        <option value="$PROJECT_DIR$/app/controllers/CalendarController.php" />
       </list>
     </option>
   </component>
@@ -520,12 +518,12 @@
       <workItem from="1507794699036" duration="25517000" />
       <workItem from="1507895091075" duration="22601000" />
       <workItem from="1508073487624" duration="599000" />
-      <workItem from="1508129995758" duration="5443000" />
+      <workItem from="1508129995758" duration="13289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113662000" />
+    <option name="totallyTimeSpent" value="121508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -567,13 +565,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/gentelella-master/production/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="1571" column="20" selection-start-line="1325" selection-start-column="4" selection-end-line="1571" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1728">
@@ -690,21 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/gantellela2/gentelella-master/production/form_advanced.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="1335" column="0" selection-start-line="1335" selection-start-column="0" selection-end-line="1365" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/calendar/show.volt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -725,13 +701,6 @@
         <state relative-caret-position="4302">
           <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/bodystart.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -798,50 +767,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partial/top.volt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="70" column="63" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/calendar2/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="64" column="73" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user/login.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-424">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/calendar/show.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -853,14 +782,6 @@
           <folding>
             <marker date="1472801475000" expanded="true" signature="1390:1563" ph="SELECT SUM(a... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,10 +801,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/TransactionController.php">
+    <entry file="file://$PROJECT_DIR$/form_advanced.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="758" column="74" selection-start-line="758" selection-start-column="73" selection-end-line="758" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/gantellela2/gentelella-master/production/form_advanced.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="720" column="68" selection-start-line="720" selection-start-column="68" selection-end-line="720" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/calendar2/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="64" column="73" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -896,28 +841,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="88" column="74" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="81" column="84" selection-start-line="81" selection-start-column="76" selection-end-line="81" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/calendar/show.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="297" column="20" selection-start-line="297" selection-start-column="20" selection-end-line="297" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Calendar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="738">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
-            <marker date="1508147306062" expanded="true" signature="1286:1459" ph="SELECT SUM(a... " />
+            <marker date="1508325125225" expanded="true" signature="1607:1780" ph="SELECT SUM(a... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/login.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-424">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/bodystart.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-717">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/TransactionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/CalendarController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+        <state relative-caret-position="199">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
           <folding />
         </state>
       </provider>

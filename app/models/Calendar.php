@@ -11,7 +11,8 @@ class Calendar extends \Phalcon\Mvc\Model
     protected $comment;
     protected $user_id;
     protected $floor_id;
-    protected $datetime;
+    protected $date;
+    protected $time;
     protected $timeshift;
 
     protected function initialize()
@@ -40,7 +41,7 @@ class Calendar extends \Phalcon\Mvc\Model
         return $this->id;
     }
 
-    public function getName()
+    public function getComment()
     {
         return $this->name;
     }
@@ -49,6 +50,23 @@ class Calendar extends \Phalcon\Mvc\Model
     {
         return $this->user_id;
     }
+    public function getFloorId()
+    {
+        return $this->user_id;
+    }
+    public function getDate()
+    {
+        return $this->user_id;
+    }
+    public function getTime()
+    {
+        return $this->user_id;
+    }
+    public function getTimeShift()
+    {
+        return $this->user_id;
+    }
+
 
     public function getOutcomeGroupedByCategory()
     {
@@ -62,6 +80,7 @@ class Calendar extends \Phalcon\Mvc\Model
 
         return $result;
     }
+
     public function getBalance()
     {
         return Transaction::sum([

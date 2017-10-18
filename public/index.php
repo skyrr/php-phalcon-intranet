@@ -56,7 +56,7 @@ try {
         "action" => "remove"
     ]);
 
-    $router->add("/calendar/index", [
+    $router->add("/calendar/{id}/index", [
         "controller" => "calendar",
         "action" => "index"
     ]);
@@ -65,7 +65,7 @@ try {
         "controller" => "calendar2",
         "action" => "index"
     ]);
-    $router->add("/calendar/show", [
+    $router->add("/calendar/{id}/show", [
         "controller" => "calendar",
         "action" => "show"
     ]);

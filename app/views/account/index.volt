@@ -79,7 +79,7 @@
                                         <p>
                                             <input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
                                     </li>
-                                    <div align="right"><a href="{{ url.get('calendar/show') }}"> ...more </a></div>
+                                    <div align="right"><a href="{{ url.get('calendar/1/show') }}"> ...more </a></div>
 
                                 </ul>
                             </div>

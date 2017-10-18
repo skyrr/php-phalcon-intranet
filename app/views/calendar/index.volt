@@ -29,29 +29,51 @@
             <div class="col-md-4">
                 <div class="x_panel">
                     <form method="post">
-                    <div class="control-group">
-                        <div class="input-group date" id="myDatepicker">
-                            <input name="datetime" type="text" class="form-control" placeholder="Date and time">
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
+                        <div>
+                            <table align="center">
+                                <tr>
+                                    <td width="54%">
+                                        <div>
+                                            <div class="input-group date" id="myDatepicker2">
+                                                <input name="date" type="text" class="form-control">
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="1%"></td>
+                                    <td>
+                                        <div>
+                                            <div class="input-group date" id="myDatepicker3">
+                                                <input name="time" type="text" class="form-control">
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                                        <div class="input-group">
+                                            <select name="timeshift" class="form-control">
+                                                <option value=0.5>0:30 hour</option>
+                                                <option value=1>1:00 hour</option>
+                                                <option value=1.5>1:30 hour</option>
+                                                <option value=2>2:00 hours</option>
+                                                <option value=2.5>2:30 hours</option>
+                                            </select>
+                                        </div>
+                                        <div class="control-group">
+                                            <div class="input-group">
+                                                <input name="comment" type="text" class="form-control" placeholder="comment">
+                                                <span class="input-group-btn">
+                                                    <button type="submit" class="btn btn-primary">Go!</button>
+                                                </span>
+                                            </div>
+                                        </div>
                         </div>
-                        <div class="input-group">
-                            <select name="timeshift" class="form-control">
-                                <option value=0.5>0:30 h</option>
-                                <option value=1>1:00 h</option>
-                                <option value=1.5>1:30 h</option>
-                                <option value=2>2:00 h</option>
-                                <option value=2.5>2:30 h</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <input name="comment" type="text" class="form-control" placeholder="comment">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-primary">Go!</button>
-                            </span>
-                        </div>
-                    </div>
                     </form>
                 </div>
             </div>
@@ -59,12 +81,12 @@
                 <div class="x_panel">
                     <div class="control-group">
                         <label class="control-label" align="center">Nearest reservations:</label>
-                        <div align="left"><a href="{{ url.get('calendar/show') }}"> Schedule meeting with new client </a></div>
-                        <div align="left"><a href="{{ url.get('calendar/show') }}"> Schedule meeting with new client </a></div>
-                        <div align="left"><a href="{{ url.get('calendar/show') }}"> Schedule meeting with new client </a></div>
-                        <div align="left"><a href="{{ url.get('calendar/show') }}"> Schedule meeting with new client </a></div>
-                        <div align="left"><a href="{{ url.get('calendar/show') }}"> Schedule meeting with new client </a></div>
-                        <div align="right"><a href="{{ url.get('calendar/show') }}"> ...more </a></div>
+                        <div align="left"><a href="{{ url.get('calendar/1/show') }}"> Schedule meeting with new client </a></div>
+                        <div align="left"><a href="{{ url.get('calendar/1/show') }}"> Schedule meeting with new client </a></div>
+                        <div align="left"><a href="{{ url.get('calendar/1/show') }}"> Schedule meeting with new client </a></div>
+                        <div align="left"><a href="{{ url.get('calendar/1/show') }}"> Schedule meeting with new client </a></div>
+                        <div align="left"><a href="{{ url.get('calendar/1/show') }}"> Schedule meeting with new client </a></div>
+                        <div align="right"><a href="{{ url.get('calendar/1/show') }}"> ...more </a></div>
 
                     </div>
                 </div>
@@ -309,11 +331,11 @@
     $('#myDatepicker').datetimepicker();
 
     $('#myDatepicker2').datetimepicker({
-        format: 'DD.MM.YYYY'
+        format: 'YYYY-MM-DD'
     });
 
     $('#myDatepicker3').datetimepicker({
-        format: 'hh:mm A'
+        format: 'HH:mm'
     });
 
     $('#myDatepicker4').datetimepicker({
