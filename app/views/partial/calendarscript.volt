@@ -1,3 +1,6 @@
+
+<!-- /calendar modal -->
+
 <!-- jQuery -->
 <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
@@ -11,8 +14,7 @@
 <script src="/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
 
 <!-- Custom Theme Scripts -->
-<script src="/build/js/custom.min.js"></script>
-
+<script src="/assets/build/js/custom.min.js"></script>
 
 <!-- FullCalendar -->
 <script>
@@ -118,3 +120,73 @@
     });
 </script>
 <!-- /FullCalendar -->
+
+{#<script type="text/javascript" src="/assets/temp/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>#}
+{#<script type="text/javascript" src="/assets/temp/bootstrap/js/bootstrap.min.js"></script>#}
+<script type="text/javascript" src="/assets/temp/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/assets/temp/js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script src="/assets/temp/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script>
+    $('#myDatepicker').datetimepicker();
+
+    $('#myDatepicker2').datetimepicker({
+        format: 'YYYY-MM-DD'
+    });
+
+    $('#myDatepicker3').datetimepicker({
+        format: 'HH:mm'
+    });
+
+    $('#myDatepicker4').datetimepicker({
+        ignoreReadonly: true,
+        allowInputToggle: true
+    });
+
+    $('#datetimepicker6').datetimepicker();
+
+    $('#datetimepicker7').datetimepicker({
+        useCurrent: false
+    });
+
+    $("#datetimepicker6").on("dp.change", function(e) {
+        $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+    });
+
+    $("#datetimepicker7").on("dp.change", function(e) {
+        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+    });
+</script>
+
+<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+    $('.form_date').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+    $('.form_time').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
+    });
+</script>

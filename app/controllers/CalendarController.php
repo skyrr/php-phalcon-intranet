@@ -28,17 +28,33 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $this->assets->addCss('assets/build/css/custom.min.css');
 
 
-        if (!$this->session->has("user_id")) {
-            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-        }
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
 
         $user_id = $this->session->get("user_id");
         $user = User::findFirst($user_id);
         $this->view->setVar('user', $user);
         $this->user = $user;
 
+        $floor_id = $this->dispatcher->getParam('id');
+        $urlForEdit = 'calendar/' . $floor_id . '/show';
+        if ($floor_id == 1) {
+            $floor = '1st';
+        } else {
+            $floor = '2nd';
+        }
+
+        $calendars = Calendar::find("floor_id = $floor_id");
+        $count = count($calendars);
 
 
+        $this->view->urlForEdit = $urlForEdit;
+        $this->view->floor = $floor;
+        $this->view->floor_id = $floor_id;
+        $this->view->count = $count;
+
+        $this->view->calendars = $calendars;
 //        if ($this->request->isPost()) {
 //            $data = $this->request->getPost();
 //            //$user = new User($data);
@@ -134,31 +150,49 @@ class CalendarController extends \Phalcon\Mvc\Controller
 //        $accounts = $user->getAccount();
 //
 //        $this->view->accounts = $accounts;
-        if (!$this->session->has("user_id")) {
-            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-        }
+        /////////////////////////////////////////////////////////////////////////////////
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
 
         $user_id = $this->session->get("user_id");
         $user = User::findFirst($user_id);
         $this->view->setVar('user', $user);
         $this->user = $user;
 
+        $id = $this->dispatcher->getParam('id');
+
+        $calendar = Calendar::find("floor_id = $id");
+        $count = count($calendar);
+        ///////////////////
+        $floor_id = $this->dispatcher->getParam('id');
+        $urlForEdit = 'calendar/' . $floor_id . '/show';
+        if ($floor_id == 1) {
+            $floor = '1st';
+        } else {
+            $floor = '2nd';
+        }
+
+        $calendars = Calendar::find("floor_id = $floor_id");
+        $count = count($calendars);
 
 
-        if ($this->request->isPost()) {
+        $this->view->urlForEdit = $urlForEdit;
+        $this->view->floor = $floor;
+        $this->view->floor_id = $floor_id;
+        $this->view->count = $count;
+        $this->view->calendars = $calendars;
+
+        ////////////////////////////
+
+        if ($this->request->ispost()) {
             $data = $this->request->getPost();
-            //$user = new User($data);
-            $success = $user->update($data);
-            if ($success) {
-                return $this->response->redirect();
-            } else {
-                $messages = $user->getMessages();
-                if ($messages) {
-                    foreach ($messages as $message) {
-                        $this->flash->error($message);
-                    }
-                }
-            }
+            $user_id = $this->user->getId();
+            $id = $this->dispatcher->getParam('id');
+            $floor_id = $id;
+            $calendar = new Calendar(['user_id' => $user_id, 'floor_id' => $floor_id]);
+            $success = $calendar->create($data);
+            return $this->response->redirect("calendar/$id/show");
         }
     }
 }

@@ -61,19 +61,11 @@ try {
         "action" => "index"
     ]);
 
-    $router->add("/calendar2/index", [
-        "controller" => "calendar2",
-        "action" => "index"
-    ]);
     $router->add("/calendar/{id}/show", [
         "controller" => "calendar",
         "action" => "show"
     ]);
 
-    $router->add("/calendar2/show", [
-        "controller" => "calendar2",
-        "action" => "show"
-    ]);
 
     $router->add("/account/show", [
         "controller" => "account",

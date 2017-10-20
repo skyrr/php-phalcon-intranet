@@ -43,7 +43,7 @@ class Calendar extends \Phalcon\Mvc\Model
 
     public function getComment()
     {
-        return $this->name;
+        return $this->comment;
     }
 
     public function getUserId()
