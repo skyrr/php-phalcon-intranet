@@ -84,7 +84,8 @@
                 calendar.fullCalendar('unselect');
             },
             editable: true,
-            events: [{
+            events: [
+                    {
                 title: 'All Day Event',
                 start: new Date(y, m, 1)
             }, {
@@ -93,7 +94,7 @@
                 end: new Date(y, m, d - 2)
             }, {
                 title: 'Meeting',
-                start: new Date(y, m, d, 10, 30),
+                start: new Date(2017, 9, 20, 10, 30),
                 allDay: false
             }, {
                 title: 'Lunch',
@@ -115,7 +116,7 @@
                 start: new Date(y, m + 1, 28),
                 end: new Date(y, m + 2, 29),
                 url: 'http://google.com/'
-            }]
+            },]
         });
     });
 </script>

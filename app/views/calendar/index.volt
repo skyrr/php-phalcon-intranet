@@ -34,10 +34,10 @@
             <div class="col-md-4">
                 <div class="x_panel">
                     <div class="control-group">
-                        <label class="control-label" align="center">Nearest reservations({{ count }}):</label>
+                        <label class="control-label" align="center">Today's {{ today }} reservations({{ count }}):</label>
 
                         {% for calendar in calendars %}
-                            <div align="left"><a href="{{ url.get(urlForEdit) }}"> {{ calendar.getComment() }} </a></div>
+                            <div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendar.getDate() }} </b> at <b> {{ calendar.getTime() }}</b> for: <b>{{ calendar.getTimeShift() }}</b>h  {{ calendar.getComment() }}</a></div>
                         {% endfor %}
 
                         <div align="right"><a href="{{ url.get(urlForEdit) }}"> ...more </a></div>

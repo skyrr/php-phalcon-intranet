@@ -52,19 +52,20 @@ class Calendar extends \Phalcon\Mvc\Model
     }
     public function getFloorId()
     {
-        return $this->user_id;
+        return $this->floor_id;
     }
     public function getDate()
     {
-        return $this->user_id;
+        return $this->date;
     }
     public function getTime()
     {
-        return $this->user_id;
+        $this->time;
+        return $this->time;
     }
     public function getTimeShift()
     {
-        return $this->user_id;
+        return $this->timeshift;
     }
 
 
