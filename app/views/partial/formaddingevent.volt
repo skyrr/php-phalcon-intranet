@@ -28,11 +28,11 @@
 
         <div class="input-group">
             <select name="timeshift" class="form-control">
-                <option value=0.5>0:30 hour</option>
-                <option value=1>1:00 hour</option>
-                <option value=1.5>1:30 hour</option>
-                <option value=2>2:00 hours</option>
-                <option value=2.5>2:30 hours</option>
+                <option value=30>0:30 hour</option>
+                <option value=60>1:00 hour</option>
+                <option value=90>1:30 hour</option>
+                <option value=120>2:00 hours</option>
+                <option value=150>2:30 hours</option>
             </select>
         </div>
         <div class="control-group">

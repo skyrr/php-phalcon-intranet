@@ -12,7 +12,12 @@ class Calendar extends \Phalcon\Mvc\Model
     protected $user_id;
     protected $floor_id;
     protected $date;
+    protected $year;
+    protected $month;
+    protected $day;
     protected $time;
+    protected $hour;
+    protected $minute;
     protected $timeshift;
 
     protected function initialize()
@@ -58,10 +63,29 @@ class Calendar extends \Phalcon\Mvc\Model
     {
         return $this->date;
     }
+    public function getYear()
+    {
+        return $this->year;
+    }
+    public function getMonth()
+    {
+        return $this->month;
+    }
+    public function getDay()
+    {
+        return $this->day;
+    }
     public function getTime()
     {
-        $this->time;
         return $this->time;
+    }
+    public function getHour()
+    {
+        return $this->hour;
+    }
+    public function getMinute()
+    {
+        return $this->minute;
     }
     public function getTimeShift()
     {

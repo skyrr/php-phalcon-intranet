@@ -85,38 +85,50 @@
             },
             editable: true,
             events: [
-                    {
-                title: 'All Day Event',
-                start: new Date(y, m, 1)
-            }, {
-                title: 'Long Event',
-                start: new Date(y, m, d - 5),
-                end: new Date(y, m, d - 2)
-            }, {
-                title: 'Meeting',
-                start: new Date(2017, 9, 20, 10, 30),
-                allDay: false
-            }, {
-                title: 'Lunch',
-                start: new Date(y, m, d + 14, 12, 0),
-                end: new Date(y, m, d, 14, 0),
-                allDay: false
-            }, {
-                title: 'Birthday Party',
-                start: new Date(y, m, d + 1, 19, 0),
-                end: new Date(y, m, d + 1, 22, 30),
-                allDay: false
-            }, {
-                title: 'Birthday Party2',
-                start: new Date(y, m, d + 1, 11, 0),
-                end: new Date(y, m, d + 1, 12, 30),
-                allDay: false
-            }, {
-                title: 'Click for Google',
-                start: new Date(y, m + 1, 28),
-                end: new Date(y, m + 2, 29),
-                url: 'http://google.com/'
-            },]
+                {% for calendar in calendars %}
+                {
+                    {#start: new Date({{ calendar.getYear() }}, {{ calendar.getMonth() }}, {{ calendar.getDay() }}, {{ calendar.getHour() }}, {{ calendar.getMinute() }}),#}
+
+                    title: '{{ calendar.getYear() }}-{{ calendar.getMonth() }}-{{ calendar.getDay() }}  :: {{ calendar.getHour() }} - {{ calendar.getMinute() }}',
+                    start: new Date({{ calendar.getYear() }}, {{ calendar.getMonth() }} - 1, {{ calendar.getDay() }}, {{ calendar.getHour() }}, {{ calendar.getMinute() }}),
+                    end: new Date({{ calendar.getYear() }}, {{ calendar.getMonth() }} - 1, {{ calendar.getDay() }}, {{ calendar.getHour() }}, {{ calendar.getMinute() }} + {{ calendar.getTimeShift() }})
+                },
+                {% endfor %}
+
+//            {
+//                title: 'All Day Event',
+//                start: new Date(y, m, 1)
+//            }, {
+//                title: 'Long Event',
+//                start: new Date(y, m, d - 5),
+//                end: new Date(y, m, d - 2)
+//            }, {
+//                title: 'Meeting',
+//                start: new Date(y, m, d, 10, 1),
+//                end: new Date(y, m, d, 14, 12),
+//                allDay: false
+//            }, {
+//                title: 'Lunch',
+//                start: new Date(y, m, d + 14, 12, 0),
+//                end: new Date(y, m, d, 14, 0),
+//                allDay: false
+//            }, {
+//                title: 'Birthday Party',
+//                start: new Date(y, m, d + 1, 19, 0),
+//                end: new Date(y, m, d + 1, 22, 30),
+//                allDay: false
+//            }, {
+//                title: 'Birthday Party2',
+//                start: new Date(y, m, d + 1, 11, 0),
+//                end: new Date(y, m, d + 1, 12, 30),
+//                allDay: false
+//            }, {
+//                title: 'Click for Google',
+//                start: new Date(y, m + 1, 28),
+//                end: new Date(y, m + 2, 29),
+//                url: 'http://google.com/'
+//            },
+            ]
         });
     });
 </script>

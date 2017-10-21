@@ -85,7 +85,26 @@ class CalendarController extends \Phalcon\Mvc\Controller
             $user_id = $this->user->getId();
             $id = $this->dispatcher->getParam('id');
             $floor_id = $id;
-            $calendar = new Calendar(['user_id' => $user_id, 'floor_id' => $floor_id]);
+            $date = $this->request->getPost("date");
+            $time = $this->request->getPost("time");
+
+            $year = date('Y', strtotime($date));
+            $month = date('m', strtotime($date));
+            $day = date('d', strtotime($date));
+
+            $hour = date('H', strtotime($time));
+            $minute = date('i', strtotime($time));
+
+            $calendar = new Calendar([
+                'user_id' => $user_id,
+                'floor_id' => $floor_id,
+                'year' => $year,
+                'month' => $month,
+                'day' => $day,
+                'hour' => $hour,
+                'minute' => $minute,
+
+            ]);
             $success = $calendar->create($data);
             return $this->response->redirect("calendar/$id/index");
         }

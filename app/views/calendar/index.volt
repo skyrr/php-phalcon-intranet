@@ -37,7 +37,7 @@
                         <label class="control-label" align="center">Today's reservations({{ count }}):</label>
 
                         {% for calendar in calendars %}
-                            <div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendar.getDate() }} </b> at <b> {{ calendar.getTime() }}</b> for: <b>{{ calendar.getTimeShift() }}</b>h  {{ calendar.getComment() }}</a></div>
+                            <div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendar.getDate() }} </b> at <b> {{ calendar.getTime() }}</b> for: <b>{{ calendar.getTimeShift() }}</b>min.  {{ calendar.getComment() }}</a></div>
                         {% endfor %}
 
                         <div align="right"><a href="{{ url.get(urlForEdit) }}"> ...more </a></div>
