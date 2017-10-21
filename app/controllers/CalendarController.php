@@ -49,7 +49,16 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $todayHM = date("H:i:s");
         $calendars = Calendar::find(
             [
-                "date >= $today",
+//                "date >= $today",
+                "floor_id = $floor_id",
+                'order' => 'date',
+//                'limit' => 5
+            ]);
+        $todayList = date("Ymd");
+        $todayHMList = date("H:i:s");
+        $calendarsList = Calendar::find(
+            [
+                "date = $today",
                 "floor_id = $floor_id",
                 'order' => 'date',
                 'limit' => 5
@@ -65,6 +74,9 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $this->view->calendars = $calendars;
         $this->view->today = $today;
         $this->view->todayHM = $todayHM;
+        $this->view->calendarsList = $calendarsList;
+        $this->view->todayList = $todayList;
+        $this->view->todayHMList = $todayHMList;
 //        if ($this->request->isPost()) {
 //            $data = $this->request->getPost();
 //            //$user = new User($data);

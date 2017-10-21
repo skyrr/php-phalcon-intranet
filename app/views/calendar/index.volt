@@ -36,7 +36,7 @@
                     <div class="control-group">
                         <label class="control-label" align="center">Today's reservations({{ count }}):</label>
 
-                        {% for calendar in calendars %}
+                        {% for calendar in calendarsList %}
                             <div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendar.getDate() }} </b> at <b> {{ calendar.getTime() }}</b> for: <b>{{ calendar.getTimeShift() }}</b>min.  {{ calendar.getComment() }}</a></div>
                         {% endfor %}
 
@@ -109,7 +109,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary antosubmit2">Save changes</button>
+                    {#<button type="submit" class="btn btn-primary antosubmit2">Save changes</button>#}
                 </div>
             </form>
         </div>
