@@ -6,9 +6,57 @@
 
 <br />
 
-<!-- sidebar menu -->
-{{ partial('sidebar') }}
-<!-- /sidebar menu -->
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+    <div class="menu_section">
+        <br><br><br>
+        <ul class="nav side-menu">
+            <li><a><i class="fa fa-edit"></i> Scheduler <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="{{ url.get('calendar/1/index') }}">1st floor</a></li>
+                    <li><a href="{{ url.get('calendar/2/index') }}">2nd floor</a></li>
+                </ul>
+            </li>
+            <li><a><i class="fa fa-edit"></i> Sample <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="form.html">General Form</a></li>
+                    <li><a href="form_advanced.html">Advanced Components</a></li>
+                    <li><a href="form_validation.html">Form Validation</a></li>
+                    <li><a href="form_wizards.html">Form Wizard</a></li>
+                    <li><a href="form_upload.html">Form Upload</a></li>
+                    <li><a href="form_buttons.html">Form Buttons</a></li>
+                </ul>
+            </li>
+            <li><a><i class="fa fa-desktop"></i> Sample <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="general_elements.html">General Elements</a></li>
+                    <li><a href="media_gallery.html">Media Gallery</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="glyphicons.html">Glyphicons</a></li>
+                    <li><a href="widgets.html">Widgets</a></li>
+                    <li><a href="invoice.html">Invoice</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                </ul>
+            </li>
+            <li><a><i class="fa fa-table"></i> Sample <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="tables.html">Tables</a></li>
+                    <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                </ul>
+            </li>
+            <li><a><i class="fa fa-bar-chart-o"></i> Sample <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="chartjs.html">Chart JS</a></li>
+                    <li><a href="chartjs2.html">Chart JS2</a></li>
+                    <li><a href="morisjs.html">Moris JS</a></li>
+                    <li><a href="echarts.html">ECharts</a></li>
+                    <li><a href="other_charts.html">Other Charts</a></li>
+                </ul>
+            </li>        </ul>
+    </div>
+</div>
+
 
 <!-- /menu footer buttons -->
 {{ partial('menufooter') }}
@@ -34,10 +82,10 @@
             <div class="col-md-4">
                 <div class="x_panel">
                     <div class="control-group">
-                        <label class="control-label" align="center">Today's reservations({{ count }}):</label>
+                        <label class="control-label" align="center">Today's reservations (total{{ count }}):</label>
 
-                        {% for calendar in calendarsList %}
-                            <div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendar.getDate() }} </b> at <b> {{ calendar.getTime() }}</b> for: <b>{{ calendar.getTimeShift() }}</b>min.  {{ calendar.getComment() }}</a></div>
+                        {% for calendarItem in calendarsList %}
+                            <div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendarItem.getDate() }} </b> at <b> {{ calendarItem.getTime() }}</b> for: <b>{{ calendarItem.getTimeShift() }}</b>min.  {{ calendarItem.getComment() }}</a></div>
                         {% endfor %}
 
                         <div align="right"><a href="{{ url.get(urlForEdit) }}"> ...more </a></div>
@@ -79,7 +127,7 @@
 </div>
 </div>
 
-<!-- calendar modal -->
+    <!-- calendar modal -->
 <div id="CalenderModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -153,5 +201,9 @@
 
 <div id="fc_create" data-toggle="modal" data-target="#CalenderModalNew"></div>
 <div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
+
+
+<!-- /calendar modal -->
+
 {{ partial('calendarscript') }}
 </body>

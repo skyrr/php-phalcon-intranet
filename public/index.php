@@ -51,8 +51,8 @@ try {
         "action" => "create"
     ]);
 
-    $router->add("/transactions/{id}/remove", [
-        "controller" => "transaction",
+    $router->add("/calendar/{id}/{eventId}/remove", [
+        "controller" => "calendar",
         "action" => "remove"
     ]);
 

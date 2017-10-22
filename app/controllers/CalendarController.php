@@ -15,10 +15,7 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $user_id = $this->session->get("user_id");
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
-    }
 
-    public function indexAction()
-    {
         $this->assets->addCss('assets/vendors/bootstrap/dist/css/bootstrap.min.css');
         $this->assets->addCss('assets/vendors/font-awesome/css/font-awesome.min.css');
         $this->assets->addCss('assets/vendors/nprogress/nprogress.css');
@@ -28,16 +25,10 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $this->assets->addCss('assets/build/css/custom.min.css');
 
 
-//        if (!$this->session->has("user_id")) {
-//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-//        }
-
-        $user_id = $this->session->get("user_id");
-        $user = User::findFirst($user_id);
-        $this->view->setVar('user', $user);
-        $this->user = $user;
-
+        // get floor id
         $floor_id = $this->dispatcher->getParam('id');
+
+        //making url
         $urlForEdit = 'calendar/' . $floor_id . '/show';
         if ($floor_id == 1) {
             $floor = '1st';
@@ -45,7 +36,13 @@ class CalendarController extends \Phalcon\Mvc\Controller
             $floor = '2nd';
         }
 
-        $today = date("Ymd");
+        $user_id = $this->session->get("user_id");
+        $user = User::findFirst($user_id);
+        $this->view->setVar('user', $user);
+        $this->user = $user;
+
+        // getting calendar items for index
+        $today = date("Y-m-d");
         $todayHM = date("H:i:s");
         $calendars = Calendar::find(
             [
@@ -54,18 +51,29 @@ class CalendarController extends \Phalcon\Mvc\Controller
                 'order' => 'date',
 //                'limit' => 5
             ]);
+
+        //getting calendar items for today
         $todayList = date("Ymd");
         $todayHMList = date("H:i:s");
         $calendarsList = Calendar::find(
             [
-                "date = $today",
-                "floor_id = $floor_id",
+                "date = $todayList AND floor_id = $floor_id",
+                'order' => 'date',
+                'limit' => 5
+            ]);
+
+        //getting calendar items for future events
+        $futureList = date("Ymd");
+        $calendarsFutureList = Calendar::find(
+            [
+                "date >= $futureList AND floor_id = $floor_id",
                 'order' => 'date',
                 'limit' => 5
             ]);
         $count = count($calendars);
 
 
+        // sending vars to view
         $this->view->urlForEdit = $urlForEdit;
         $this->view->floor = $floor;
         $this->view->floor_id = $floor_id;
@@ -77,6 +85,21 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $this->view->calendarsList = $calendarsList;
         $this->view->todayList = $todayList;
         $this->view->todayHMList = $todayHMList;
+        $this->view->calendarsFutureList = $calendarsFutureList;
+
+
+    }
+
+    public function indexAction()
+    {
+
+
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
+
+
+
 //        if ($this->request->isPost()) {
 //            $data = $this->request->getPost();
 //            //$user = new User($data);
@@ -179,6 +202,16 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
     public function removeAction()
     {
+        $floor_id = $this->dispatcher->getParam('id');
+        $eventId = $this->dispatcher->getParam('eventId');
+        $calendar = Calendar::findFirst($eventId);
+        if (!$calendar) {
+            return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
+        }
+
+        $calendar->delete();
+        $floor_id = $this->dispatcher->getParam('id');
+        return $this->response->redirect("calendar/$floor_id/show");
 
     }
 
@@ -196,33 +229,33 @@ class CalendarController extends \Phalcon\Mvc\Controller
 //            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
 //        }
 
-        $user_id = $this->session->get("user_id");
-        $user = User::findFirst($user_id);
-        $this->view->setVar('user', $user);
-        $this->user = $user;
+//        $user_id = $this->session->get("user_id");
+//        $user = User::findFirst($user_id);
+//        $this->view->setVar('user', $user);
+//        $this->user = $user;
 
-        $id = $this->dispatcher->getParam('id');
+//        $id = $this->dispatcher->getParam('id');
 
-        $calendar = Calendar::find("floor_id = $id");
-        $count = count($calendar);
-        ///////////////////
-        $floor_id = $this->dispatcher->getParam('id');
-        $urlForEdit = 'calendar/' . $floor_id . '/show';
-        if ($floor_id == 1) {
-            $floor = '1st';
-        } else {
-            $floor = '2nd';
-        }
-
-        $calendars = Calendar::find("floor_id = $floor_id");
-        $count = count($calendars);
-
-
-        $this->view->urlForEdit = $urlForEdit;
-        $this->view->floor = $floor;
-        $this->view->floor_id = $floor_id;
-        $this->view->count = $count;
-        $this->view->calendars = $calendars;
+////        $calendar = Calendar::find("floor_id = $id");
+////        $count = count($calendar);
+////        ///////////////////
+////        $floor_id = $this->dispatcher->getParam('id');
+////        $urlForEdit = 'calendar/' . $floor_id . '/show';
+////        if ($floor_id == 1) {
+////            $floor = '1st';
+////        } else {
+////            $floor = '2nd';
+////        }
+////
+////        $calendars = Calendar::find("floor_id = $floor_id");
+////        $count = count($calendars);
+//
+//
+//        $this->view->urlForEdit = $urlForEdit;
+//        $this->view->floor = $floor;
+//        $this->view->floor_id = $floor_id;
+//        $this->view->count = $count;
+//        $this->view->calendars = $calendars;
 
         ////////////////////////////
 

@@ -1,6 +1,4 @@
 
-<!-- /calendar modal -->
-
 <!-- jQuery -->
 <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
@@ -87,8 +85,6 @@
             events: [
                 {% for calendar in calendars %}
                 {
-                    {#start: new Date({{ calendar.getYear() }}, {{ calendar.getMonth() }}, {{ calendar.getDay() }}, {{ calendar.getHour() }}, {{ calendar.getMinute() }}),#}
-
                     title: '{{ calendar.getComment() }} - {{ calendar.getYear() }}-{{ calendar.getMonth() }}-{{ calendar.getDay() }}   {{ calendar.getHour() }}:{{ calendar.getMinute() }}',
                     start: new Date({{ calendar.getYear() }}, {{ calendar.getMonth() }} - 1, {{ calendar.getDay() }}, {{ calendar.getHour() }}, {{ calendar.getMinute() }}),
                     end: new Date({{ calendar.getYear() }}, {{ calendar.getMonth() }} - 1, {{ calendar.getDay() }}, {{ calendar.getHour() }}, {{ calendar.getMinute() }} + {{ calendar.getTimeShift() }})
