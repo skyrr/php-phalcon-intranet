@@ -82,6 +82,11 @@ try {
         "action" => "create"
     ]);
 
+    $router->add("/menu/index", [
+        "controller" => "menu",
+        "action" => "index"
+    ]);
+
     $router->notFound([
         "controller" => "exception",
         "action" => "notFound"
