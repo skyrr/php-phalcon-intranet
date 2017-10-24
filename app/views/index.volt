@@ -26,6 +26,7 @@
 
     <!-- Custom Theme Style -->
     <link href="/assets/build/css/custom.min.css" rel="stylesheet">
+    <link href="/assets/build/css/custom1.css" rel="stylesheet">
 
 
     <!-- fullCalendar 2.2.5-->
@@ -40,7 +41,9 @@
     <!-- bootstrap-datetimepicker -->
     <link href="/assets/temp/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
 
+    <style type="text/css">
 
+    </style>
 </head>
 <body class="nav-md">
 {{ content() }}
