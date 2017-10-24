@@ -203,10 +203,12 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
-                                    <object data="/menu/menu.pdf" type="application/pdf" width="100%" height="420">
-                                        <p><a href="/menu/menu.pdf">Download menu in PDF!</a></p>
-                                    </object>
+                                    {#<object data="/menu/menu.pdf" type="application/pdf" width="100%" height="420">#}
+                                        {#<p><a href="/menu/menu.pdf">Download menu in PDF!</a></p>#}
+                                    {#</object>#}
                                     {#<embed src="/menu/menu.pdf" width="100%" height="450" alt="pdf" type='application/pdf'>#}
+                                    <iframe src="http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true" style="width:100%; height:400px;" frameborder="0"></iframe>
+
                                 </div>
                             </div>
 

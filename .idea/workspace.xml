@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3579e6-71d5-4b75-a613-ed17ff88942b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/menu/menu.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/MenuController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/menu/index.volt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/menu/show.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/index.volt" afterPath="$PROJECT_DIR$/app/views/account/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calendar/index.volt" afterPath="$PROJECT_DIR$/app/views/calendar/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calendar/show.volt" afterPath="$PROJECT_DIR$/app/views/calendar/show.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/formaddingevent.volt" afterPath="$PROJECT_DIR$/app/views/partial/formaddingevent.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/sidebar.volt" afterPath="$PROJECT_DIR$/app/views/partial/sidebar.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/sidebarend.volt" afterPath="$PROJECT_DIR$/app/views/partial/sidebarend.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/menu/index.volt" afterPath="$PROJECT_DIR$/app/views/menu/index.volt" />
     </list>
     <ignored path="accounting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,11 +88,10 @@
       <file leaf-file-name="index.volt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/menu/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+            <state relative-caret-position="232">
+              <caret line="79" column="102" selection-start-line="79" selection-start-column="70" selection-end-line="79" selection-end-column="102" />
               <folding>
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,8 +125,8 @@
       <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/account/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="306">
+              <caret line="209" column="159" selection-start-line="209" selection-start-column="159" selection-end-line="209" selection-end-column="159" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -200,8 +190,8 @@
         <option value="$PROJECT_DIR$/app/views/menu/show.volt" />
         <option value="$PROJECT_DIR$/app/views/calendar/show.volt" />
         <option value="$PROJECT_DIR$/app/views/partial/sidebar.volt" />
-        <option value="$PROJECT_DIR$/app/views/account/index.volt" />
         <option value="$PROJECT_DIR$/app/views/calendar/index.volt" />
+        <option value="$PROJECT_DIR$/app/views/account/index.volt" />
         <option value="$PROJECT_DIR$/app/views/menu/index.volt" />
       </list>
     </option>
@@ -575,12 +565,12 @@
       <workItem from="1508389147555" duration="93000" />
       <workItem from="1508491273975" duration="34041000" />
       <workItem from="1508671464867" duration="22318000" />
-      <workItem from="1508841509011" duration="10200000" />
+      <workItem from="1508841509011" duration="11188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188864000" />
+    <option name="totallyTimeSpent" value="189852000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -946,16 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/account/show.volt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2072">
@@ -988,13 +968,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="209" column="159" selection-start-line="209" selection-start-column="159" selection-end-line="209" selection-end-column="159" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/menu/index.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+        <state relative-caret-position="232">
+          <caret line="79" column="102" selection-start-line="79" selection-start-column="70" selection-end-line="79" selection-end-column="102" />
           <folding>
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
