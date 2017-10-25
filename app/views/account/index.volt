@@ -207,7 +207,7 @@
                                         {#<p><a href="/menu/menu.pdf">Download menu in PDF!</a></p>#}
                                     {#</object>#}
                                     {#<embed src="/menu/menu.pdf" width="100%" height="450" alt="pdf" type='application/pdf'>#}
-                                    <iframe src="http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true" style="width:100%; height:400px;" frameborder="0"></iframe>
+                                    <iframe id="iframe" src="http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true" style="width:100%; height:400px;" frameborder="0"></iframe>
 
                                 </div>
                             </div>
@@ -538,3 +538,17 @@
     gauge.setTextField(document.getElementById("gauge-text"));
 </script>
 <!-- /gauge.js -->
+<script type="text/javascript">
+
+    $('#iframe').one('load', function(){
+        console.log("Sure load event is called!")
+    }).each(function(){
+        if(this.contentDocument.body.children.length) {
+            $(this).trigger('load');
+        }
+    })
+</script>
+<script type="text/javascript">
+
+    document.getElementById('iframe1').contentWindow.location.reload();
+</script>

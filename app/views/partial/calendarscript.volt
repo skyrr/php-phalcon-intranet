@@ -199,3 +199,17 @@
         forceParse: 0
     });
 </script>
+<script type="text/javascript">
+
+    $('#iframe').one('load', function(){
+        console.log("Sure load event is called!")
+    }).each(function(){
+        if(this.contentDocument.body.children.length) {
+            $(this).trigger('load');
+        }
+    })
+</script>
+<script type="text/javascript">
+
+    document.getElementById('iframe1').contentWindow.location.reload();
+</script>
