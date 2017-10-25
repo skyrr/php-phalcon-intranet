@@ -113,7 +113,7 @@
 
                             <div class="x_content" id="iframe">
                             {#<embed src="/menu/menu.pdf" width="100%" height="1170" alt="pdf" type='application/pdf'>#}
-                                <iframe src="http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true" style="width:100%; height:1170px;" frameborder="0"></iframe>
+                                <iframe src="http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true" style="width:100%; height:1170px;" frameborder="0" onload="function(){iframe.src='http://skyrr.space/menu/menu.pdf';}"></iframe>
                             </div>
                         </div>
 
