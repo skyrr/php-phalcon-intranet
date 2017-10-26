@@ -14,3 +14,7 @@ and (min-device-width : 480px)
 and (max-device-width : 5500px){
   .desktopShow {display: inline;}
 }
+
+.searchHeight {
+  height:200px;
+}

@@ -87,6 +87,11 @@ try {
         "action" => "index"
     ]);
 
+    $router->add("/message/index", [
+        "controller" => "message",
+        "action" => "index"
+    ]);
+
     $router->notFound([
         "controller" => "exception",
         "action" => "notFound"

@@ -54,71 +54,27 @@
         <div class="clearfix"></div>
             <div class="mobileShow">
                 <div class="row">
-                <div class="col-md-12">
-                    <div class="x_panel">
-                        {#<div class="x_title">#}
-                            {#<h2>Typography <small>different design elements</small></h2>#}
-                            {#<ul class="nav navbar-right panel_toolbox">#}
-                                {#<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>#}
-                                {#</li>#}
-                                {#<li class="dropdown">#}
-                                    {#<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>#}
-                                    {#<ul class="dropdown-menu" role="menu">#}
-                                        {#<li><a href="#">Settings 1</a>#}
-                                        {#</li>#}
-                                        {#<li><a href="#">Settings 2</a>#}
-                                        {#</li>#}
-                                    {#</ul>#}
-                                {#</li>#}
-                                {#<li><a class="close-link"><i class="fa fa-close"></i></a>#}
-                                {#</li>#}
-                            {#</ul>#}
-                            {#<div class="clearfix"></div>#}
-                        {#</div>#}
-
-
+                    <div class="col-md-12">
+                        <div class="x_panel">
                             <div class="x_content">
-                            {#<embed src="/menu/menu.pdf" width="100%" height="1170" alt="pdf" type='application/pdf'>#}
-                                <iframe src="http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true" style="width:100%; height:400px;" frameborder="0"></iframe>
+                                {#<embed src="/menu/menu.pdf" width="100%" height="1170" alt="pdf" type='application/pdf'>#}
+                                <iframe id="miiframe" src="http://skyrr.space/menu/menu.pdf" style="width:100%; height:400px;" frameborder="0"></iframe>
                             </div>
                         </div>
-
-                        </div>
                     </div>
+                </div>
             </div>
             <div class="desktopShow">
                 <div class="row">
-                <div class="col-md-12">
-                    <div class="x_panel">
-                        {#<div class="x_title">#}
-                            {#<h2>Typography <small>different design elements</small></h2>#}
-                            {#<ul class="nav navbar-right panel_toolbox">#}
-                                {#<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>#}
-                                {#</li>#}
-                                {#<li class="dropdown">#}
-                                    {#<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>#}
-                                    {#<ul class="dropdown-menu" role="menu">#}
-                                        {#<li><a href="#">Settings 1</a>#}
-                                        {#</li>#}
-                                        {#<li><a href="#">Settings 2</a>#}
-                                        {#</li>#}
-                                    {#</ul>#}
-                                {#</li>#}
-                                {#<li><a class="close-link"><i class="fa fa-close"></i></a>#}
-                                {#</li>#}
-                            {#</ul>#}
-                            {#<div class="clearfix"></div>#}
-                        {#</div>#}
-
-
+                    <div class="col-md-12">
+                        <div class="x_panel">
                             <div class="x_content" >
-                            {#<embed src="/menu/menu.pdf" width="100%" height="1170" alt="pdf" type='application/pdf'>#}
-                                <iframe id="iframe" src="http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true" style="width:100%; height:1170px;" frameborder="0" onload="function(){iframe.src='http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true';}"></iframe>
+                                {#<embed src="/menu/menu.pdf" width="100%" height="1170" alt="pdf" type='application/pdf'>#}
+                                <iframe id="miiframe" src="http://skyrr.space/menu/menu.pdf" style="width:100%; height:1170px;" frameborder="0"></iframe>
                             </div>
                         </div>
-
-                        </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>

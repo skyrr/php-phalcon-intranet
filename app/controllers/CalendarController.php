@@ -16,6 +16,13 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
 
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
+        $unreadMessages = 5;
+        $this->view->unreadMessages = $unreadMessages;
+
+
         $this->assets->addCss('assets/vendors/bootstrap/dist/css/bootstrap.min.css');
         $this->assets->addCss('assets/vendors/font-awesome/css/font-awesome.min.css');
         $this->assets->addCss('assets/vendors/nprogress/nprogress.css');
@@ -72,6 +79,8 @@ class CalendarController extends \Phalcon\Mvc\Controller
             ]);
         $count = count($calendars);
 
+        $json_encoded_from_model = json_encode(Calendar::find()->toArray(), JSON_NUMERIC_CHECK);
+        $this->view->json_encoded_from_model = $json_encoded_from_model;
 
         // sending vars to view
         $this->view->urlForEdit = $urlForEdit;
@@ -92,13 +101,6 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
-
-
-//        if (!$this->session->has("user_id")) {
-//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-//        }
-
-
 
 //        if ($this->request->isPost()) {
 //            $data = $this->request->getPost();

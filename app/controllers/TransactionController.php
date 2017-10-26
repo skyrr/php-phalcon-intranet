@@ -28,6 +28,10 @@ class TransactionController extends \Phalcon\Mvc\Controller
         $this->user = User::findFirst($user_id);
         //$this->account =
         $this->view->setVar('user', $this->user);
+
+        $unreadMessages = 5;
+        $this->view->unreadMessages = $unreadMessages;
+
     }
     /**
      * @route /transactions

@@ -199,17 +199,18 @@
         forceParse: 0
     });
 </script>
+
 <script type="text/javascript">
 
-    $('#iframe').one('load', function(){
-        console.log("Sure load event is called!")
-    }).each(function(){
-        if(this.contentDocument.body.children.length) {
-            $(this).trigger('load');
+    function setIframeSrc() {
+        var s = "http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true";
+        var iframe1 = document.getElementById('miiframe');
+        if ( -1 == navigator.userAgent.indexOf("MSIE") ) {
+            iframe1.src = s;
         }
-    })
-</script>
-<script type="text/javascript">
-
-    document.getElementById('iframe1').contentWindow.location.reload();
+        else {
+            iframe1.location = s;
+        }
+    }
+    setTimeout(setIframeSrc, 5);
 </script>

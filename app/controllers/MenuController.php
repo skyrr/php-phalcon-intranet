@@ -16,9 +16,12 @@ class MenuController extends \Phalcon\Mvc\Controller
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
 
-        //        if (!$this->session->has("user_id")) {
+//        if (!$this->session->has("user_id")) {
 //            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
 //        }
+        $unreadMessages = 5;
+        $this->view->unreadMessages = $unreadMessages;
+
     }
 
     public function indexAction()

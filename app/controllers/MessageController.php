@@ -5,7 +5,7 @@
  * Date: 18.08.16
  * Time: 11:33
  */
-class AccountController extends \Phalcon\Mvc\Controller
+class MessageController extends \Phalcon\Mvc\Controller
 {
     protected $user;
     protected $account;
@@ -20,6 +20,8 @@ class AccountController extends \Phalcon\Mvc\Controller
 //        }
         $unreadMessages = 5;
         $this->view->unreadMessages = $unreadMessages;
+
+
     }
 
     public function indexAction()
@@ -35,6 +37,8 @@ class AccountController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $user);
         $this->user = $user;
 
+        $userList = User::find();
+        $this->view->userList = $userList;
 
 
         if ($this->request->isPost()) {
