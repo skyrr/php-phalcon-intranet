@@ -18,6 +18,10 @@ class MessageController extends \Phalcon\Mvc\Controller
 //        if (!$this->session->has("user_id")) {
 //            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
 //        }
+
+        $userList = User::find();
+        $this->view->userList = $userList;
+
         $unreadMessages = 5;
         $this->view->unreadMessages = $unreadMessages;
 
@@ -37,8 +41,7 @@ class MessageController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $user);
         $this->user = $user;
 
-        $userList = User::find();
-        $this->view->userList = $userList;
+
 
 
         if ($this->request->isPost()) {
@@ -61,6 +64,35 @@ class MessageController extends \Phalcon\Mvc\Controller
 
     public function createAction()
     {
+        $this->assets->addInlineJs('jQuery(document).ready(function($) {
+                               $(".clickable-row").click(function() {
+                               window.document.location = $(this).data("href");});});');
+
+
+
+        $user_id = $this->session->get("user_id");
+        $user = User::findFirst($user_id);
+        $this->view->setVar('user', $user);
+        $this->user = $user;
+
+
+
+
+        if ($this->request->isPost()) {
+            $data = $this->request->getPost();
+            //$user = new User($data);
+            $success = $user->update($data);
+            if ($success) {
+                return $this->response->redirect();
+            } else {
+                $messages = $user->getMessages();
+                if ($messages) {
+                    foreach ($messages as $message) {
+                        $this->flash->error($message);
+                    }
+                }
+            }
+        }
 
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
@@ -80,8 +112,8 @@ class MessageController extends \Phalcon\Mvc\Controller
             }
             return $this->response->redirect("/account/show");
         }
-        $currency = Currency::find();
-        $this->view-> currency = $currency;
+//        $currency = Currency::find();
+//        $this->view-> currency = $currency;
 
 
         //$this->view->user_id = $user_id;

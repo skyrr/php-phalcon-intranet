@@ -1,5 +1,5 @@
 
-            <li><a><i class="fa fa-table"></i> Restaurant menu <span class="fa fa-chevron-down"></span></a>
+            <li><a><i class="fa fa-clone"></i> Restaurant menu <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url.get('menu/index') }}">Menu</a></li>
                     {#<li><a href="form_advanced.html">Advanced Components</a></li>#}

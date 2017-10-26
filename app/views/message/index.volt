@@ -6,17 +6,9 @@
                 <!-- /menu profile quick info -->
 
                 <br />
-<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-    <div class="menu_section">
-        <br><br><br>
-        <ul class="nav side-menu">
-            <li><a><i class="fa fa-edit"></i> Scheduler <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="{{ url.get('calendar/1/index') }}">1st floor</a></li>
-                    <li><a href="{{ url.get('calendar/2/index') }}">2nd floor</a></li>
-                </ul>
-            </li>
+
                 <!-- sidebar menu -->
+                {{ partial('sidebarstart') }}
                 {{ partial('sidebar') }}
                 <!-- /sidebar menu -->
 
@@ -80,7 +72,7 @@
                     <div class="x_content">
                         <div class="row">
                             <div class="col-sm-3 mail_list_column">
-                                <button id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</button>
+                                <a href="{{  url.get('message/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>
 
                                 <div align="center">
                                     <input type="text" name="search" id="search" placeholder="Search User" class="form-control" />
@@ -95,7 +87,7 @@
                                             </div>
                                             <div class="right">
                                                 <h3>{{ user.getName() }} <small>3.00 PM</small></h3>
-                                                <p>Ut enim ad minim veniam, quis nostrud exercitation enim ad minim veniam, quis nostrud exercitation...</p>
+                                                <p>{{ user.getEmail() }}</p>
                                             </div>
                                         </div>
                                     </a>
@@ -119,7 +111,7 @@
                                             <p class="date"> 8:02 PM 12 FEB 2014</p>
                                         </div>
                                         <div class="col-md-12">
-                                            <h4> Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. Donec ultrices faucibus rutrum.</h4>
+                                            <h4> Message title</h4>
                                         </div>
                                     </div>
                                     <div class="sender-info">
