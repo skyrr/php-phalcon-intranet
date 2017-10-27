@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3579e6-71d5-4b75-a613-ed17ff88942b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message/create.volt" afterPath="$PROJECT_DIR$/app/views/message/create.volt" />
     </list>
     <ignored path="accounting.iws" />
@@ -29,21 +30,6 @@
             <state relative-caret-position="180">
               <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="127" column="21" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
-              <folding>
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -106,11 +92,25 @@
       <file leaf-file-name="create.volt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/message/create.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+            <state relative-caret-position="191">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
-                <marker date="1509119611140" expanded="true" signature="8986:9018" ph="..." />
-                <marker date="1509119611140" expanded="true" signature="10718:10725" ph="×" />
+                <element signature="e#2263#3046#0#Twig" expanded="false" />
+                <marker date="1509120604605" expanded="true" signature="12537:12569" ph="..." />
+                <marker date="1509120604605" expanded="true" signature="14269:14276" ph="×" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/message/index.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="209" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+              <folding>
+                <element signature="e#694#12641#0#HTML" expanded="false" />
+                <element signature="e#3437#4220#0#Twig" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -489,12 +489,12 @@
       <workItem from="1508671464867" duration="22318000" />
       <workItem from="1508841509011" duration="14602000" />
       <workItem from="1508923672991" duration="12578000" />
-      <workItem from="1509002847547" duration="34354000" />
+      <workItem from="1509002847547" duration="35345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240198000" />
+    <option name="totallyTimeSpent" value="241189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -781,23 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/message/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="74" column="87" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="87" />
-          <folding>
-            <element signature="e#4509#5972#0#HTML" expanded="false" />
-            <element signature="e#4580#5544#0#HTML" expanded="false" />
-            <element signature="e#4647#5497#0#HTML" expanded="false" />
-            <element signature="e#6677#8380#0#HTML" expanded="false" />
-            <element signature="e#8417#11542#0#HTML" expanded="false" />
-            <element signature="e#8840#11499#0#HTML" expanded="false" />
-            <element signature="e#11579#12389#0#HTML" expanded="false" />
-            <marker date="1509045881034" expanded="false" signature="3437:4220" ph="{% for user in userList ...%}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/gentelella-master/production/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -994,13 +977,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/message/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="209" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+          <folding>
+            <element signature="e#694#12641#0#HTML" expanded="false" />
+            <element signature="e#3437#4220#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/message/create.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+        <state relative-caret-position="191">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
-            <marker date="1509119611140" expanded="true" signature="8986:9018" ph="..." />
-            <marker date="1509119611140" expanded="true" signature="10718:10725" ph="×" />
+            <element signature="e#2263#3046#0#Twig" expanded="false" />
+            <marker date="1509120604605" expanded="true" signature="12537:12569" ph="..." />
+            <marker date="1509120604605" expanded="true" signature="14269:14276" ph="×" />
           </folding>
         </state>
       </provider>
