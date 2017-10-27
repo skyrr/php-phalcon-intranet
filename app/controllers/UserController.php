@@ -7,6 +7,18 @@
  */
 class UserController extends \Phalcon\Mvc\Controller
 {
+    public function beforeExecuteRoute()
+    {
+        $user_id = $this->session->get("user_id");
+        $this->user = User::findFirst($user_id);
+        $this->view->setVar('user', $this->user);
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
+        $unreadMessages = 5;
+        $this->view->unreadMessages = $unreadMessages;
+    }
+
     public function loginAction()
     {
         $this->assets->addJs("assets/plugins/jquery-validation/js/jquery.validate.min.js")
@@ -63,5 +75,10 @@ class UserController extends \Phalcon\Mvc\Controller
                 }
             }
         }
+    }
+
+    public function showAction()
+    {
+
     }
 }

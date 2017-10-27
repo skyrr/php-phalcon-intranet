@@ -67,8 +67,8 @@ try {
     ]);
 
 
-    $router->add("/account/show", [
-        "controller" => "account",
+    $router->add("/user/show", [
+        "controller" => "user",
         "action" => "show"
     ]);
 
@@ -105,14 +105,14 @@ try {
     $di->set('router', $router);
 
     $assets = $di->get('assets');
-    $assets->addCss('/assets/plugins/pace/pace-theme-flash.css')
-        ->addCss('/assets/plugins/boostrapv3/css/bootstrap.min.css')
-        ->addCss('/assets/plugins/boostrapv3/css/bootstrap-theme.min.css')
-        ->addCss('/assets/plugins/font-awesome/css/font-awesome.css')
-        ->addCss('/assets/css/animate.min.css')
-        ->addCss('/assets/css/style.css')
-        ->addCss('/assets/css/responsive.css')
-        ->addCss('/assets/css/custom-icon-set.css')
+//    $assets->addCss('/assets/plugins/pace/pace-theme-flash.css')
+//        ->addCss('/assets/plugins/boostrapv3/css/bootstrap.min.css')
+//        ->addCss('/assets/plugins/boostrapv3/css/bootstrap-theme.min.css')
+//        ->addCss('/assets/plugins/font-awesome/css/font-awesome.css')
+//        ->addCss('/assets/css/animate.min.css')
+//        ->addCss('/assets/css/style.css')
+//        ->addCss('/assets/css/responsive.css')
+//        ->addCss('/assets/css/custom-icon-set.css')
 //        ->addJs('/assets/plugins/jquery-1.8.3.min.js')
 //        ->addJs('/assets/plugins/bootstrap/js/bootstrap.min.js')
 //        ->addJs('/assets/plugins/pace/pace.min.js')
@@ -140,15 +140,15 @@ try {
 //        ->addJs('/assets/js/moment/moment.min.js')
 //        ->addJs('/assets/js/datepicker/daterangepicker.js')
 //        ->addJs('/assets/build/js/custom.min.js')
-        ->addCss('/assets/vendors/bootstrap/dist/css/bootstrap.min.css')
-        ->addCss('/assets/vendors/font-awesome/css/font-awesome.min.css')
-        ->addCss('/assets/vendors/nprogress/nprogress.css')
-        ->addCss('/assets/vendors/iCheck/skins/flat/green.css')
-        ->addCss('/assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css')
-        ->addCss('/assets/vendors/jqvmap/dist/jqvmap.min.css')
-        ->addCss('/assets/plugins/fullcalendar/fullcalendar.min.css')
-        ->addCss('/assets/plugins/fullcalendar/fullcalendar.print.css')
-        ->addCss('/assets/build/css/custom.min.css');
+//        ->addCss('/assets/vendors/bootstrap/dist/css/bootstrap.min.css')
+//        ->addCss('/assets/vendors/font-awesome/css/font-awesome.min.css')
+//        ->addCss('/assets/vendors/nprogress/nprogress.css')
+//        ->addCss('/assets/vendors/iCheck/skins/flat/green.css')
+//        ->addCss('/assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css')
+//        ->addCss('/assets/vendors/jqvmap/dist/jqvmap.min.css')
+//        ->addCss('/assets/plugins/fullcalendar/fullcalendar.min.css')
+//        ->addCss('/assets/plugins/fullcalendar/fullcalendar.print.css')
+//        ->addCss('/assets/build/css/custom.min.css');
 
     // Настраиваем сервис для работы с БД
     $di->set('db', function () {
@@ -168,19 +168,19 @@ try {
             $controller_name = $dispatcher->getControllerName();
             if ($controller_name == 'account' || $controller_name == 'transaction') {
                 $assets = \Phalcon\Di::getDefault()->get('assets');
-                $assets->addCss('assets/css/magic_space.css')
-                    ->addCss('assets/plugins/jquery-scrollbar/jquery.scrollbar.css')
-                    ->addCss('assets/plugins/Mapplic/mapplic/mapplic.css')
-                    ->addCss('assets/plugins/jquery-scrollbar/jquery.scrollbar.css')
-                    ->addJs('assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js')
-                    ->addJs('assets/plugins/breakpoints.js')
-                    ->addJs('assets/plugins/jquery-lazyload/jquery.lazyload.min.js')
-                    ->addJs('assets/plugins/jquery-unveil/jquery.unveil.min.js')
-                    ->addJs('assets/plugins/jquery-block-ui/jqueryblockui.js')
-                    ->addJs('assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js')
-                    ->addJs('assets/plugins/Mapplic/js/jquery.easing.js')
-                    ->addJs('assets/js/core.js')
-                    ->addJs('assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js');
+//                $assets->addCss('assets/css/magic_space.css')
+//                    ->addCss('assets/plugins/jquery-scrollbar/jquery.scrollbar.css')
+//                    ->addCss('assets/plugins/Mapplic/mapplic/mapplic.css')
+//                    ->addCss('assets/plugins/jquery-scrollbar/jquery.scrollbar.css');
+//                    ->addJs('assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js');
+//                    ->addJs('assets/plugins/breakpoints.js')
+//                    ->addJs('assets/plugins/jquery-lazyload/jquery.lazyload.min.js')
+//                    ->addJs('assets/plugins/jquery-unveil/jquery.unveil.min.js')
+//                    ->addJs('assets/plugins/jquery-block-ui/jqueryblockui.js')
+//                    ->addJs('assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js')
+//                    ->addJs('assets/plugins/Mapplic/js/jquery.easing.js')
+//                    ->addJs('assets/js/core.js')
+//                    ->addJs('assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js');
             }
         }
     });

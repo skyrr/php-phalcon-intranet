@@ -30,9 +30,9 @@ class MessageController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
-        $this->assets->addInlineJs('jQuery(document).ready(function($) {
-                               $(".clickable-row").click(function() {
-                               window.document.location = $(this).data("href");});});');
+//        $this->assets->addInlineJs('jQuery(document).ready(function($) {
+//                               $(".clickable-row").click(function() {
+//                               window.document.location = $(this).data("href");});});');
 
 
 
@@ -64,9 +64,9 @@ class MessageController extends \Phalcon\Mvc\Controller
 
     public function createAction()
     {
-        $this->assets->addInlineJs('jQuery(document).ready(function($) {
-                               $(".clickable-row").click(function() {
-                               window.document.location = $(this).data("href");});});');
+//        $this->assets->addInlineJs('jQuery(document).ready(function($) {
+//                               $(".clickable-row").click(function() {
+//                               window.document.location = $(this).data("href");});});');
 
 
 

@@ -18,3 +18,7 @@ and (max-device-width : 5500px){
 .searchHeight {
   height:200px;
 }
+.editor-wrapper {
+  font-family:    Arial, Helvetica, sans-serif;
+  font-size:      14px;
+}
