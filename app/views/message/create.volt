@@ -34,7 +34,6 @@
                     <div class="x_title">
                         <h2>Message</h2>
                         {#<small>Sessions</small>#}
-
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -113,11 +112,8 @@
                             <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
                             <div id="editor-one" class="editor-wrapper placeholderText" contenteditable="true"></div>
                             <br/>
-                            <button type="submit" class="btn btn-success pull-right">Submit</button>
+                            <button type="submit" class="btn btn-success pull-right">Send</button>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3579e6-71d5-4b75-a613-ed17ff88942b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message/create.volt" afterPath="$PROJECT_DIR$/app/views/message/create.volt" />
     </list>
     <ignored path="accounting.iws" />
@@ -107,11 +106,11 @@
       <file leaf-file-name="create.volt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/message/create.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="115" column="83" selection-start-line="115" selection-start-column="83" selection-end-line="115" selection-end-column="83" />
+            <state relative-caret-position="142">
+              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
               <folding>
-                <marker date="1509119544292" expanded="true" signature="8990:9022" ph="..." />
-                <marker date="1509119544292" expanded="true" signature="10722:10729" ph="×" />
+                <marker date="1509119611140" expanded="true" signature="8986:9018" ph="..." />
+                <marker date="1509119611140" expanded="true" signature="10718:10725" ph="×" />
               </folding>
             </state>
           </provider>
@@ -490,12 +489,12 @@
       <workItem from="1508671464867" duration="22318000" />
       <workItem from="1508841509011" duration="14602000" />
       <workItem from="1508923672991" duration="12578000" />
-      <workItem from="1509002847547" duration="34290000" />
+      <workItem from="1509002847547" duration="34354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240134000" />
+    <option name="totallyTimeSpent" value="240198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -997,11 +996,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/message/create.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="115" column="83" selection-start-line="115" selection-start-column="83" selection-end-line="115" selection-end-column="83" />
+        <state relative-caret-position="142">
+          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding>
-            <marker date="1509119544292" expanded="true" signature="8990:9022" ph="..." />
-            <marker date="1509119544292" expanded="true" signature="10722:10729" ph="×" />
+            <marker date="1509119611140" expanded="true" signature="8986:9018" ph="..." />
+            <marker date="1509119611140" expanded="true" signature="10718:10725" ph="×" />
           </folding>
         </state>
       </provider>
