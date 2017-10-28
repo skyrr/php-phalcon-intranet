@@ -143,6 +143,16 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
             ]);
             $success = $calendar->create($data);
+            if ($success) {
+                return $this->response->redirect("calendar/$id/index");
+            } else {
+                $messages = $calendar->getMessages();
+                if ($messages) {
+                    foreach ($messages as $message) {
+                        $this->flash->error($message);
+                    }
+                }
+            }
             return $this->response->redirect("calendar/$id/index");
         }
 

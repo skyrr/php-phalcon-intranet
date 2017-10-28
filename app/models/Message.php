@@ -11,7 +11,7 @@ class Message extends \Phalcon\Mvc\Model
     protected $user_id;
     protected $recipient_id;
     protected $text;
-    protected $title;
+    protected $subject;
     protected $status;
     protected $priority;
     protected $created_at;
@@ -65,9 +65,9 @@ class Message extends \Phalcon\Mvc\Model
 //        }
 //    }
 
-    public function getTitle()
+    public function getSubject()
     {
-        return $this->title;
+        return $this->subject;
     }
 
 //    public function isIncome()

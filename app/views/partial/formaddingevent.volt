@@ -7,8 +7,8 @@
                         <div class="input-group date" id="myDatepicker2">
                             <input name="date" type="text" class="form-control">
                             <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
                         </div>
                     </div>
                 </td>
@@ -18,8 +18,8 @@
                         <div class="input-group date" id="myDatepicker3">
                             <input name="time" type="text" class="form-control">
                             <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
                         </div>
                     </div>
                 </td>
@@ -39,8 +39,8 @@
             <div class="input-group">
                 <input name="comment" type="text" class="form-control" placeholder="comment">
                 <span class="input-group-btn">
-                                                    <button type="submit" class="btn btn-primary">Go!</button>
-                                                </span>
+                    <button type="submit" class="btn btn-primary">Go!</button>
+                </span>
             </div>
         </div>
     </div>

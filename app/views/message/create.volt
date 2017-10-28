@@ -154,12 +154,16 @@
                                             {#</div>#}
                                             {#</div>#}
                                             <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                                <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
-                                                <br />
-                                                <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
-                                                <div id="editor-one" class="editor-wrapper placeholderText" contenteditable="true"></div>
-                                                <br/>
-                                                <button type="submit" class="btn btn-success pull-right">Send</button>
+                                                <form method="post">
+                                                    <input name="recipient" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
+                                                    <br/>
+                                                    <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                                                    <input name="subject" type="text" class="form-control" placeholder="Default Input">
+                                                    <br/>
+                                                    <div name="text" id="editor-one" class="editor-wrapper placeholderText" contenteditable="true"></div>
+                                                    <br/>
+                                                    <button type="submit" class="btn btn-success pull-right">Send</button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>

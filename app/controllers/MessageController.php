@@ -34,15 +34,10 @@ class MessageController extends \Phalcon\Mvc\Controller
 //                               $(".clickable-row").click(function() {
 //                               window.document.location = $(this).data("href");});});');
 
-
-
         $user_id = $this->session->get("user_id");
         $user = User::findFirst($user_id);
         $this->view->setVar('user', $user);
         $this->user = $user;
-
-
-
 
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
@@ -75,15 +70,31 @@ class MessageController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $user);
         $this->user = $user;
 
-
-
+        $created_at = date("Y-m-d");
 
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
-            //$user = new User($data);
-            $success = $user->update($data);
+            $text = $this->request->getPost("text");
+            $subject = $this->request->getPost("subject");
+            $recipient = $this->request->getPost("recipient");
+//            $recipient = User::findFirst($recipient);
+            $user_id = 8;
+            $recipient_id = 8;
+            $status = 1;
+            $priority = 1;
+
+            $message = new Message([
+                'user_id' => $user_id,
+                'recipient_id' => $recipient_id,
+                'text' => $text,
+                'subject' => $subject,
+                'status' => $status,
+                'priority' => $priority,
+                'created_at' => $created_at
+            ]);
+            $success = $message->create($data);
             if ($success) {
-                return $this->response->redirect();
+                return $this->response->redirect("message/index");
             } else {
                 $messages = $user->getMessages();
                 if ($messages) {
@@ -94,24 +105,24 @@ class MessageController extends \Phalcon\Mvc\Controller
             }
         }
 
-        if ($this->request->isPost()) {
-            $data = $this->request->getPost();
-            $user_id = $this->user->getId();
-            $currency_id = $this->request->getPost("currency_id");
-            $account = new Account(['user_id' => $user_id, 'currency_id' => $currency_id]);
-            $success = $account->create($data);
-            if ($success) {
-                $this->user->update(['selected_account_id' => $account->getId()]);
-            } else {
-                $messages = $account->getMessages();
-                if ($messages) {
-                    foreach ($messages as $message) {
-                        $this->flash->error($message);
-                    }
-                }
-            }
-            return $this->response->redirect("/account/show");
-        }
+//        if ($this->request->isPost()) {
+//            $data = $this->request->getPost();
+//            $user_id = $this->user->getId();
+//            $currency_id = $this->request->getPost("currency_id");
+//            $account = new Account(['user_id' => $user_id, 'currency_id' => $currency_id]);
+//            $success = $account->create($data);
+//            if ($success) {
+//                $this->user->update(['selected_account_id' => $account->getId()]);
+//            } else {
+//                $messages = $account->getMessages();
+//                if ($messages) {
+//                    foreach ($messages as $message) {
+//                        $this->flash->error($message);
+//                    }
+//                }
+//            }
+//            return $this->response->redirect("/account/show");
+//        }
 //        $currency = Currency::find();
 //        $this->view-> currency = $currency;
 
