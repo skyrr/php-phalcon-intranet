@@ -98,10 +98,10 @@
                                         <thead>
                                         <tr>
                                             <th style="width: 1%">#</th>
-                                            <th style="width: 35%">Text</th>
-                                            <th style="width: 24%">Date</th>
                                             <th style="width: 20%">To</th>
-                                            <th style="width: 20%">Operations</th>
+                                            <th style="width: 53%">Text</th>
+                                            <th style="width: 14%">Date</th>
+                                            <th style="width: 13%">Operations</th>                                                                                                                                                                                                                                                                                                 </Operations></th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -110,6 +110,10 @@
                                             <tr>
                                                 <td>{{ usermail.getId() }}</td>
                                                 <td>
+                                                    <a>{{ usermail.getRecipientId() }}</a>
+                                                    <br>
+                                                </td>
+                                                <td>
                                                     <a>{{ usermail.getText() }}</a>
                                                     <br>
                                                 </td>
@@ -117,12 +121,8 @@
                                                     <a>{{ usermail.getCreatedAt() }}</a>
                                                 </td>
                                                 <td>
-                                                    <a>{{ usermail.getRecipientId() }}</a>
-                                                    <br>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit </a>
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/remove') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
+                                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>
+                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/remove') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>
                                                 </td>
                                             </tr>
                                         {% endfor %}
