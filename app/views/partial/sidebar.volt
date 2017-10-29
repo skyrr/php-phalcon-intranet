@@ -14,7 +14,7 @@
             <li><a><i class="fa fa-sitemap"></i> Tasks <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url.get('task/index') }}">Tasks</a></li>
-                    <li><a href="{{ url.get('task/create') }}">New task</a></li>
+                    {#<li><a href="{{ url.get('task/create') }}">New task</a></li>#}
                 </ul>
             </li>
 
