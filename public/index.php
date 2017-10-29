@@ -36,21 +36,27 @@ try {
         "action" => "logout"
     ]);
 
-    $router->add("/transactions", [
-        "controller" => "transaction",
-        "action" => "index"
+    $router->add("/user/show", [
+        "controller" => "user",
+        "action" => "show"
     ]);
 
-    $router->add("/transactions/{id}/edit", [
-        "controller" => "transaction",
-        "action" => "edit"
-    ]);
 
-    $router->add("/transactions/create", [
-        "controller" => "transaction",
-        "action" => "create"
-    ]);
-
+//    $router->add("/transactions", [
+//        "controller" => "transaction",
+//        "action" => "index"
+//    ]);
+//
+//    $router->add("/transactions/{id}/edit", [
+//        "controller" => "transaction",
+//        "action" => "edit"
+//    ]);
+//
+//    $router->add("/transactions/create", [
+//        "controller" => "transaction",
+//        "action" => "create"
+//    ]);
+//
     $router->add("/calendar/{id}/{eventId}/remove", [
         "controller" => "calendar",
         "action" => "remove"
@@ -67,11 +73,6 @@ try {
     ]);
 
 
-    $router->add("/user/show", [
-        "controller" => "user",
-        "action" => "show"
-    ]);
-
     $router->add("/account/{id}/edit", [
         "controller" => "account",
         "action" => "edit"
@@ -87,13 +88,23 @@ try {
         "action" => "index"
     ]);
 
-    $router->add("/message/index", [
-        "controller" => "message",
+    $router->add("/usermail/index", [
+        "controller" => "usermail",
         "action" => "index"
     ]);
 
-    $router->add("/message/create", [
-        "controller" => "message",
+    $router->add("/usermail/create", [
+        "controller" => "usermail",
+        "action" => "create"
+    ]);
+
+    $router->add("/task/index", [
+        "controller" => "task",
+        "action" => "index"
+    ]);
+
+    $router->add("/task/create", [
+        "controller" => "task",
         "action" => "create"
     ]);
 

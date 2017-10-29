@@ -79,8 +79,8 @@ class CalendarController extends \Phalcon\Mvc\Controller
             ]);
         $count = count($calendars);
 
-        $json_encoded_from_model = json_encode(Calendar::find()->toArray(), JSON_NUMERIC_CHECK);
-        $this->view->json_encoded_from_model = $json_encoded_from_model;
+//        $json_encoded_from_model = json_encode(Calendar::find()->toArray(), JSON_NUMERIC_CHECK);
+//        $this->view->json_encoded_from_model = $json_encoded_from_model;
 
         // sending vars to view
         $this->view->urlForEdit = $urlForEdit;

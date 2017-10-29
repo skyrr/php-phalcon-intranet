@@ -1,18 +1,20 @@
 
             <li><a><i class="fa fa-clone"></i> Restaurant menu <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="{{ url.get('menu/index') }}">Menu</a></li>
+                    <li><a href="{{ url.get('menu/index') }}">Restaurant #10</a></li>
                     {#<li><a href="form_advanced.html">Advanced Components</a></li>#}
                 </ul>
             </li>
             <li><a><i class="fa fa-edit"></i> Messages <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="{{ url.get('message/index') }}">Messages</a></li>
+                    <li><a href="{{ url.get('usermail/index') }}">Messages</a></li>
+                    <li><a href="{{ url.get('usermail/create') }}">Compose</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-sitemap"></i> Tasks <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="#level1_1">Tasks</a>
+                    <li><a href="{{ url.get('task/index') }}">Tasks</a></li>
+                    <li><a href="{{ url.get('task/create') }}">New task</a></li>
                 </ul>
             </li>
 
