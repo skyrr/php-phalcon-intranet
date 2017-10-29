@@ -38,10 +38,10 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $user = User::findFirst($user_id);
         $this->view->setVar('user', $user);
         $this->user = $user;
-        $recipient_id = 8;
-        $status = 1;
-        $priority = 1;
-        $created_at = date('Ymd');
+
+//        $usermail = Usermail::find(["user_id = $user_id"]);
+        $usermail = Usermail::find();
+        $this->view->usermails = $usermail;
 
         if ($this->request->isPost()) {
 //            $data = $this->request->getPost();
@@ -66,16 +66,20 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //            $recipient_id = 8;
 //            $status = 1;
 //            $priority = 1;
+            $recipient_id = 8;
+            $status = 1;
+            $priority = 1;
+            $created_at = date("Y-m-d");
 
             $usermail = new Usermail([
-                'user_id' => $user_id,
-                'recipient_id' => $recipient_id,
+                "user_id" => $user_id,
+                "recipient_id" => $recipient_id,
+                "status" => $status,
+                "priority" => $priority,
+                "created_at" => $created_at
+            ]);
 //                'text' => $text,
 //                'subject' => $subject,
-                'status' => $status,
-                'priority' => $priority,
-                'created_at' => $created_at,
-            ]);
             $success = $usermail->create($data);
             if ($success) {
                 return $this->response->redirect("usermail/create");
@@ -166,6 +170,14 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
     public function removeAction()
     {
+        $usermail_id = $this->dispatcher->getParam('usermailid');
+        $usermail = Usermail::findFirst($usermail_id);
+        if (!$usermail) {
+            return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
+        }
+
+        $usermail->delete();
+        return $this->response->redirect("usermail/index");
 
     }
 

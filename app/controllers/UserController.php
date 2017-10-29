@@ -12,9 +12,6 @@ class UserController extends \Phalcon\Mvc\Controller
         $user_id = $this->session->get("user_id");
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
-//        if (!$this->session->has("user_id")) {
-//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-//        }
         $unreadMessages = 5;
         $this->view->unreadMessages = $unreadMessages;
     }

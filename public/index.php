@@ -98,6 +98,11 @@ try {
         "action" => "create"
     ]);
 
+    $router->add("/usermail/{usermailid}/remove", [
+        "controller" => "usermail",
+        "action" => "remove"
+    ]);
+
     $router->add("/task/index", [
         "controller" => "task",
         "action" => "index"

@@ -101,7 +101,9 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
-
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
 //        if ($this->request->isPost()) {
 //            $data = $this->request->getPost();
 //            //$user = new User($data);
@@ -160,6 +162,9 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
     public function createAction()
     {
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
 
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
@@ -188,6 +193,9 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
     public function editAction()
     {
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
         $id = $this->dispatcher->getParam('id');
         $account = Account::findFirst($id);
         $currency = Currency::find();
@@ -214,6 +222,9 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
     public function removeAction()
     {
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
         $floor_id = $this->dispatcher->getParam('id');
         $eventId = $this->dispatcher->getParam('eventId');
         $calendar = Calendar::findFirst($eventId);
@@ -229,6 +240,9 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
     public function showAction()
     {
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
 //        $user_id = $this->session->get("user_id");
 //        $user = User::findFirst($user_id);
 //        $this->view->setVar('user', $user);

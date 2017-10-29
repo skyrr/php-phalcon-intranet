@@ -161,12 +161,19 @@
                                                     {#</div>#}
                                                 {#{% endif %}#}
                                                 <form method="post">
-                                                    <input name="recipient_email" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
+                                                    {#<input name="recipient_email" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="recipient">#}
+                                                    {#<br/>#}
+                                                    <select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">
+                                                        <option value="">recipient..</option>
+                                                        {% for user in userList %}
+                                                            <option value="{{ user.getId() }}">{{ user.getName() }}</option>
+                                                        {% endfor %}
+                                                        </select>
                                                     <br/>
                                                     <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
-                                                    <input name="subject" type="text" class="form-control" placeholder="Default Input">
+                                                    <input name="subject" type="text" class="form-control" placeholder="subject">
                                                     <br/>
-                                                    <div name="text" id="editor-one" class="editor-wrapper placeholderText" contenteditable="true"></div>
+                                                    <textarea name="text" class="form-control" rows="10" placeholder=""></textarea>
                                                     <br/>
                                                     <button type="submit" class="btn btn-success pull-right">Send</button>
                                                 </form>

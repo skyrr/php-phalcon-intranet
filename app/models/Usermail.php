@@ -43,93 +43,25 @@ class Usermail extends \Phalcon\Mvc\Model
         return $this->id;
     }
 
-    public function getComment()
+    public function getRecipientId()
     {
-        return $this->comment;
+        return $this->recipient_id;
+    }
+
+    public function getText()
+    {
+        return $this->text;
     }
 
     public function getUserId()
     {
         return $this->user_id;
     }
-    public function getFloorId()
+
+    public function getCreatedAt()
     {
-        return $this->floor_id;
-    }
-    public function getDate()
-    {
-        return $this->date;
-    }
-    public function getYear()
-    {
-        return $this->year;
-    }
-    public function getMonth()
-    {
-        return $this->month;
-    }
-    public function getDay()
-    {
-        return $this->day;
-    }
-    public function getTime()
-    {
-        return $this->time;
-    }
-    public function getHour()
-    {
-        return $this->hour;
-    }
-    public function getMinute()
-    {
-        return $this->minute;
-    }
-    public function getTimeShift()
-    {
-        return $this->timeshift;
+        return $this->created_at;
     }
 
-
-    public function getOutcomeGroupedByCategory()
-    {
-        $outcome_grouped_by_category = $this->_modelsManager->executeQuery('SELECT SUM(amount), Category.name FROM [Transaction] INNER JOIN [Category] ON Category.id = Transaction.category_id WHERE amount < 0 AND account_id = ?0 GROUP BY category_id', [$this->id]);
-
-        $result = [];
-        foreach ($outcome_grouped_by_category as $item) {
-            $item->{0} = abs($item->{0});
-            $result[] = $item->toArray();
-        }
-
-        return $result;
-    }
-
-    public function getBalance()
-    {
-        return Transaction::sum([
-            "account_id = '$this->id'",
-            'column' => 'amount'
-        ]);
-    }
-
-    public function getBalanceMonth()
-    {
-        return Transaction::sum([
-            "account_id = '$this->id' AND YEAR(created_at) = YEAR(NOW()) AND MONTH(created_at) = MONTH(NOW())" ,
-            'column' => 'amount'
-        ]);
-    }
-
-    public function getBalanceToday()
-    {
-        return Transaction::sum([
-            "account_id = '$this->id' AND DATE(created_at) = CURDATE()",
-            'column' => 'amount'
-        ]);
-    }
-
-    public function getCurrencyId()
-    {
-        return $this->currency_id;
-    }
 
 }
