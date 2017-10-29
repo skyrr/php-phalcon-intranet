@@ -67,12 +67,9 @@
                                 {% for user in userList %}
                                     <a href="#">
                                         <div class="mail_list">
-                                            <div class="left">
-                                                <i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
-                                            </div>
                                             <div class="right">
-                                                <h3>{{ user.getName() }} <small>3.00 PM</small></h3>
-                                                <p>{{ user.getEmail() }}</p>
+                                                <h3>{{ user.getName() }}</h3>
+                                                {#<p>{{ user.getEmail() }}</p>#}
                                             </div>
                                         </div>
                                     </a>
@@ -84,15 +81,6 @@
                             <div class="col-sm-9 mail_view">
                                 <div class="inbox-body">
                                     <div class="mail_heading row">
-                                        {#print group#}
-                                        {#{{ partial('printgroup') }}#}
-                                        {#end of print group#}
-                                        {#<div class="col-md-4 text-right">#}
-                                            {#<p class="date"> 8:02 PM 12 FEB 2014</p>#}
-                                        {#</div>#}
-                                        {#<div class="col-md-12">#}
-                                            {#<h4> Message title</h4>#}
-                                        {#</div>#}
                                     </div>
                                     <table class="table table-striped projects">
                                         <thead>
