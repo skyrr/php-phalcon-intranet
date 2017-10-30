@@ -5,8 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/TaskController.php" afterPath="$PROJECT_DIR$/app/controllers/TaskController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Task.php" afterPath="$PROJECT_DIR$/app/models/Task.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/task/index.volt" afterPath="$PROJECT_DIR$/app/views/task/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
     </list>
     <ignored path="accounting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,8 +73,8 @@
       <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+            <state relative-caret-position="281">
+              <caret line="157" column="37" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
               <folding>
                 <element signature="e#631#718#0#PHP" expanded="false" />
               </folding>
@@ -117,10 +115,10 @@
       <file leaf-file-name="Task.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+            <state relative-caret-position="119">
+              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
               <folding>
-                <marker date="1509376607045" expanded="true" signature="2316:2489" ph="SELECT SUM(a... " />
+                <marker date="1509377365974" expanded="true" signature="2345:2518" ph="SELECT SUM(a... " />
               </folding>
             </state>
           </provider>
@@ -559,12 +557,12 @@
       <workItem from="1508923672991" duration="12578000" />
       <workItem from="1509002847547" duration="43000000" />
       <workItem from="1509199925608" duration="35595000" />
-      <workItem from="1509349143359" duration="7414000" />
+      <workItem from="1509349143359" duration="8094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291853000" />
+    <option name="totallyTimeSpent" value="292533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -961,18 +959,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+        <state relative-caret-position="119">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
           <folding>
-            <marker date="1509376607045" expanded="true" signature="2316:2489" ph="SELECT SUM(a... " />
+            <marker date="1509377365974" expanded="true" signature="2345:2518" ph="SELECT SUM(a... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+        <state relative-caret-position="281">
+          <caret line="157" column="37" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
           <folding>
             <element signature="e#631#718#0#PHP" expanded="false" />
           </folding>

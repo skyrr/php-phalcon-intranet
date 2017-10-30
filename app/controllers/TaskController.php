@@ -46,15 +46,15 @@ class TaskController extends \Phalcon\Mvc\Controller
             $data = $this->request->getPost();
             $user_id = $this->user->getId();
             $status = 0;
-            $date = date("Y-m-d H-i-m");
+            $date = date("Y-m-d H-i-s");
 //            $comment = 'some comment';
 
             $task = new Task([
 //                'comment' => $comment,
                 'user_id' => $user_id,
-                'status' => $status,
+                'status' => 0,
                 'date' => $date,
-//                'month' => $month,
+                'archive' => 0,
 //                'day' => $day,
 //                'hour' => $hour,
 //                'minute' => $minute,
@@ -142,7 +142,7 @@ class TaskController extends \Phalcon\Mvc\Controller
 //        $floor_id = $this->dispatcher->getParam('id');
         $taskid = $this->dispatcher->getParam('taskid');
         $task = Task::findFirst($taskid);
-        $success = $task->setArchive();
+        $success = $task->setArchive(1);
 
         $task->save();
 //        $floor_id = $this->dispatcher->getParam('id');
@@ -155,7 +155,7 @@ class TaskController extends \Phalcon\Mvc\Controller
 //        $floor_id = $this->dispatcher->getParam('id');
         $taskid = $this->dispatcher->getParam('taskid');
         $task = Task::findFirst($taskid);
-        $success = $task->setStatus();
+        $success = $task->setStatus(1);
 
         $task->save();
 //        $floor_id = $this->dispatcher->getParam('id');

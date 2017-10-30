@@ -60,17 +60,17 @@ class Task extends \Phalcon\Mvc\Model
     {
         return $this->status;
     }
-    public function setStatus()
+    public function setStatus($status)
     {
-        $this->status = 1;
+        $this->status = $status;
     }
     public function getArchive()
     {
-        return $this->status;
+        return $this->archive;
     }
-    public function setArchive()
+    public function setArchive($archive)
     {
-        $this->archive = 1;
+        $this->archive = $archive;
     }
     public function getDate()
     {
