@@ -30,9 +30,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
-        if (!$this->session->has("user_id")) {
-            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-        }
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
 
         $user_id = $this->session->get("user_id");
         $user = User::findFirst($user_id);
