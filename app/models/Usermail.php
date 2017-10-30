@@ -7,15 +7,15 @@
  */
 class Usermail extends \Phalcon\Mvc\Model
 {
-    protected $id;
-    protected $user_id;
-    protected $recipient_id;
-    protected $text;
-    protected $subject;
-    protected $status;
-    protected $priority;
-    protected $date;
-    protected $archive;
+    public $id;
+    public $user_id;
+    public $recipient_id;
+    public $text;
+    public $subject;
+    public $status;
+    public $priority;
+    public $date;
+    public $archive;
 
     protected function initialize()
     {
@@ -24,7 +24,17 @@ class Usermail extends \Phalcon\Mvc\Model
         $this->belongsTo('user_id', User::class, 'id');
 
     }
+    public function beforeCreate()
+    {
+        if (!$this->archive) { // use default value if the value is not set
+            $this->archive = 0;
+        }
+        $date = date("Y-m-d H-i-s");
+        if (!$this->date) { // use default value if the value is not set
+            $this->date = $date;
+        }
 
+    }
     protected function beforeUpdate()
     {
 //        if ($this->hasChanged('currency_id')) {
@@ -88,6 +98,7 @@ class Usermail extends \Phalcon\Mvc\Model
     {
         return $this->archive;
     }
+
     public function setArchive($archive)
     {
         $this->archive = $archive;

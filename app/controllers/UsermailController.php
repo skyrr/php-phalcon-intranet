@@ -40,7 +40,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $this->user = $user;
 
 //        $usermail = Usermail::find(["user_id = $user_id AND archive=0"]);
-        $usermail = Usermail::find(["archive=0"]);
+        $usermail = Usermail::find(["archive = 0"]);
         $this->view->usermails = $usermail;
 
         if ($this->request->isPost()) {
@@ -73,15 +73,23 @@ class UsermailController extends \Phalcon\Mvc\Controller
             $date = date("Y-m-d H-i-s");
 
             $usermail = new Usermail([
-                'user_id' => $user_id,
-                'recipient_id' => $recipient_id,
-                'status' => $status,
-                'priority' => $priority,
-                'date' => $date,
+//                'user_id' => $user_id,
+//                'recipient_id' => $recipient_id,
+//                'status' => $status,
+//                'priority' => $priority,
+//                'date' => $date,
+//                'archive' => '0',
             ]);
+            $usermail->user_id = $user_id;
+            $usermail->recipient_id = $recipient_id;
+            $usermail->subject = $status;
+            $usermail->priority = $priority;
+            $usermail->date = $date;
+            $usermail->archive = '0';
+
 //                'text' => $text,
 //                'subject' => $subject,
-            $success = $usermail->create($data);
+            $success = $usermail->create();
             if ($success) {
                 return $this->response->redirect("usermail/create");
             } else {
