@@ -8,7 +8,6 @@
 class Usermail extends \Phalcon\Mvc\Model
 {
     protected $id;
-//    protected $comment;
     protected $user_id;
     protected $recipient_id;
     protected $text;
@@ -51,6 +50,21 @@ class Usermail extends \Phalcon\Mvc\Model
     public function getText()
     {
         return $this->text;
+    }
+
+    public function getSubject()
+    {
+        return $this->subject;
+    }
+
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    public function getPriority()
+    {
+        return $this->priority;
     }
 
     public function getUserId()

@@ -30,9 +30,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
-//        $this->assets->addInlineJs('jQuery(document).ready(function($) {
-//                               $(".clickable-row").click(function() {
-//                               window.document.location = $(this).data("href");});});');
+        if (!$this->session->has("user_id")) {
+            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+        }
 
         $user_id = $this->session->get("user_id");
         $user = User::findFirst($user_id);
@@ -66,17 +66,18 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //            $recipient_id = 8;
 //            $status = 1;
 //            $priority = 1;
+            $user_id = $this->user->getId();
             $recipient_id = 8;
             $status = 1;
             $priority = 1;
-            $created_at = date("Y-m-d");
+            $date = date("Y-m-d H-i-s");
 
             $usermail = new Usermail([
-                "user_id" => $user_id,
-                "recipient_id" => $recipient_id,
-                "status" => $status,
-                "priority" => $priority,
-                "created_at" => $created_at
+                'user_id' => $user_id,
+                'recipient_id' => $recipient_id,
+                'status' => $status,
+                'priority' => $priority,
+                'created_at' => $date,
             ]);
 //                'text' => $text,
 //                'subject' => $subject,
