@@ -113,6 +113,16 @@ try {
         "action" => "create"
     ]);
 
+    $router->add("/task/{taskid}/done", [
+        "controller" => "task",
+        "action" => "done"
+    ]);
+
+    $router->add("/task/{taskid}/remove", [
+        "controller" => "task",
+        "action" => "remove"
+    ]);
+
     $router->notFound([
         "controller" => "exception",
         "action" => "notFound"

@@ -29,25 +29,31 @@ class TaskController extends \Phalcon\Mvc\Controller
 //        $this->assets->addCss('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css');
 //        $this->assets->addCss('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css');
 //        $this->assets->addCss('assets/build/css/custom.min.css');
-        $tasks = Task::find($user_id);
-        $this->view->tasks = $tasks;
 
     }
 
     public function indexAction()
     {
+        $user_id = $this->session->get("user_id");
+        $tasks = Task::find(["user_id = '5' AND status = 0 AND archive=0",
+            'order' => 'date DESC']);
+        $this->view->tasks = $tasks;
+
+        $tasksDone = Task::find(["user_id = '5' AND status = 1 AND archive=0"]);
+        $this->view->tasksDone = $tasksDone;
 
         if ($this->request->ispost()) {
             $data = $this->request->getPost();
             $user_id = $this->user->getId();
             $status = 0;
+            $date = date("Y-m-d H-i-m");
 //            $comment = 'some comment';
 
             $task = new Task([
 //                'comment' => $comment,
                 'user_id' => $user_id,
                 'status' => $status,
-//                'year' => $year,
+                'date' => $date,
 //                'month' => $month,
 //                'day' => $day,
 //                'hour' => $hour,
@@ -133,16 +139,27 @@ class TaskController extends \Phalcon\Mvc\Controller
 
     public function removeAction()
     {
-        $floor_id = $this->dispatcher->getParam('id');
-        $eventId = $this->dispatcher->getParam('eventId');
-        $calendar = Calendar::findFirst($eventId);
-        if (!$calendar) {
-            return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
-        }
+//        $floor_id = $this->dispatcher->getParam('id');
+        $taskid = $this->dispatcher->getParam('taskid');
+        $task = Task::findFirst($taskid);
+        $success = $task->setArchive();
 
-        $calendar->delete();
-        $floor_id = $this->dispatcher->getParam('id');
-        return $this->response->redirect("calendar/$floor_id/show");
+        $task->save();
+//        $floor_id = $this->dispatcher->getParam('id');
+        return $this->response->redirect("task/index");
+
+    }
+
+    public function doneAction()
+    {
+//        $floor_id = $this->dispatcher->getParam('id');
+        $taskid = $this->dispatcher->getParam('taskid');
+        $task = Task::findFirst($taskid);
+        $success = $task->setStatus();
+
+        $task->save();
+//        $floor_id = $this->dispatcher->getParam('id');
+        return $this->response->redirect("task/index");
 
     }
 

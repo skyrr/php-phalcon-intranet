@@ -11,7 +11,8 @@ class Task extends \Phalcon\Mvc\Model
     protected $subject;
     protected $user_id;
     protected $status;
-//    protected $date;
+    protected $date;
+    protected $archive;
 //    protected $year;
 //    protected $month;
 //    protected $day;
@@ -58,6 +59,18 @@ class Task extends \Phalcon\Mvc\Model
     public function getStatus()
     {
         return $this->status;
+    }
+    public function setStatus()
+    {
+        $this->status = 1;
+    }
+    public function getArchive()
+    {
+        return $this->status;
+    }
+    public function setArchive()
+    {
+        $this->archive = 1;
     }
     public function getDate()
     {
