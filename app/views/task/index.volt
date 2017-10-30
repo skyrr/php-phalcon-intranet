@@ -71,7 +71,7 @@
                             <ul class="to_do">
                                 {% for task in tasks %}
                                     <li>
-                                        {{ task.getSubject() }}
+                                        {{ task.getSubjectSymbols(20) }}
                                         <a href="{{ url.get('task/'~ task.getId()~'/done') }}" class="btn btn-primary btn-xs pull-right"><i class="fa fa-folder"></i> Done </a>
                                         <a href="#" class="btn btn-info btn-xs pull-right"><i class="fa fa-pencil"></i> Edit </a>
                                     </li>
@@ -96,8 +96,8 @@
                             <ul class="to_do">
                                 {% for taskDone in tasksDone %}
                                     <li>
-                                        {{ taskDone.getSubject() }}
-                                        <a href="{{ url.get('task/'~ taskDone.getId()~'/remove') }}" class="btn btn-danger btn-xs pull-right"><i class="fa fa-trash-o"></i> Remove </a>
+                                        {{ taskDone.getSubjectSymbols(20) }}
+                                        <a href="{{ url.get('task/'~ taskDone.getId()~'/remove') }}" class="btn btn-danger btn-xs pull-right"><i class="fa fa-trash-o"></i> Archive </a>
                                     </li>
                                 {% endfor %}
                             </ul>

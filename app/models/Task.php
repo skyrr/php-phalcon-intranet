@@ -52,6 +52,15 @@ class Task extends \Phalcon\Mvc\Model
         return $this->subject;
     }
 
+    public function getSubjectSymbols($symbolNumber)
+    {
+        $subString = substr($this->subject, 0, $symbolNumber);
+        if (!(strlen($this->subject) < $symbolNumber)) {
+            $subString = $subString."...";
+        }
+        return $subString;
+    }
+
     public function getUserId()
     {
         return $this->user_id;

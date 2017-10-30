@@ -34,12 +34,23 @@ class TaskController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
+
         $user_id = $this->session->get("user_id");
-        $tasks = Task::find(["user_id = '5' AND status = 0 AND archive=0",
+//        $tasks = Task::find(["user_id = '$user_id' AND status = 0 AND archive=0",
+//            'order' => 'date DESC']);
+//        $this->view->tasks = $tasks;
+        $tasks = Task::find(["user_id = 5 AND status = 0 AND archive=0",
             'order' => 'date DESC']);
         $this->view->tasks = $tasks;
 
-        $tasksDone = Task::find(["user_id = '5' AND status = 1 AND archive=0"]);
+//        $tasksDone = Task::find(["user_id = '$user_id' AND status = 1 AND archive=0",
+//        'order' => 'date DESC']);
+//        $this->view->tasksDone = $tasksDone;
+        $tasksDone = Task::find(["user_id = 5 AND status = 1 AND archive=0",
+            'order' => 'date DESC']);
         $this->view->tasksDone = $tasksDone;
 
         if ($this->request->ispost()) {

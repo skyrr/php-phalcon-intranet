@@ -18,6 +18,12 @@ class AccountController extends \Phalcon\Mvc\Controller
 //        if (!$this->session->has("user_id")) {
 //            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
 //        }
+//        $tasks = Task::find(["user_id = '$user_id' AND status = 0 AND archive=0",
+//            'order' => 'date DESC', limit => 11]);
+        $tasks = Task::find(["user_id = 5 AND status = 0 AND archive=0",
+            'order' => 'date DESC', limit => 11]);
+        $this->view->tasks = $tasks;
+
         $unreadMessages = 5;
         $this->view->unreadMessages = $unreadMessages;
     }

@@ -101,7 +101,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
-                                    <h2>To Do List <small>Sample tasks</small></h2>
+                                    <h2>To Do List </h2>
                                     <ul class="nav navbar-right panel_toolbox">
                                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                         </li>
@@ -123,42 +123,11 @@
 
                                     <div class="">
                                         <ul class="to_do">
-                                            <li>
-                                                <p>
-                                                    <input type="checkbox" class="flat"> Schedule meeting with new client </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <input type="checkbox" class="flat"> Create email address for new intern</p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <input type="checkbox" class="flat"> Have IT fix the network printer</p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <input type="checkbox" class="flat"> Copy backups to offsite location</p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <input type="checkbox" class="flat"> Create email address for new intern</p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <input type="checkbox" class="flat"> Have IT fix the network printer</p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <input type="checkbox" class="flat"> Copy backups to offsite location</p>
-                                            </li>
+                                            {% for task in tasks %}
+                                                <li>
+                                                    {{ task.getSubjectSymbols(35) }}
+                                                </li>
+                                            {% endfor %}
                                         </ul>
                                     </div>
                                 </div>
