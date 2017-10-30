@@ -39,8 +39,8 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $user);
         $this->user = $user;
 
-//        $usermail = Usermail::find(["user_id = $user_id"]);
-        $usermail = Usermail::find();
+//        $usermail = Usermail::find(["user_id = $user_id AND archive=0"]);
+        $usermail = Usermail::find(["archive=0"]);
         $this->view->usermails = $usermail;
 
         if ($this->request->isPost()) {
@@ -77,7 +77,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
                 'recipient_id' => $recipient_id,
                 'status' => $status,
                 'priority' => $priority,
-                'created_at' => $date,
+                'date' => $date,
             ]);
 //                'text' => $text,
 //                'subject' => $subject,
@@ -177,9 +177,10 @@ class UsermailController extends \Phalcon\Mvc\Controller
             return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
         }
 
-        $usermail->delete();
-        return $this->response->redirect("usermail/index");
+        $success = $usermail->setArchive(1);
 
+        $usermail->save();
+        return $this->response->redirect("usermail/index");
     }
 
     public function showAction()

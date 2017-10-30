@@ -14,7 +14,8 @@ class Usermail extends \Phalcon\Mvc\Model
     protected $subject;
     protected $status;
     protected $priority;
-    protected $created_at;
+    protected $date;
+    protected $archive;
 
     protected function initialize()
     {
@@ -78,9 +79,18 @@ class Usermail extends \Phalcon\Mvc\Model
         return $this->user_id;
     }
 
-    public function getCreatedAt()
+    public function getDate()
     {
-        return $this->created_at;
+        return $this->date;
+    }
+
+    public function getArchive()
+    {
+        return $this->archive;
+    }
+    public function setArchive($archive)
+    {
+        $this->archive = $archive;
     }
 
 

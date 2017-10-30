@@ -106,7 +106,7 @@
                                                     <br>
                                                 </td>
                                                 <td>
-                                                    <a>{{ usermail.getCreatedAt() }}</a>
+                                                    <a>{{ usermail.getDate() }}</a>
                                                 </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>

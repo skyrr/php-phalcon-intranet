@@ -153,6 +153,10 @@ class TaskController extends \Phalcon\Mvc\Controller
 //        $floor_id = $this->dispatcher->getParam('id');
         $taskid = $this->dispatcher->getParam('taskid');
         $task = Task::findFirst($taskid);
+        if (!$task) {
+            return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
+        }
+
         $success = $task->setArchive(1);
 
         $task->save();
