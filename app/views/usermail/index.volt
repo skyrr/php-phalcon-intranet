@@ -98,7 +98,7 @@
                                             <tr>
                                                 <td>{{ usermail.getId() }}</td>
                                                 <td>
-                                                    <a>{{ usermail.getRecipientId() }}</a>
+                                                    <a>{{ usermail.getRecipientById() }}</a>
                                                     <br>
                                                 </td>
                                                 <td>

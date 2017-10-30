@@ -47,6 +47,12 @@ class Usermail extends \Phalcon\Mvc\Model
         return $this->recipient_id;
     }
 
+    public function getRecipientById()
+    {
+        $user = User::findfirst($this->recipient_id);
+        return $user->getName();
+    }
+
     public function getText()
     {
         return $this->text;
