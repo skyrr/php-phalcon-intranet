@@ -29,6 +29,8 @@ class TaskController extends \Phalcon\Mvc\Controller
 //        $this->assets->addCss('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css');
 //        $this->assets->addCss('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css');
 //        $this->assets->addCss('assets/build/css/custom.min.css');
+        $tasks = Task::find($user_id);
+        $this->view->tasks = $tasks;
 
     }
 
@@ -37,14 +39,14 @@ class TaskController extends \Phalcon\Mvc\Controller
 
         if ($this->request->ispost()) {
             $data = $this->request->getPost();
-//            $user_id = $this->user->getId();
-
+            $user_id = $this->user->getId();
+            $status = 0;
 //            $comment = 'some comment';
 
             $task = new Task([
 //                'comment' => $comment,
-//                'user_id' => $user_id,
-//                'floor_id' => $floor_id,
+                'user_id' => $user_id,
+                'status' => $status,
 //                'year' => $year,
 //                'month' => $month,
 //                'day' => $day,

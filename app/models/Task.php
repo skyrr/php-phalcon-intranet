@@ -8,9 +8,9 @@
 class Task extends \Phalcon\Mvc\Model
 {
     protected $id;
-    protected $comment;
-//    protected $user_id;
-//    protected $floor_id;
+    protected $subject;
+    protected $user_id;
+    protected $status;
 //    protected $date;
 //    protected $year;
 //    protected $month;
@@ -46,18 +46,18 @@ class Task extends \Phalcon\Mvc\Model
         return $this->id;
     }
 
-    public function getComment()
+    public function getSubject()
     {
-        return $this->comment;
+        return $this->subject;
     }
 
     public function getUserId()
     {
         return $this->user_id;
     }
-    public function getFloorId()
+    public function getStatus()
     {
-        return $this->floor_id;
+        return $this->status;
     }
     public function getDate()
     {
