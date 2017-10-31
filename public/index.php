@@ -103,6 +103,11 @@ try {
         "action" => "remove"
     ]);
 
+    $router->add("/usermail/{usermailid}/show", [
+        "controller" => "usermail",
+        "action" => "show"
+    ]);
+
     $router->add("/task/index", [
         "controller" => "task",
         "action" => "index"

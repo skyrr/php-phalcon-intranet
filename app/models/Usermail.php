@@ -29,6 +29,9 @@ class Usermail extends \Phalcon\Mvc\Model
         if (!$this->archive) { // use default value if the value is not set
             $this->archive = 0;
         }
+        if (!$this->status) { // use default value if the value is not set
+            $this->status = 0;
+        }
         $date = date("Y-m-d H-i-s");
         if (!$this->date) { // use default value if the value is not set
             $this->date = $date;
@@ -102,6 +105,11 @@ class Usermail extends \Phalcon\Mvc\Model
     public function setArchive($archive)
     {
         $this->archive = $archive;
+    }
+
+    public function setStatus($status)
+    {
+        $this->status = $status;
     }
 
 

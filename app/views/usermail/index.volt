@@ -93,16 +93,18 @@
                                         </tr>
                                         </thead>
                                         <tbody>
+
                                         {% for usermail in usermails %}
                                             {#<div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendarItem.getDate() }} </b> at <b> {{ calendarItem.getTime() }}</b> for: <b>{{ calendarItem.getTimeShift() }}</b>min.  {{ calendarItem.getComment() }}</a></div>#}
                                             <tr>
-                                                <td>{{ usermail.getId() }}</td>
+                                                <td>{% if  usermail.getStatus() == '0' %} <strong> {% endif %} {{ usermail.getId() }} {% if  usermail.getStatus() == '0' %} </strong> {% endif %}</td>
+
                                                 <td>
-                                                    <a>{{ usermail.getRecipientById() }}</a>
+                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatus() == '0' %} <strong> {% endif %} {{ usermail.getRecipientById() }}{% if  usermail.getStatus() == '0' %} </strong> {% endif %}</a>
                                                     <br>
                                                 </td>
                                                 <td>
-                                                    <a>{{ usermail.getText() }}</a>
+                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatus() == '0' %} <strong> {% endif %} {{ usermail.getText() }}{% if  usermail.getStatus() == '0' %} </strong> {% endif %}</a>
                                                     <br>
                                                 </td>
                                                 <td>
