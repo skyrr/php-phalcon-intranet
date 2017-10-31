@@ -93,6 +93,16 @@ try {
         "action" => "index"
     ]);
 
+    $router->add("/usermail/sent", [
+        "controller" => "usermail",
+        "action" => "sent"
+    ]);
+
+    $router->add("/usermail/trash", [
+        "controller" => "usermail",
+        "action" => "trash"
+    ]);
+
     $router->add("/usermail/create", [
         "controller" => "usermail",
         "action" => "create"

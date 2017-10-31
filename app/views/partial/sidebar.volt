@@ -7,7 +7,9 @@
             </li>
             <li><a><i class="fa fa-edit"></i> Messages <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="{{ url.get('usermail/index') }}">Messages</a></li>
+                    <li><a href="{{ url.get('usermail/index') }}">Inbox</a></li>
+                    <li><a href="{{ url.get('usermail/sent') }}">Sent</a></li>
+                    <li><a href="{{ url.get('usermail/trash') }}">Trash</a></li>
                     <li><a href="{{ url.get('usermail/create') }}">Compose</a></li>
                 </ul>
             </li>
