@@ -29,7 +29,7 @@
         <div class="row">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>New message</h2>
+                    <h2>Message from {{ usermessage.getRecipientById() }}</h2>
                     {#<small>User Mail</small>#}
                     <div class="clearfix"></div>
                 </div>
@@ -55,24 +55,40 @@
                 </div>
                 {#end mail list#}
 
+                {#read mail#}
+                <div class="col-md-9 col-sm-9 col-xs-12 mail_list_column">
+                    <blockquote>
+                        <p>{{ usermessage.getText() }}</p>
+                        <footer>{{ usermessage.getRecipientById() }}
+                        </footer>
+                    </blockquote>
+                </div>
+                {#end read mail#}
+                {#<div class="pull-right"></div>#}
+
+
                 {#new message#}
                 <div class="col-md-9 col-sm-9 col-xs-12 mail_list_column">
+
                     <form method="post">
+                        {{ partial('printgroup') }}
+                        <br/>
+
                         {#<input name="recipient_email" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="recipient">#}
                         {#<br/>#}
-                        <select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">
-                            <option value="">recipient..</option>
-                            {% for user in userList %}
-                                <option value="{{ user.getId() }}">{{ user.getName() }}</option>
-                            {% endfor %}
-                        </select>
+
+                        <input name="responseto" type="hidden" value="{{ usermessage.getId() }}">
+                        {#<select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">#}
+                            {#<option value="">recipient..</option>#}
+                            {#{% for user in userList %}#}
+                                {#<option value="{{ user.getId() }}">{{ user.getName() }}</option>#}
+                            {#{% endfor %}#}
+                        {#</select>#}
                         <br/>
-                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
-                        <input name="subject" type="text" class="form-control" placeholder="subject">
+                        {#<span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>#}
+                        <textarea name="text" class="form-control" rows="8" placeholder=""></textarea>
                         <br/>
-                        <textarea name="text" class="form-control" rows="10" placeholder=""></textarea>
-                        <br/>
-                        <button type="submit" class="btn btn-success pull-right">Send</button>
+                        <button type="submit" class="btn btn-success pull-right">Reply</button>
                     </form>
                 </div>
 

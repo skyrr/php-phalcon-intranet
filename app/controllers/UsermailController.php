@@ -365,6 +365,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $usermail = Usermail::find(["archive = 0"]);
         $this->view->usermails = $usermail;
 
+        $usermessage = Usermail::findfirst($usermailid);
+        $this->view->usermessage = $usermessage;
+
         if ($this->request->isPost()) {
 //            $data = $this->request->getPost();
 //            //$user = new User($data);
@@ -389,9 +392,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //            $status = 1;
 //            $priority = 1;
             $user_id = $this->user->getId();
-            $recipient_id = 8;
-            $status = 1;
-            $priority = 1;
+//            $recipient_id = 8;
+//            $status = 1;
+//            $priority = 1;
             $date = date("Y-m-d H-i-s");
 
             $usermail = new Usermail([
@@ -403,11 +406,11 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //                'archive' => '0',
             ]);
             $usermail->user_id = $user_id;
-            $usermail->recipient_id = $recipient_id;
-            $usermail->subject = $status;
-            $usermail->priority = $priority;
-            $usermail->date = $date;
-            $usermail->archive = '0';
+//            $usermail->recipient_id = $recipient_id;
+//            $usermail->subject = $status;
+//            $usermail->priority = $priority;
+//            $usermail->date = $date;
+//            $usermail->archive = '0';
 
 //                'text' => $text,
 //                'subject' => $subject,

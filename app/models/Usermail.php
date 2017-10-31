@@ -16,6 +16,7 @@ class Usermail extends \Phalcon\Mvc\Model
     public $priority;
     public $date;
     public $archive;
+    public $responseto;
 
     protected function initialize()
     {
@@ -31,6 +32,9 @@ class Usermail extends \Phalcon\Mvc\Model
         }
         if (!$this->status) { // use default value if the value is not set
             $this->status = 0;
+        }
+        if (!$this->responseto) { // use default value if the value is not set
+            $this->responseto = 0;
         }
         $date = date("Y-m-d H-i-s");
         if (!$this->date) { // use default value if the value is not set
@@ -100,6 +104,11 @@ class Usermail extends \Phalcon\Mvc\Model
     public function getArchive()
     {
         return $this->archive;
+    }
+
+    public function getResponseTo()
+    {
+        return $this->responseto;
     }
 
     public function setArchive($archive)
