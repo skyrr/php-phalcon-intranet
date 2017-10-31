@@ -22,9 +22,15 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $userList = User::find();
         $this->view->userList = $userList;
 
-        $unreadMessages = 5;
-        $this->view->unreadMessages = $unreadMessages;
 
+
+    }
+
+    public function afterExecuteRoute()
+    {
+        $usermail = Usermail::find(['status_to_recipient = 0 AND recipient_id = 5 AND archive_to_recipient = 0']);
+        $unreadMessages = count($usermail);
+        $this->view->unreadMessages = $unreadMessages;
 
     }
 

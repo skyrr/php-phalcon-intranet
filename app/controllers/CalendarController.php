@@ -19,9 +19,6 @@ class CalendarController extends \Phalcon\Mvc\Controller
 //        if (!$this->session->has("user_id")) {
 //            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
 //        }
-        $unreadMessages = 5;
-        $this->view->unreadMessages = $unreadMessages;
-
 
         $this->assets->addCss('assets/vendors/bootstrap/dist/css/bootstrap.min.css');
         $this->assets->addCss('assets/vendors/font-awesome/css/font-awesome.min.css');
@@ -96,6 +93,13 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $this->view->todayHMList = $todayHMList;
         $this->view->calendarsFutureList = $calendarsFutureList;
 
+
+    }
+    public function afterExecuteRoute()
+    {
+        $usermail = Usermail::find(['status_to_recipient = 0 AND recipient_id = 5 AND archive_to_recipient = 0']);
+        $unreadMessages = count($usermail);
+        $this->view->unreadMessages = $unreadMessages;
 
     }
 

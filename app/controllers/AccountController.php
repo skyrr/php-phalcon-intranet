@@ -24,8 +24,13 @@ class AccountController extends \Phalcon\Mvc\Controller
             'order' => 'date DESC', limit => 11]);
         $this->view->tasks = $tasks;
 
-        $unreadMessages = 5;
+    }
+    public function afterExecuteRoute()
+    {
+        $usermail = Usermail::find(['status_to_recipient = 0 AND recipient_id = 5 AND archive_to_recipient = 0']);
+        $unreadMessages = count($usermail);
         $this->view->unreadMessages = $unreadMessages;
+
     }
 
     public function indexAction()

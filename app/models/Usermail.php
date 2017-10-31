@@ -153,5 +153,11 @@ class Usermail extends \Phalcon\Mvc\Model
         $this->status_to_recipient = $status;
     }
 
+    public function getUsermailCount()
+    {
+        $usermail = Usermail::find(["status_to_recipient > '0'"]);
+        return count($usermail);
+    }
+
 
 }
