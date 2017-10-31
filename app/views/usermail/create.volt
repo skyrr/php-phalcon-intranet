@@ -67,6 +67,9 @@
                                         {% endfor %}
                                     </select>
                                     <br/>
+                                    <input name="archive_to_recipient" type="hidden" value="0">
+                                    <input name="status_to_recipient" type="hidden" value="0">
+                                    <input name="responseto" type="hidden" value="0">
                                     <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
                                     <input name="subject" type="text" class="form-control" placeholder="subject">
                                     <br/>
