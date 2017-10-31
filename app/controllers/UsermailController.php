@@ -401,6 +401,10 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //            $status = 1;
 //            $priority = 1;
             $date = date("Y-m-d H-i-s");
+            $status_to_recipient = 0;
+            $archive_to_recipient = 0;
+            $responseto = 0;
+
 
             $usermail = new Usermail([
 //                'user_id' => $user_id,

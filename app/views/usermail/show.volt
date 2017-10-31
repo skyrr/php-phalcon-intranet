@@ -78,7 +78,9 @@
                         {#<br/>#}
 
                         <input name="responseto" type="hidden" value="{{ usermessage.getId() }}">
-                        <input name="recipient_id" type="hidden" value="{{ usermessage.getRecipientId() }}">
+                        <input name="recipient_id" type="hidden" value="{{ usermessage.getUserId() }}">
+                        <input name="archive_to_recipient" type="hidden" value="0">
+                        <input name="status_to_recipient" type="hidden" value="0">
                         {#<select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">#}
                             {#<option value="">recipient..</option>#}
                             {#{% for user in userList %}#}
