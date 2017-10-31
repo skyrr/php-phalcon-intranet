@@ -86,7 +86,7 @@
                                         <thead>
                                         <tr>
                                             <th style="width: 1%">#</th>
-                                            <th style="width: 20%">To</th>
+                                            <th style="width: 20%">From</th>
                                             <th style="width: 53%">Text</th>
                                             <th style="width: 14%">Date</th>
                                             <th style="width: 13%">Operations</th>                                                                                                                                                                                                                                                                                                 </Operations></th>
@@ -97,21 +97,23 @@
                                         {% for usermail in usermails %}
                                             {#<div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendarItem.getDate() }} </b> at <b> {{ calendarItem.getTime() }}</b> for: <b>{{ calendarItem.getTimeShift() }}</b>min.  {{ calendarItem.getComment() }}</a></div>#}
                                             <tr>
-                                                <td>{% if  usermail.getStatus() == '0' %} <strong> {% endif %} {{ usermail.getId() }} {% if  usermail.getStatus() == '0' %} </strong> {% endif %}</td>
+                                                {#id displayed#}
+                                                <td>{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getId() }} {% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</td>
 
                                                 <td>
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatus() == '0' %} <strong> {% endif %} {{ usermail.getRecipientById() }}{% if  usermail.getStatus() == '0' %} </strong> {% endif %}</a>
+                                                    {#gets Recipient Name by Id#}
+                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getUserById() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
                                                     <br>
                                                 </td>
                                                 <td>
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatus() == '0' %} <strong> {% endif %} {{ usermail.getText() }}{% if  usermail.getStatus() == '0' %} </strong> {% endif %}</a>
+                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getText() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
                                                     <br>
                                                 </td>
                                                 <td>
                                                     <a>{{ usermail.getDate() }}</a>
                                                 </td>
                                                 <td>
-                                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>
+                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>
                                                     <a href="{{ url.get('usermail/'~ usermail.getId() ~'/remove') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>
                                                 </td>
                                             </tr>

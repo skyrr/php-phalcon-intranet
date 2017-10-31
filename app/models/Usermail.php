@@ -13,9 +13,11 @@ class Usermail extends \Phalcon\Mvc\Model
     public $text;
     public $subject;
     public $status;
+    public $status_to_recipient;
     public $priority;
     public $date;
     public $archive;
+    public $archive_to_recipient;
     public $responseto;
 
     protected function initialize()
@@ -30,8 +32,14 @@ class Usermail extends \Phalcon\Mvc\Model
         if (!$this->archive) { // use default value if the value is not set
             $this->archive = 0;
         }
+        if (!$this->archive_to_recipient) { // use default value if the value is not set
+            $this->archive_to_recipient = 0;
+        }
         if (!$this->status) { // use default value if the value is not set
             $this->status = 0;
+        }
+        if (!$this->status_to_recipient) { // use default value if the value is not set
+            $this->status_to_recipient = 0;
         }
         if (!$this->responseto) { // use default value if the value is not set
             $this->responseto = 0;
@@ -71,6 +79,12 @@ class Usermail extends \Phalcon\Mvc\Model
         return $user->getName();
     }
 
+    public function getUserById()
+    {
+        $user = User::findfirst($this->user_id);
+        return $user->getName();
+    }
+
     public function getText()
     {
         return $this->text;
@@ -84,6 +98,11 @@ class Usermail extends \Phalcon\Mvc\Model
     public function getStatus()
     {
         return $this->status;
+    }
+
+    public function getStatusToRecipient()
+    {
+        return $this->status_to_recipient;
     }
 
     public function getPriority()
@@ -105,6 +124,10 @@ class Usermail extends \Phalcon\Mvc\Model
     {
         return $this->archive;
     }
+    public function getArchiveToRecipient()
+    {
+        return $this->archiveToRecipient;
+    }
 
     public function getResponseTo()
     {
@@ -116,9 +139,18 @@ class Usermail extends \Phalcon\Mvc\Model
         $this->archive = $archive;
     }
 
+    public function setArchiveToRecipient($archiveToRecipient)
+    {
+        $this->archive_to_recipient = $archiveToRecipient;
+    }
+
     public function setStatus($status)
     {
         $this->status = $status;
+    }
+    public function setStatusToRecipient($status)
+    {
+        $this->status_to_recipient = $status;
     }
 
 

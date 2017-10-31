@@ -39,9 +39,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $user);
         $this->user = $user;
 
-//        $usermail = Usermail::find(["user_id = $user_id AND archive=0",
+//        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
 //        'order' => 'date DESC']);
-        $usermail = Usermail::find(["archive = 0",
+        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '5'",
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
@@ -343,7 +343,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
             return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
         }
 
-        $success = $usermail->setArchive(1);
+        $success = $usermail->setArchiveToRecipient(1);
 
         $usermail->save();
         return $this->response->redirect("usermail/index");
@@ -362,7 +362,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
         if (!$usermail) {
             return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
         }
-        $success = $usermail->setStatus(1);
+        $success = $usermail->setStatusToRecipient(1);
         $usermail->save();
 
 //        $usermail = Usermail::find(["user_id = $user_id AND archive=0"]);

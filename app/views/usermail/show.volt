@@ -78,6 +78,7 @@
                         {#<br/>#}
 
                         <input name="responseto" type="hidden" value="{{ usermessage.getId() }}">
+                        <input name="recipient_id" type="hidden" value="{{ usermessage.getRecipientId() }}">
                         {#<select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">#}
                             {#<option value="">recipient..</option>#}
                             {#{% for user in userList %}#}
