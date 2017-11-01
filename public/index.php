@@ -108,6 +108,11 @@ try {
         "action" => "create"
     ]);
 
+    $router->add("/usermail/{recipientid}/create", [
+        "controller" => "usermail",
+        "action" => "create"
+    ]);
+
     $router->add("/usermail/{usermailid}/removefrominbox", [
         "controller" => "usermail",
         "action" => "removefrominbox"

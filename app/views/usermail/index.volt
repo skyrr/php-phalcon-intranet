@@ -64,16 +64,7 @@
                                 </div>
                                 <ul class="list-group" id="result"></ul>
                                 {#{{ json_encoded_from_model }}#}
-                                {% for user in userList %}
-                                    <a href="#">
-                                        <div class="mail_list">
-                                            <div class="right">
-                                                <h3>{{ user.getName() }}</h3>
-                                                {#<p>{{ user.getEmail() }}</p>#}
-                                            </div>
-                                        </div>
-                                    </a>
-                                {% endfor %}
+                                {{ partial("userlistformail") }}
                             </div>
                             <!-- /MAIL LIST -->
 

@@ -22,6 +22,8 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $userList = User::find();
         $this->view->userList = $userList;
 
+        $recipientid = $this->dispatcher->getParam('recipientid');
+        $this->view->recipientid = $recipientid;
 
 
     }
@@ -39,6 +41,8 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //        if (!$this->session->has("user_id")) {
 //            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
 //        }
+        $recipientid = $this->dispatcher->getParam('recipientid');
+        $this->view->recipientid = $recipientid;
 
         $user_id = $this->session->get("user_id");
         $user = User::findFirst($user_id);
@@ -270,7 +274,6 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
     public function createAction()
     {
-
         $user_id = $this->session->get("user_id");
         $user = User::findFirst($user_id);
         $this->view->setVar('user', $user);

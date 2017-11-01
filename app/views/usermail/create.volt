@@ -42,16 +42,7 @@
                     </div>
                     <ul class="list-group" id="result"></ul>
                     {#{{ json_encoded_from_model }}#}
-                    {% for user in userList %}
-                        <a href="#">
-                            <div class="mail_list">
-                                <div class="right">
-                                    <h3>{{ user.getName() }}</h3>
-                                    {#<p>{{ user.getEmail() }}</p>#}
-                                </div>
-                            </div>
-                        </a>
-                    {% endfor %}
+                    {{ partial("userlistformail") }}
                 </div>
                 {#end mail list#}
 
@@ -60,10 +51,12 @@
                                 <form method="post">
                                     {#<input name="recipient_email" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="recipient">#}
                                     {#<br/>#}
+
                                     <select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">
                                         <option value="">recipient..</option>
                                         {% for user in userList %}
-                                            <option value="{{ user.getId() }}">{{ user.getName() }}</option>
+                                            {#selected=""#}
+                                            <option value="{{ user.getId() }}" {% if recipientid == user.getId()%} selected {% endif %}>{{ user.getName() }}</option>
                                         {% endfor %}
                                     </select>
                                     <br/>
