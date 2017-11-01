@@ -108,9 +108,14 @@ try {
         "action" => "create"
     ]);
 
-    $router->add("/usermail/{usermailid}/remove", [
+    $router->add("/usermail/{usermailid}/removefrominbox", [
         "controller" => "usermail",
-        "action" => "remove"
+        "action" => "removefrominbox"
+    ]);
+
+    $router->add("/usermail/{usermailid}/removefromsent", [
+        "controller" => "usermail",
+        "action" => "removefromsent"
     ]);
 
     $router->add("/usermail/{usermailid}/show", [

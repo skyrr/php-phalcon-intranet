@@ -44,6 +44,9 @@ class Usermail extends \Phalcon\Mvc\Model
         if (!$this->responseto) { // use default value if the value is not set
             $this->responseto = 0;
         }
+        if (!$this->subject) { // use default value if the value is not set
+            $this->subject = '(no subject)';
+        }
         $date = date("Y-m-d H-i-s");
         if (!$this->date) { // use default value if the value is not set
             $this->date = $date;
@@ -157,6 +160,15 @@ class Usermail extends \Phalcon\Mvc\Model
     {
         $usermail = Usermail::find(["status_to_recipient > '0'"]);
         return count($usermail);
+    }
+
+    public function getUsermailSymbols($symbolNumber)
+    {
+        $subString = substr($this->subject, 0, $symbolNumber);
+        if (!(strlen($this->subject) < $symbolNumber)) {
+            $subString = $subString."...";
+        }
+        return $subString;
     }
 
 

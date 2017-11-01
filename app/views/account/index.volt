@@ -95,7 +95,82 @@
 
 
 
+                        <!-- Start usermail list -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>Incoming mail </h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Settings 1</a>
+                                                </li>
+                                                <li><a href="#">Settings 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
 
+                                    <div class="">
+                                        <ul class="to_do">
+                                            {% for usermail in usermails %}
+                                                <li>
+                                                    {{ usermail.getUsermailSymbols(35) }}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End usermail list -->
+
+
+
+
+                        <!-- start Restaurant -->
+                        {#<a href="https://www.accuweather.com/cs/cz/mlada-boleslav/125998/driving-current-weather/125998" class="aw-widget-legal">#}
+                        {#<!--#}
+                        {#By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.#}
+                        {#-->#}
+                        {#</a><div id="awtd1508841677357" class="aw-widget-36hour"  data-locationkey="125998" data-unit="c" data-language="cs" data-useip="false" data-uid="awtd1508841677357" data-editlocation="true" data-lifestyle="driving"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>#}
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>Restaurant menu <small></small></h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Settings 1</a>
+                                                </li>
+                                                <li><a href="#">Settings 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <iframe id="miiframe" src="http://skyrr.space/menu/menu.pdf" style="width:100%; height:400px;" frameborder="0"></iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end of Restaurant -->
 
                         <!-- Start to do list -->
                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -135,41 +210,6 @@
                         </div>
                         <!-- End to do list -->
 
-                        <!-- start Restaurant -->
-                        {#<a href="https://www.accuweather.com/cs/cz/mlada-boleslav/125998/driving-current-weather/125998" class="aw-widget-legal">#}
-                        {#<!--#}
-                        {#By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.#}
-                        {#-->#}
-                        {#</a><div id="awtd1508841677357" class="aw-widget-36hour"  data-locationkey="125998" data-unit="c" data-language="cs" data-useip="false" data-uid="awtd1508841677357" data-editlocation="true" data-lifestyle="driving"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>#}
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="x_panel">
-                                <div class="x_title">
-                                    <h2>Restaurant menu <small></small></h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
-                                    <iframe id="miiframe" src="http://skyrr.space/menu/menu.pdf" style="width:100%; height:400px;" frameborder="0"></iframe>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end of Restaurant -->
                     </div>
                 </div>
 

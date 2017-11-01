@@ -15,9 +15,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $user_id = $this->session->get("user_id");
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
-//        if (!$this->session->has("user_id")) {
-//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-//        }
+        if (!$this->session->has("user_id")) {
+            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+        }
 
         $userList = User::find();
         $this->view->userList = $userList;
@@ -114,7 +114,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
     }
     public function sentAction()
     {
-//        if (!$this->session->has("user_id")) {
+        //        if (!$this->session->has("user_id")) {
 //            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
 //        }
 
@@ -123,9 +123,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $user);
         $this->user = $user;
 
-//        $usermail = Usermail::find(["user_id = $user_id AND archive=0",
+//        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
 //        'order' => 'date DESC']);
-        $usermail = Usermail::find(["archive = 0",
+        $usermail = Usermail::find(["archive = 0 AND user_id = '5'",
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
@@ -188,7 +188,6 @@ class UsermailController extends \Phalcon\Mvc\Controller
             }
 
         }
-
     }
     public function trashAction()
     {
@@ -203,7 +202,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
 //        $usermail = Usermail::find(["user_id = $user_id AND archive=0",
 //        'order' => 'date DESC']);
-        $usermail = Usermail::find(["archive = 0",
+        $usermail = Usermail::find(["(user_id = 5 AND archive = 1) OR (recipient_id = 5 AND archive_to_recipient = 1)",
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
@@ -341,7 +340,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $this->view->account = $account;
     }
 
-    public function removeAction()
+    public function removefrominboxAction()
     {
         $usermail_id = $this->dispatcher->getParam('usermailid');
         $usermail = Usermail::findFirst($usermail_id);
@@ -353,6 +352,20 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
         $usermail->save();
         return $this->response->redirect("usermail/index");
+    }
+
+    public function removefromsentAction()
+    {
+        $usermail_id = $this->dispatcher->getParam('usermailid');
+        $usermail = Usermail::findFirst($usermail_id);
+        if (!$usermail) {
+            return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
+        }
+
+        $success = $usermail->setArchive(1);
+
+        $usermail->save();
+        return $this->response->redirect("usermail/sent");
     }
 
     public function showAction()

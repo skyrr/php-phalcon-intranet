@@ -114,7 +114,7 @@
                                                 </td>
                                                 <td>
                                                     <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/remove') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>
+                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/removefrominbox') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>
                                                 </td>
                                             </tr>
                                         {% endfor %}
