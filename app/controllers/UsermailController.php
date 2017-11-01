@@ -202,7 +202,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
 //        $usermail = Usermail::find(["user_id = $user_id AND archive=0",
 //        'order' => 'date DESC']);
-        $usermail = Usermail::find(["(user_id = 5 AND archive = 1) OR (recipient_id = 5 AND archive_to_recipient = 1)",
+        $usermail = Usermail::find(["(user_id = 5 AND archive = 1  AND remove_forever = 0) OR (recipient_id = 5 AND archive_to_recipient = 1  AND remove_forever = 0)",
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
@@ -366,6 +366,20 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
         $usermail->save();
         return $this->response->redirect("usermail/sent");
+    }
+
+    public function removeforeverAction()
+    {
+        $usermail_id = $this->dispatcher->getParam('usermailid');
+        $usermail = Usermail::findFirst($usermail_id);
+        if (!$usermail) {
+            return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
+        }
+
+        $success = $usermail->setRemoveForever(1);
+
+        $usermail->save();
+        return $this->response->redirect("usermail/trash");
     }
 
     public function showAction()

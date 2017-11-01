@@ -118,6 +118,11 @@ try {
         "action" => "removefromsent"
     ]);
 
+    $router->add("/usermail/{usermailid}/removeforever", [
+        "controller" => "usermail",
+        "action" => "removeforever"
+    ]);
+
     $router->add("/usermail/{usermailid}/show", [
         "controller" => "usermail",
         "action" => "show"

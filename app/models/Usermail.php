@@ -19,6 +19,7 @@ class Usermail extends \Phalcon\Mvc\Model
     public $archive;
     public $archive_to_recipient;
     public $responseto;
+    public $remove_forever;
 
     protected function initialize()
     {
@@ -43,6 +44,9 @@ class Usermail extends \Phalcon\Mvc\Model
         }
         if (!$this->responseto) { // use default value if the value is not set
             $this->responseto = 0;
+        }
+        if (!$this->remove_forever) { // use default value if the value is not set
+            $this->remove_forever = 0;
         }
         if (!$this->subject) { // use default value if the value is not set
             $this->subject = '(no subject)';
@@ -140,6 +144,16 @@ class Usermail extends \Phalcon\Mvc\Model
     public function setArchive($archive)
     {
         $this->archive = $archive;
+    }
+
+    public function getRemoveForever()
+    {
+        return $this->remove_forever;
+    }
+
+    public function setRemoveForever($archive)
+    {
+        $this->remove_forever = $archive;
     }
 
     public function setArchiveToRecipient($archiveToRecipient)
