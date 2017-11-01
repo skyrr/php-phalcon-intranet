@@ -15,9 +15,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $user_id = $this->session->get("user_id");
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
-        if (!$this->session->has("user_id")) {
-            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-        }
+//        if (!$this->session->has("user_id")) {
+//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+//        }
 
         $userList = User::find();
         $this->view->userList = $userList;
