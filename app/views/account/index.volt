@@ -36,85 +36,56 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
-                                    <h2>Visitors location <small>geo-presentation</small></h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
+                                    <h2>Welcome to eLED</h2>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
                                     <div class="dashboard-widget-content">
-                                        <div class="col-md-4 hidden-small">
-                                            <h2 class="line_30">125.7k Views from 60 countries</h2>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 hidden-small">
+                                            <h2 class="line_30">Company message</h2>
 
                                             <table class="countries_list">
                                                 <tbody>
                                                 <tr>
-                                                    <td>United States</td>
+                                                    <td>Message 1</td>
                                                     <td class="fs15 fw700 text-right">33%</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>France</td>
+                                                    <td>Message 2</td>
                                                     <td class="fs15 fw700 text-right">27%</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Germany</td>
+                                                    <td>Message 3</td>
                                                     <td class="fs15 fw700 text-right">16%</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Spain</td>
+                                                    <td>Message 4</td>
                                                     <td class="fs15 fw700 text-right">11%</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Britain</td>
+                                                    <td>Message 5</td>
                                                     <td class="fs15 fw700 text-right">10%</td>
                                                 </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div id="world-map-gdp" class="col-md-8 col-sm-12 col-xs-12" style="height:230px;"></div>
+                                        <div class="col-m-8 col-md-8 col-sm-12 col-xs-12">
+                                            <img src="/assets/img/future.jpg" class="col-m-12 col-md-12 col-sm-12 col-xs-12">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+
+
                     <div class="row">
-
-
-
                         <!-- Start usermail list -->
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
                                     <h2>Incoming mail </h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
@@ -147,25 +118,12 @@
                             <div class="x_panel">
                                 <div class="x_title">
                                     <h2>Restaurant menu <small></small></h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
-                                    <iframe id="miiframe" src="http://skyrr.space/menu/menu.pdf" style="width:100%; height:400px;" frameborder="0"></iframe>
+                                    <iframe id="miiframe" src="https://drive.google.com/viewerng/viewer?
+url=http://skyrr.space/menu/menu.pdf?
+pid=explorer&efh=false&a=v&chrome=false&embedded=true" style="width:100%; height:400px;" frameborder="0"></iframe>
                                 </div>
                             </div>
 
@@ -177,21 +135,6 @@
                             <div class="x_panel">
                                 <div class="x_title">
                                     <h2>To Do List </h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
@@ -212,13 +155,19 @@
 
                     </div>
                 </div>
-
-
+                <style>
+                    #box {
+                        height: 510px;
+                        overflow: hidden;
+                    }
+                </style>
                 <!-- Start weather -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-12" id="box">
                     <a href="https://www.accuweather.com/cs/cz/mlada-boleslav/125998/driving-current-weather/125998" class="aw-widget-legal">
-                    </a><div id="awtd1508841677357" class="aw-widget-36hour"  data-locationkey="125998" data-unit="c" data-language="cs" data-useip="false" data-uid="awtd1508841677357" data-editlocation="true" data-lifestyle="driving"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>                </div>
+                    </a><div id="awtd1508841677357" class="aw-widget-36hour"  data-locationkey="125998" data-unit="c" data-language="cs" data-useip="false" data-uid="awtd1508841677357" data-editlocation="true" data-lifestyle="driving"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+                </div>
                 <!-- End weather -->
+                {#<!-- weather widget start --><a target="_blank" href="http://www.booked.cz/weather/mlada-boleslav-56270"><img src="https://w.bookcdn.com/weather/picture/4_56270_1_13_009b48_293_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=&anc_id=92452"  alt="booked.net"/></a><!-- weather widget end -->#}
 
 
             </div>

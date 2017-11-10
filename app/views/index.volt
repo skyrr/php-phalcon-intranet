@@ -20,7 +20,7 @@
     <link href="../vendors/starrr/dist/starrr.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    {#<link href="../build/css/custom.min.css" rel="stylesheet">#}
 
     <!-- Bootstrap -->
     <link href="/assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -58,6 +58,14 @@
 </head>
 <body class="nav-md">
 {{ content() }}
+<script>
+    var ajax_call = function() {
+        //your jQuery ajax code
+    };
 
+    var interval = 1000 * 60 * X; // where X is your every X minutes
+
+    setInterval(ajax_call, interval);
+</script>
 </body>
 </html>

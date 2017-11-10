@@ -15,9 +15,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $user_id = $this->session->get("user_id");
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
-//        if (!$this->session->has("user_id")) {
-//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-//        }
+        if (!$this->session->has("user_id")) {
+            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+        }
 
         $userList = User::find();
         $this->view->userList = $userList;
@@ -30,10 +30,13 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
     public function afterExecuteRoute()
     {
-        $usermail = Usermail::find(['status_to_recipient = 0 AND recipient_id = 5 AND archive_to_recipient = 0']);
+        $user_id = $this->session->get("user_id");
+        $usermail = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0"]);
         $unreadMessages = count($usermail);
         $this->view->unreadMessages = $unreadMessages;
 
+        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", limit =>4, order => 'date DESC',]);
+        $this->view->usermailtotop = $usermailtotop;
     }
 
     public function indexAction()
@@ -51,7 +54,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
 //        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
 //        'order' => 'date DESC']);
-        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '5'",
+        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
@@ -129,7 +132,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
 //        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
 //        'order' => 'date DESC']);
-        $usermail = Usermail::find(["archive = 0 AND user_id = '5'",
+        $usermail = Usermail::find(["archive = 0 AND user_id = '$user_id'",
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
@@ -206,7 +209,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
 //        $usermail = Usermail::find(["user_id = $user_id AND archive=0",
 //        'order' => 'date DESC']);
-        $usermail = Usermail::find(["(user_id = 5 AND archive = 1  AND remove_forever = 0) OR (recipient_id = 5 AND archive_to_recipient = 1  AND remove_forever = 0)",
+        $usermail = Usermail::find(["(user_id = '$user_id' AND archive = 1  AND remove_forever = 0) OR (recipient_id = '$user_id' AND archive_to_recipient = 1  AND remove_forever = 0)",
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
@@ -301,6 +304,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //                'priority' => $priority,
 //                'created_at' => $created_at,
             ]);
+            $usermail->priority = '111';
             $success = $usermail->create($data);
             if ($success) {
                 return $this->response->redirect("usermail/index");
@@ -393,6 +397,8 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $this->user = $user;
 
         $usermailid = $this->dispatcher->getParam('usermailid');
+        $sender_id = $this->dispatcher->getParam('userid');
+//        $sender_id = 11;
 
         $usermail = Usermail::findFirst($usermailid);
         if (!$usermail) {
@@ -402,12 +408,22 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $usermail->save();
 
 //        $usermail = Usermail::find(["user_id = $user_id AND archive=0"]);
-        $usermail = Usermail::find(["archive = 0",
+        $usermail = Usermail::find(["user_id = $user_id AND archive = 0",
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
         $usermessage = Usermail::findfirst($usermailid);
         $this->view->usermessage = $usermessage;
+
+        //        $usermessage = Usermail::findfirst($usermailid);
+//        $this->view->usermessage = $usermessage;
+        $usermessages = Usermail::find(["(recipient_id = $user_id AND user_id = $sender_id AND archive = 0) OR (recipient_id = $sender_id AND user_id = $user_id AND archive = 0)",
+            'order' => 'date DESC']);
+        $this->view->usermessages = $usermessages;
+        $this->view->recipient_id = $user_id;
+        $this->view->sendto = $sender_id;
+        $this->view->sender_id = $sender_id;
+
 
         if ($this->request->isPost()) {
 //            $data = $this->request->getPost();
@@ -461,7 +477,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //                'subject' => $subject,
             $success = $usermail->create($data);
             if ($success) {
-                return $this->response->redirect("usermail/index");
+                return $this->response->redirect("usermail/$sender_id/show");
             } else {
                 $messages = $user->getMessages();
                 if ($messages) {

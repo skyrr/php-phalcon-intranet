@@ -1,11 +1,18 @@
+<body class="login">
 <div>
     <a class="hiddenanchor" id="signup"></a>
     <a class="hiddenanchor" id="signin"></a>
 
     <div class="login_wrapper">
-        <div class="animate form login_form">
+        <div id="register" >
             <section class="login_content">
                 <form method="post">
+                    {% if error1 is defined %}
+                        <div class="alert alert-error">
+                            <button class="close" data-dismiss="alert"></button>
+                            {{ error1 }}
+                        </div>
+                    {% endif %}
                     <h1>Login Form</h1>
                     <div>
                         <input name="email" id="txtusername"  type="text" class="form-control" placeholder="Username" required="" />

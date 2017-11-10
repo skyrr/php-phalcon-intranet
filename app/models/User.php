@@ -7,11 +7,18 @@
  */
 class User extends \Phalcon\Mvc\Model
 {
-    protected $id;
-    protected $name;
-    protected $email;
-    protected $password;
+    public $id;
+    public $name;
+    public $email;
+    public $password;
+    public $is_online;
 //    protected $selected_account_id;
+    public function beforeCreate()
+    {
+        if (!$this->is_online) { // use default value if the value is not set
+            $this->is_online = 1;
+        }
+    }
 
     public function validation()
     {

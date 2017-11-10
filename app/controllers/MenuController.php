@@ -16,14 +16,15 @@ class MenuController extends \Phalcon\Mvc\Controller
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
 
-//        if (!$this->session->has("user_id")) {
-//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-//        }
+        if (!$this->session->has("user_id")) {
+            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+        }
 
     }
     public function afterExecuteRoute()
     {
-        $usermail = Usermail::find(['status_to_recipient = 0 AND recipient_id = 5 AND archive_to_recipient = 0']);
+        $user_id = $this->session->get("user_id");
+        $usermail = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0"]);
         $unreadMessages = count($usermail);
         $this->view->unreadMessages = $unreadMessages;
 

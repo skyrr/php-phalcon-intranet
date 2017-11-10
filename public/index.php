@@ -133,6 +133,11 @@ try {
         "action" => "show"
     ]);
 
+    $router->add("/usermail/{userid}/show", [
+        "controller" => "usermail",
+        "action" => "show"
+    ]);
+
     $router->add("/task/index", [
         "controller" => "task",
         "action" => "index"

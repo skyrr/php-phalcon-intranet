@@ -29,62 +29,28 @@
                         {% if unreadMessages %}<span class="badge bg-green">{{ unreadMessages }}</span>{% endif %}
                     </a>
                     <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                        {% for usermailt in usermailtotop %}
                         <li>
-                            <a>
-                                <span class="image"><img src="/assets/images/img.jpg" alt="Profile Image" /></span>
+                            <a href="{{ url.get('usermail/'~ usermailt.getId() ~'/show') }}">
                                 <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
+                          <span>{{ usermailt.getUserById() }}</span>
+                          <span class="time">{{ usermailt.getDate() }} </span>
                         </span>
                                 <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                          {{ usermailt.getText() }}
                         </span>
                             </a>
                         </li>
-                        <li>
-                            <a>
-                                <span class="image"><img src="/assets/images/img.jpg" alt="Profile Image" /></span>
-                                <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="image"><img src="/assets/images/img.jpg" alt="Profile Image" /></span>
-                                <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="image"><img src="/assets/images/img.jpg" alt="Profile Image" /></span>
-                                <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                            </a>
-                        </li>
+                        {% endfor %}
                         <li>
                             <div class="text-center">
-                                <a href="{{ url.get('message/index') }}">
+                                <a href="{{ url.get('usermail/index') }}">
                                     <strong>See All Alerts</strong>
                                     <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
                         </li>
+
                     </ul>
                 </li>
             </ul>

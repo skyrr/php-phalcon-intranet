@@ -49,7 +49,9 @@
                         <div class="x_panel">
                             <div class="x_content">
                                 {#<embed src="/menu/menu.pdf" width="100%" height="1170" alt="pdf" type='application/pdf'>#}
-                                <iframe id="miiframe" src="http://skyrr.space/menu/menu.pdf" style="width:100%; height:400px;" frameborder="0"></iframe>
+                                <iframe id="miiframe" src="https://drive.google.com/viewerng/viewer?
+url=http://skyrr.space/menu/menu.pdf?
+pid=explorer&efh=false&a=v&chrome=false&embedded=true" style="width:100%; height:400px;" frameborder="0"></iframe>
                             </div>
                         </div>
                     </div>
@@ -61,7 +63,9 @@
                         <div class="x_panel">
                             <div class="x_content" >
                                 {#<embed src="/menu/menu.pdf" width="100%" height="1170" alt="pdf" type='application/pdf'>#}
-                                <iframe id="miiframe" src="http://skyrr.space/menu/menu.pdf" style="width:100%; height:1170px;" frameborder="0"></iframe>
+                                <iframe id="miiframe" src="https://drive.google.com/viewerng/viewer?
+url=http://skyrr.space/menu/menu.pdf?
+pid=explorer&efh=false&a=v&chrome=false&embedded=true" style="width:100%; height:1170px;" frameborder="0"></iframe>
                             </div>
                         </div>
                     </div>

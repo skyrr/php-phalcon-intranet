@@ -15,15 +15,13 @@ class AccountController extends \Phalcon\Mvc\Controller
         $user_id = $this->session->get("user_id");
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
-//        if (!$this->session->has("user_id")) {
-//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-//        }
-//        $tasks = Task::find(["user_id = '$user_id' AND status = 0 AND archive=0",
-//            'order' => 'date DESC', limit => 11]);
-        $tasks = Task::find(["user_id = 5 AND status = 0 AND archive=0",
+        if (!$this->session->has("user_id")) {
+            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
+        }
+        $tasks = Task::find(["user_id = '$user_id' AND status = 0 AND archive=0",
             'order' => 'date DESC', limit => 11]);
         $this->view->tasks = $tasks;
-        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '5'",
+        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
             'order' => 'date DESC', limit => 10]);
         $this->view->usermails = $usermail;
 
@@ -32,7 +30,8 @@ class AccountController extends \Phalcon\Mvc\Controller
     }
     public function afterExecuteRoute()
     {
-        $usermail = Usermail::find(['status_to_recipient = 0 AND recipient_id = 5 AND archive_to_recipient = 0']);
+        $user_id = $this->session->get("user_id");
+        $usermail = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0"]);
         $unreadMessages = count($usermail);
         $this->view->unreadMessages = $unreadMessages;
 

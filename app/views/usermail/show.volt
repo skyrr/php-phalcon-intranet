@@ -29,12 +29,13 @@
         <div class="row">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Message from {{ usermessage.getRecipientById() }}</h2>
+                    <h2>Message with {{ usermessage.getRecipientById() }}</h2>
                     {#<small>User Mail</small>#}
                     <div class="clearfix"></div>
                 </div>
                 {#mail list#}
-                <div class="col-sm-3 mail_list_column">
+
+                <div class="col-md-2 col-sm-2 col-xs-2 mail_list_column">
                     <a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>
 
                     <div align="center">
@@ -46,47 +47,63 @@
                 </div>
                 {#end mail list#}
 
+                {#new message#}
+
+                            <div class="col-md-10 col-sm-10 col-xs-12 mail_list_column pull-right">
+
+                                <form method="post">
+                                    {#{{ partial('printgroup') }}#}
+
+                                    {#<input name="recipient_email" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="recipient">#}
+                                    {#<br/>#}
+
+                                    <input name="responseto" type="hidden" value="{{ usermessage.getId() }}">
+                                    <input name="recipient_id" type="hidden" value="{{ sendto }}">
+                                    <input name="archive_to_recipient" type="hidden" value="0">
+                                    <input name="status_to_recipient" type="hidden" value="0">
+                                    {#<select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">#}
+                                    {#<option value="">recipient..</option>#}
+                                    {#{% for user in userList %}#}
+                                    {#<option value="{{ user.getId() }}">{{ user.getName() }}</option>#}
+                                    {#{% endfor %}#}
+                                    {#</select>#}
+
+                                    {#<span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>#}
+                                    <textarea name="text" class="form-control" rows="5" placeholder=""></textarea>
+                                    <br/>
+                                    <button type="submit" class="btn btn-success pull-right">Reply</button>
+                                </form>
+                            </div>
+
+
+                {#new message#}
+
                 {#read mail#}
-                <div class="col-md-9 col-sm-9 col-xs-12 mail_list_column">
-                    <blockquote>
-                        <p>{{ usermessage.getText() }}</p>
-                        <footer>{{ usermessage.getRecipientById() }}
-                        </footer>
-                    </blockquote>
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            {% for message in usermessages %}
+                                <div class="col-md-12 col-sm-12 col-xs-12 mail_list_column">
+                                    {#<blockquote>#}
+                                    {% if (message.getUserId() == sender_id )%}
+                                        <div class="well col-md-12 col-sm-12 col-xs-12 pull-left"> {{ message.getText() }} </div>
+                                    {% endif %}
+                                    {% if (message.getUserId() ==  recipient_id) %}
+                                        <div class="well col-md-6 col-sm-6 col-xs-6 pull-right">{{ message.getText() }}
+                                        </div>
+                                    {% endif %}
+                                    </blockquote>
+                                </div>
+                            {% endfor %}
+
+                        </td>
+
+                        </tr>
+
+                    </table>
+
                 {#end read mail#}
                 {#<div class="pull-right"></div>#}
-
-
-                {#new message#}
-                <div class="col-md-9 col-sm-9 col-xs-12 mail_list_column">
-
-                    <form method="post">
-                        {{ partial('printgroup') }}
-                        <br/>
-
-                        {#<input name="recipient_email" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="recipient">#}
-                        {#<br/>#}
-
-                        <input name="responseto" type="hidden" value="{{ usermessage.getId() }}">
-                        <input name="recipient_id" type="hidden" value="{{ usermessage.getUserId() }}">
-                        <input name="archive_to_recipient" type="hidden" value="0">
-                        <input name="status_to_recipient" type="hidden" value="0">
-                        {#<select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">#}
-                            {#<option value="">recipient..</option>#}
-                            {#{% for user in userList %}#}
-                                {#<option value="{{ user.getId() }}">{{ user.getName() }}</option>#}
-                            {#{% endfor %}#}
-                        {#</select>#}
-                        <br/>
-                        {#<span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>#}
-                        <textarea name="text" class="form-control" rows="8" placeholder=""></textarea>
-                        <br/>
-                        <button type="submit" class="btn btn-success pull-right">Reply</button>
-                    </form>
-                </div>
-
-                {#new message#}
             </div>
 
         </div>

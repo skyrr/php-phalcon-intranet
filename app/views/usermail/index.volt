@@ -56,7 +56,7 @@
                     </div>
                     <div class="x_content">
                         <div class="row">
-                            <div class="col-sm-3 mail_list_column">
+                            <div class="col-sm-3 mail_list_column" style="overflow-y: scroll; height:400px;">
                                 <a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>
 
                                 <div align="center">
@@ -93,11 +93,11 @@
 
                                                 <td>
                                                     {#gets Recipient Name by Id#}
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getUserById() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
+                                                    <a href="{{ url.get('usermail/'~ usermail.getUserId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getUserById() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
                                                     <br>
                                                 </td>
                                                 <td>
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getText() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
+                                                    <a href="{{ url.get('usermail/'~ usermail.getUserId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getText() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
                                                     <br>
                                                 </td>
                                                 <td>
