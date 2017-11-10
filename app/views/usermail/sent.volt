@@ -47,75 +47,74 @@
         <div class="clearfix"></div>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Inbox</h2>
+                        <h2>Sent</h2>
                         {#<small>User Mail</small>#}
                         <div class="clearfix"></div>
                     </div>
-                    <div class="x_content">
-                        <div class="row">
-                            <div class="col-sm-3 mail_list_column">
-                                <a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>
+                    <!-- MAIL LIST -->
+                    <div class="col-sm-3 col-xs-12">
+                        <a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>
 
-                                <div align="center">
-                                    <input type="text" name="search" id="search" placeholder="Search User" class="form-control" />
-                                </div>
-                                <ul class="list-group" id="result"></ul>
-                                {#{{ json_encoded_from_model }}#}
-                                {{ partial("userlistformail") }}
-                            </div>
-                            <!-- /MAIL LIST -->
-
-                            <!-- CONTENT MAIL -->
-                            <div class="col-sm-9 mail_view">
-                                <div class="inbox-body">
-                                    <div class="mail_heading row">
-                                    </div>
-                                    <table class="table table-hover">
-                                        <thead>
-                                        <tr>
-                                            <th style="width: 1%">#</th>
-                                            <th style="width: 20%">To</th>
-                                            <th style="width: 53%">Text</th>
-                                            <th style="width: 14%">Date</th>
-                                            <th style="width: 13%">Operations</th>                                                                                                                                                                                                                                                                                                 </Operations></th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-
-                                        {% for usermail in usermails %}
-                                            {#<div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendarItem.getDate() }} </b> at <b> {{ calendarItem.getTime() }}</b> for: <b>{{ calendarItem.getTimeShift() }}</b>min.  {{ calendarItem.getComment() }}</a></div>#}
-                                            <tr>
-                                                <td>{% if  usermail.getStatus() == '0' %} {% endif %} {{ usermail.getId() }} {% if  usermail.getStatus() == '0' %}  {% endif %}</td>
-
-                                                <td>
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatus() == '0' %}  {% endif %} {{ usermail.getRecipientById() }}{% if  usermail.getStatus() == '0' %}  {% endif %}</a>
-                                                    <br>
-                                                </td>
-                                                <td>
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}">{% if  usermail.getStatus() == '0' %}  {% endif %} {{ usermail.getText() }}{% if  usermail.getStatus() == '0' %}  {% endif %}</a>
-                                                    <br>
-                                                </td>
-                                                <td>
-                                                    <a>{{ usermail.getDate() }}</a>
-                                                </td>
-                                                <td>
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>
-                                                    <a href="{{ url.get('usermail/'~ usermail.getId() ~'/removefromsent') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>
-                                                </td>
-                                            </tr>
-                                        {% endfor %}
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-                            <!-- /CONTENT MAIL -->
+                        <div align="center">
+                            <input type="text" name="search" id="search" placeholder="Search User" class="form-control" />
                         </div>
+                        <ul class="list-group" id="result"></ul>
+                        {#{{ json_encoded_from_model }}#}
+                        {{ partial("userlistformail") }}
                     </div>
+                    <!-- /MAIL LIST -->
+
+
+                    <!-- CONTENT MAIL -->
+                    <div class="col-sm-9 col-xs-12">
+                        <div class="inbox-body">
+                            <div class="mail_heading row">
+                            </div>
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th style="width: 1%">#</th>
+                                    <th style="width: 20%">To</th>
+                                    <th style="width: 53%">Text</th>
+                                    <th style="width: 14%">Date</th>
+                                    <th style="width: 12%"></th>                                                                                                                                                                                                                                                                                                 </Operations></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                {% for usermail in usermails %}
+                                    {#<div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendarItem.getDate() }} </b> at <b> {{ calendarItem.getTime() }}</b> for: <b>{{ calendarItem.getTimeShift() }}</b>min.  {{ calendarItem.getComment() }}</a></div>#}
+                                    <tr>
+                                        <td>{% if  usermail.getStatus() == '0' %} {% endif %} {{ usermail.getId() }} {% if  usermail.getStatus() == '0' %}  {% endif %}</td>
+
+                                        <td>
+                                            <a href="{{ url.get('usermail/'~ usermail.getUserId() ~'/show') }}">{% if  usermail.getStatus() == '0' %}  {% endif %} {{ usermail.getRecipientById() }}{% if  usermail.getStatus() == '0' %}  {% endif %}</a>
+                                            <br>
+                                        </td>
+                                        <td>
+                                            <a href="{{ url.get('usermail/'~ usermail.getUserId() ~'/show') }}">{% if  usermail.getStatus() == '0' %}  {% endif %} {{ usermail.getText() }}{% if  usermail.getStatus() == '0' %}  {% endif %}</a>
+                                            <br>
+                                        </td>
+                                        <td>
+                                            <a>{{ usermail.getDate() }}</a>
+                                        </td>
+                                        <td>
+                                            <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>
+                                            <a href="{{ url.get('usermail/'~ usermail.getId() ~'/removefromsent') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- /CONTENT MAIL -->
+
                 </div>
             </div>
         </div>

@@ -29,13 +29,13 @@
         <div class="row">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Message with {{ usermessage.getRecipientById() }}</h2>
+                    <h2>Message with {{ usermessage.getName() }}</h2>
                     {#<small>User Mail</small>#}
                     <div class="clearfix"></div>
                 </div>
                 {#mail list#}
 
-                <div class="col-md-2 col-sm-2 col-xs-2 mail_list_column">
+                <div class="col-md-2 col-sm-2 col-xs-12 mail_list_column">
                     <a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>
 
                     <div align="center">
@@ -79,7 +79,7 @@
                 {#new message#}
 
                 {#read mail#}
-                <table>
+                <table class="col-md-10 col-sm-10 col-xs-12">
                     <tr>
                         <td>
                             {% for message in usermessages %}

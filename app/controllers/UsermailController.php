@@ -412,12 +412,13 @@ class UsermailController extends \Phalcon\Mvc\Controller
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
-        $usermessage = Usermail::findfirst($usermailid);
+//        $usermessage = Usermail::findfirst($usermailid);
+        $usermessage = User::findfirst($sender_id);
         $this->view->usermessage = $usermessage;
 
         //        $usermessage = Usermail::findfirst($usermailid);
 //        $this->view->usermessage = $usermessage;
-        $usermessages = Usermail::find(["(recipient_id = $user_id AND user_id = $sender_id AND archive = 0) OR (recipient_id = $sender_id AND user_id = $user_id AND archive = 0)",
+        $usermessages = Usermail::find(["(recipient_id = $user_id AND user_id = $sender_id) OR (recipient_id = $sender_id AND user_id = $user_id AND archive = 0)",
             'order' => 'date DESC']);
         $this->view->usermessages = $usermessages;
         $this->view->recipient_id = $user_id;
