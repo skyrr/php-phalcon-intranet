@@ -19,6 +19,9 @@ class MenuController extends \Phalcon\Mvc\Controller
         if (!$this->session->has("user_id")) {
             return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
         }
+        $user = User::findFirst($user_id);
+        $success = $user->setLastVisit();
+        $user->save();
 
     }
     public function afterExecuteRoute()

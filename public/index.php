@@ -7,6 +7,8 @@ use Phalcon\Di\FactoryDefault;
 use Phalcon\Mvc\Url as UrlProvider;
 use Phalcon\Session\Adapter\Files as Session;
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
+use Phalcon\Http\Response\Cookies;
+use Phalcon\Crypt;
 
 try {
 
@@ -39,6 +41,11 @@ try {
     $router->add("/user/show", [
         "controller" => "user",
         "action" => "show"
+    ]);
+
+    $router->add("/user/lastvisit", [
+        "controller" => "user",
+        "action" => "lastvisit"
     ]);
 
 
@@ -253,6 +260,22 @@ try {
         $session = new Session();
         $session->start();
         return $session;
+    });
+
+    $di->set('crypt', function () {
+        $crypt = new Crypt();
+
+        $crypt->setKey('q1-#1+%&/k5l6&olr$'); // Use your own key!
+
+        return $crypt;
+    });
+
+    $di->setShared('cookies', function () {
+        $cookies = new Cookies();
+
+//        $cookies->useEncryption(true);
+
+        return $cookies;
     });
 
     // Настраиваем компонент View

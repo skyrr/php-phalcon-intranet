@@ -11,12 +11,12 @@ class User extends \Phalcon\Mvc\Model
     public $name;
     public $email;
     public $password;
-    public $is_online;
+    public $last_visit;
 //    protected $selected_account_id;
     public function beforeCreate()
     {
-        if (!$this->is_online) { // use default value if the value is not set
-            $this->is_online = 1;
+        if (!$this->last_visit) { // use default value if the value is not set
+            $this->last_visit = date("Y-m-d H-i-s");
         }
     }
 
@@ -64,6 +64,38 @@ class User extends \Phalcon\Mvc\Model
     {
         return $this->password;
     }
+
+    public function getLastVisit()
+    {
+        return $this->last_visit;
+    }
+
+    public function getLastVisitMinusValue()
+    {
+        //one minute
+        $currentDateTime = date('Y-m-d H-i-s');
+        $lastVisit = $this->last_visit;
+        $currentMin60Sec = date("Y-m-d H-i-s", strtotime("-60 second"));
+////        $dateMinusMinute = date('Y-m-d H-i-s', strtotime($this->last_visit) - 60 * 60 * 6);
+        if ($lastVisit < $currentMin60Sec) {
+            $difference = 0;
+        } else {
+            $difference = 1;
+        }
+//        $timestamp = strtotime($currentDateTime);
+//
+//        $currentDateToInt = strtotime($currentDateTime);
+//        $lastVisitInt = strtotime($lastVisit);
+//        $lvMin60Sec = $lastVisitInt - 60;
+
+        return $difference;
+    }
+
+    public function setLastVisit()
+    {
+        $this->last_visit = date("Y-m-d H-i-s");
+    }
+
 
 //    public function getSelectedAccountId()
 //    {

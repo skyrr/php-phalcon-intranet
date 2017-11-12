@@ -12,12 +12,31 @@ class AccountController extends \Phalcon\Mvc\Controller
 
     public function beforeExecuteRoute()
     {
-        $user_id = $this->session->get("user_id");
-        $this->user = User::findFirst($user_id);
-        $this->view->setVar('user', $this->user);
+        if ($this->cookies->has('remember-me')) {
+            $user_id = (string) $this->cookies->get('remember-me');
+            $this->session->set("user_id", $user_id);
+            $this->view->cookie = (string) $this->cookies->get('remember-me');
+
+        } else {
+
+            echo "no cookie found";
+//            die();
+        }
+
         if (!$this->session->has("user_id")) {
             return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
         }
+
+        $user_id = $this->session->get("user_id");
+        $this->user = User::findFirst($user_id);
+        //store data about last visit
+        $user = User::findFirst($user_id);
+        $success = $user->setLastVisit();
+        $user->save();
+
+        $this->view->setVar('user', $this->user);
+
+
         $tasks = Task::find(["user_id = '$user_id' AND status = 0 AND archive=0",
             'order' => 'date DESC', limit => 11]);
         $this->view->tasks = $tasks;
@@ -44,12 +63,12 @@ class AccountController extends \Phalcon\Mvc\Controller
                                window.document.location = $(this).data("href");});});');
 
 
-
         $user_id = $this->session->get("user_id");
         $user = User::findFirst($user_id);
         $this->view->setVar('user', $user);
         $this->user = $user;
 
+//        $this->cookies->set('remember-me', $user_id, time() + 15 * 86400000,"/");
 
 
         if ($this->request->isPost()) {

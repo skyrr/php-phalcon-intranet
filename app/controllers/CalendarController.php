@@ -19,6 +19,9 @@ class CalendarController extends \Phalcon\Mvc\Controller
         if (!$this->session->has("user_id")) {
             return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
         }
+        $user = User::findFirst($user_id);
+        $success = $user->setLastVisit();
+        $user->save();
 
         $this->assets->addCss('assets/vendors/bootstrap/dist/css/bootstrap.min.css');
         $this->assets->addCss('assets/vendors/font-awesome/css/font-awesome.min.css');

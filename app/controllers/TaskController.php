@@ -26,7 +26,9 @@ class TaskController extends \Phalcon\Mvc\Controller
 //        $this->assets->addCss('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css');
 //        $this->assets->addCss('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css');
 //        $this->assets->addCss('assets/build/css/custom.min.css');
-
+        $user = User::findFirst($user_id);
+        $success = $user->setLastVisit();
+        $user->save();
     }
     public function afterExecuteRoute()
     {

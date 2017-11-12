@@ -29,7 +29,7 @@
         <div class="row">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Message with {{ usermessage.getName() }}</h2>
+                    <h2>Conversation with {{ usermessage.getName() }}</h2>
                     {#<small>User Mail</small>#}
                     <div class="clearfix"></div>
                 </div>
@@ -86,13 +86,15 @@
                                 <div class="col-md-12 col-sm-12 col-xs-12 mail_list_column">
                                     {#<blockquote>#}
                                     {% if (message.getUserId() == sender_id )%}
-                                        <div class="well well-sm col-md-12 col-sm-12 col-xs-12 pull-left"> {{ message.getText() }} </div>
-                                    {% endif %}
-                                    {% if (message.getUserId() ==  recipient_id) %}
-                                        <div class="well well-sm col-md-6 col-sm-6 col-xs-6 pull-right">{{ message.getText() }}
+                                        <div class="col-md-12 col-sm-12 col-xs-12 pull-left">
+                                            <pre class="">{{ message.getText() }}</pre>
                                         </div>
                                     {% endif %}
-                                    </blockquote>
+                                    {% if (message.getUserId() ==  recipient_id) %}
+                                        <div class="col-md-7 col-sm-7 col-xs-7 pull-right">
+                                            <pre class="text-muted bg-primary">{{ message.getText() }}</pre>
+                                        </div>
+                                    {% endif %}
                                 </div>
                             {% endfor %}
 

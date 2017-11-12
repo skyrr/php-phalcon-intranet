@@ -61,9 +61,14 @@
 <script>
     var ajax_call = function() {
         //your jQuery ajax code
+        $.get( "/user/lastvisit", function( data ) {
+            $( ".result" ).html( data );
+//            alert( "Load was performed." );
+        });
     };
 
-    var interval = 1000 * 60 * X; // where X is your every X minutes
+    var interval = 1000 * 10 * 1; // where X is your every X minutes // middle number means seconds
+//    var interval = 1000 * 60 * 1; // where X is your every X minutes
 
     setInterval(ajax_call, interval);
 </script>

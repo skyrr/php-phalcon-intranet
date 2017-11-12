@@ -14,6 +14,18 @@ class UserController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $this->user);
         $unreadMessages = 5;
         $this->view->unreadMessages = $unreadMessages;
+
+        if ($this->cookies->has('remember-me')) {
+            $user_id = (string) $this->cookies->get('remember-me');
+//            $this->session->set("user_id", $user_id);
+            $this->view->cookie = (string) $this->cookies->get('remember-me');
+
+        } else {
+
+            echo "no cookie found";
+//            die();
+        }
+
     }
 
     public function loginAction()
@@ -29,6 +41,7 @@ class UserController extends \Phalcon\Mvc\Controller
             if ($user) {
                 if ($this->security->checkHash($password, $user->password)) {
                     $this->session->set("user_id", $user->getId());
+                    $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
                     return $this->response->redirect();
                 }
             } else {
@@ -53,6 +66,10 @@ class UserController extends \Phalcon\Mvc\Controller
     {
         if ($this->session->has("user_id")) {
             $this->session->destroy();
+            $rememberMeCookie = $this->cookies->get("remember-me");
+
+            // Delete the cookie
+            $rememberMeCookie->delete();
         }
 
         return $this->response->redirect();
@@ -72,6 +89,8 @@ class UserController extends \Phalcon\Mvc\Controller
             $success = $user->create($data);
             if ($success) {
                 $this->session->set("user_id", $user->getId());
+                $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
+
                 return $this->response->redirect("/");
 //                return $this->response->redirect("/account/show");
             } else {
@@ -85,8 +104,13 @@ class UserController extends \Phalcon\Mvc\Controller
         }
     }
 
-    public function showAction()
+    public function lastVisitAction()
     {
+        //store data about last visit
+        $user_id = $this->session->get("user_id");
+        $user = User::findFirst($user_id);
+        $success = $user->setLastVisit();
+        $user->save();
 
     }
 }

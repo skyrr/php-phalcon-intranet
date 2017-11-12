@@ -19,12 +19,16 @@ class UsermailController extends \Phalcon\Mvc\Controller
             return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
         }
 
-        $userList = User::find();
+        $userList = User::find([
+            'order' => 'last_visit DESC']);
         $this->view->userList = $userList;
 
         $recipientid = $this->dispatcher->getParam('recipientid');
         $this->view->recipientid = $recipientid;
 
+        $user = User::findFirst($user_id);
+        $success = $user->setLastVisit();
+        $user->save();
 
     }
 
