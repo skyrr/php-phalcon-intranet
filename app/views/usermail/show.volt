@@ -86,10 +86,10 @@
                                 <div class="col-md-12 col-sm-12 col-xs-12 mail_list_column">
                                     {#<blockquote>#}
                                     {% if (message.getUserId() == sender_id )%}
-                                        <div class="well col-md-12 col-sm-12 col-xs-12 pull-left"> {{ message.getText() }} </div>
+                                        <div class="well well-sm col-md-12 col-sm-12 col-xs-12 pull-left"> {{ message.getText() }} </div>
                                     {% endif %}
                                     {% if (message.getUserId() ==  recipient_id) %}
-                                        <div class="well col-md-6 col-sm-6 col-xs-6 pull-right">{{ message.getText() }}
+                                        <div class="well well-sm col-md-6 col-sm-6 col-xs-6 pull-right">{{ message.getText() }}
                                         </div>
                                     {% endif %}
                                     </blockquote>

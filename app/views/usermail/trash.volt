@@ -69,7 +69,7 @@
                     </div>
                     <!-- /MAIL LIST -->
                     <!-- CONTENT MAIL -->
-                    <div class="col-sm-9 mail_view">
+                    <div class="col-sm-9">
                         <div class="inbox-body">
                             <div class="mail_heading row">
                             </div>
