@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="de3579e6-71d5-4b75-a613-ed17ff88942b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AccountController.php" afterPath="$PROJECT_DIR$/app/controllers/AccountController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/CalendarController.php" afterPath="$PROJECT_DIR$/app/controllers/CalendarController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/MenuController.php" afterPath="$PROJECT_DIR$/app/controllers/MenuController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/TaskController.php" afterPath="$PROJECT_DIR$/app/controllers/TaskController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UserController.php" afterPath="$PROJECT_DIR$/app/controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsermailController.php" afterPath="$PROJECT_DIR$/app/controllers/UsermailController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/show.volt" afterPath="$PROJECT_DIR$/app/views/usermail/show.volt" />
     </list>
     <ignored path="accounting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,10 +58,11 @@
       <file leaf-file-name="UsermailController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            <state relative-caret-position="180">
+              <caret line="416" column="87" selection-start-line="416" selection-start-column="87" selection-end-line="416" selection-end-column="87" />
               <folding>
                 <element signature="n#afterExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
+                <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#trashAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#createAction#0;n#UsermailController#0;n#!!top" expanded="false" />
@@ -74,6 +71,16 @@
                 <element signature="n#removefromsentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#removeforeverAction#0;n#UsermailController#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1411">
+              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,21 +115,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index.volt">
+      <file leaf-file-name="show.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="69" column="99" selection-start-line="69" selection-start-column="99" selection-end-line="69" selection-end-column="99" />
-              <folding />
+            <state relative-caret-position="144">
+              <caret line="31" column="96" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
+              <folding>
+                <marker date="1510589975326" expanded="true" signature="6845:6877" ph="..." />
+                <marker date="1510589975326" expanded="true" signature="8577:8584" ph="×" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
+        <entry file="file://$PROJECT_DIR$/app/views/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2235">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            <state relative-caret-position="321">
+              <caret line="69" column="99" selection-start-line="69" selection-start-column="99" selection-end-line="69" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -175,7 +185,6 @@
         <option value="$PROJECT_DIR$/app/views/partial/bodystart.volt" />
         <option value="$PROJECT_DIR$/app/views/account/index.volt" />
         <option value="$PROJECT_DIR$/app/views/user/login.volt" />
-        <option value="$PROJECT_DIR$/app/views/usermail/show.volt" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/app/views/index.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/index.volt" />
@@ -186,6 +195,7 @@
         <option value="$PROJECT_DIR$/app/controllers/CalendarController.php" />
         <option value="$PROJECT_DIR$/app/controllers/MenuController.php" />
         <option value="$PROJECT_DIR$/app/controllers/TaskController.php" />
+        <option value="$PROJECT_DIR$/app/views/usermail/show.volt" />
         <option value="$PROJECT_DIR$/app/controllers/UsermailController.php" />
       </list>
     </option>
@@ -581,16 +591,16 @@
       <workItem from="1510431580008" duration="12434000" />
       <workItem from="1510500909711" duration="17663000" />
       <workItem from="1510568744977" duration="133000" />
-      <workItem from="1510569440786" duration="3116000" />
+      <workItem from="1510569440786" duration="6543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419704000" />
+    <option name="totallyTimeSpent" value="423131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35856575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -599,7 +609,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28173375" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35758513" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -882,24 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="93" column="78" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
-          <folding>
-            <marker date="1510491402184" expanded="true" signature="6815:6847" ph="..." />
-            <marker date="1510491402184" expanded="true" signature="8547:8554" ph="×" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/usermail/index.volt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -920,14 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
           <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="69" column="99" selection-start-line="69" selection-start-column="99" selection-end-line="69" selection-end-column="99" />
           <folding />
         </state>
       </provider>
@@ -1004,12 +988,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="69" column="99" selection-start-line="69" selection-start-column="99" selection-end-line="69" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1411">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="31" column="96" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
+          <folding>
+            <marker date="1510589975326" expanded="true" signature="6845:6877" ph="..." />
+            <marker date="1510589975326" expanded="true" signature="8577:8584" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="180">
+          <caret line="416" column="87" selection-start-line="416" selection-start-column="87" selection-end-line="416" selection-end-column="87" />
           <folding>
             <element signature="n#afterExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#trashAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#createAction#0;n#UsermailController#0;n#!!top" expanded="false" />

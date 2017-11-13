@@ -410,16 +410,21 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $user);
         $this->user = $user;
 
-        $usermailid = $this->dispatcher->getParam('usermailid');
+        $usermailidforupdate = $this->dispatcher->getParam('usermailid');
         $sender_id = $this->dispatcher->getParam('userid');
-//        $sender_id = 11;
+        $this->view->usermailidforupdate = $usermailidforupdate;
 
-        $usermail = Usermail::findFirst($usermailid);
+        $usermail = Usermail::find(["user_id = '$sender_id' AND status_to_recipient = 0"]);
         if (!$usermail) {
             return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
         }
-        $success = $usermail->setStatusToRecipient(1);
-        $usermail->save();
+        foreach ($usermail as $oneusermail) {
+            $oneusermail->setStatusToRecipient(1);
+
+            $oneusermail->save();
+        }
+//        $success = $usermail->setStatusToRecipient(1);
+//        $usermail->save();
 
 //        $usermail = Usermail::find(["user_id = $user_id AND archive=0"]);
         $usermail = Usermail::find(["user_id = $user_id AND archive = 0",

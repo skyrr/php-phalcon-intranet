@@ -29,7 +29,7 @@
         <div class="row">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Conversation with {{ usermessage.getName() }}</h2>
+                    <h2>Conversation with {{ usermessage.getName() }} and {{ usermailidforupdate }}</h2>
                     {#<small>User Mail</small>#}
                     <div class="clearfix"></div>
                 </div>
