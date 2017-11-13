@@ -29,6 +29,17 @@ class TaskController extends \Phalcon\Mvc\Controller
         $user = User::findFirst($user_id);
         $success = $user->setLastVisit();
         $user->save();
+        if ($this->cookies->has('remember-me')) {
+            $user_id = (string) $this->cookies->get('remember-me');
+            $this->session->set("user_id", $user_id);
+            $this->view->cookie = (string) $this->cookies->get('remember-me');
+
+        } else {
+            $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
+            echo "no cookie found";
+//            die();
+        }
+
     }
     public function afterExecuteRoute()
     {
