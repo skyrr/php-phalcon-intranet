@@ -25,16 +25,16 @@ class AccountController extends \Phalcon\Mvc\Controller
         $success = $user->setLastVisit();
         $user->save();
 
-        if ($this->cookies->has('remember-me')) {
-            $user_id = (string) $this->cookies->get('remember-me');
-            $this->session->set("user_id", $user_id);
-            $this->view->cookie = (string) $this->cookies->get('remember-me');
-
-        } else {
+//        if ($this->cookies->has('remember-me')) {
+//            $user_id = (string) $this->cookies->get('remember-me');
+//            $this->session->set("user_id", $user_id);
+//            $this->view->cookie = (string) $this->cookies->get('remember-me');
+//
+//        } else {
             $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
-            echo "no cookie found";
-//            die();
-        }
+//            echo "no cookie found";
+////            die();
+//        }
         $this->view->setVar('user', $this->user);
 
 

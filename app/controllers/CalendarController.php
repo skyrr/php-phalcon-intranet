@@ -47,16 +47,16 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $user = User::findFirst($user_id);
         $this->view->setVar('user', $user);
         $this->user = $user;
-        if ($this->cookies->has('remember-me')) {
-            $user_id = (string) $this->cookies->get('remember-me');
-            $this->session->set("user_id", $user_id);
-            $this->view->cookie = (string) $this->cookies->get('remember-me');
-
-        } else {
+//        if ($this->cookies->has('remember-me')) {
+//            $user_id = (string) $this->cookies->get('remember-me');
+//            $this->session->set("user_id", $user_id);
+//            $this->view->cookie = (string) $this->cookies->get('remember-me');
+//
+//        } else {
             $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
-            echo "no cookie found";
-//            die();
-        }
+//            echo "no cookie found";
+////            die();
+//        }
 
         // getting calendar items for index
         $today = date("Y-m-d");
