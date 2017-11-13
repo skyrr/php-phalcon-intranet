@@ -31,7 +31,7 @@ class AccountController extends \Phalcon\Mvc\Controller
 //            $this->view->cookie = (string) $this->cookies->get('remember-me');
 //
 //        } else {
-            $this->cookies->set('remember-me', $user_id, time() + 15 * 86400,"/");
+//            $this->cookies->set('remember-me', $user_id, time() + 15 * 86400,"/");
 //            echo "no cookie found";
 ////            die();
 //        }
