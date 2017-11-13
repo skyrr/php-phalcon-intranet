@@ -12,16 +12,7 @@ class AccountController extends \Phalcon\Mvc\Controller
 
     public function beforeExecuteRoute()
     {
-        if ($this->cookies->has('remember-me')) {
-            $user_id = (string) $this->cookies->get('remember-me');
-            $this->session->set("user_id", $user_id);
-            $this->view->cookie = (string) $this->cookies->get('remember-me');
 
-        } else {
-
-            echo "no cookie found";
-//            die();
-        }
 
         if (!$this->session->has("user_id")) {
             return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
@@ -34,6 +25,16 @@ class AccountController extends \Phalcon\Mvc\Controller
         $success = $user->setLastVisit();
         $user->save();
 
+        if ($this->cookies->has('remember-me')) {
+            $user_id = (string) $this->cookies->get('remember-me');
+            $this->session->set("user_id", $user_id);
+            $this->view->cookie = (string) $this->cookies->get('remember-me');
+
+        } else {
+            $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
+            echo "no cookie found";
+//            die();
+        }
         $this->view->setVar('user', $this->user);
 
 
