@@ -20,7 +20,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
         }
 
         $userList = User::find([
-            'order' => 'last_visit DESC']);
+            'order' => 'id ASC']);
         $this->view->userList = $userList;
 
         $recipientid = $this->dispatcher->getParam('recipientid');

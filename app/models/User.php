@@ -75,9 +75,11 @@ class User extends \Phalcon\Mvc\Model
         //one minute
         $currentDateTime = date('Y-m-d H-i-s');
         $lastVisit = $this->last_visit;
-        $currentMin60Sec = date("Y-m-d H-i-s", strtotime("-60 second"));
+//        $currentMin60Sec = date("Y-m-d H-i-s", strtotime('-1 minute'));
+        $today_time = strtotime($lastVisit);
+        $expire_time = strtotime("now") - 20;
 ////        $dateMinusMinute = date('Y-m-d H-i-s', strtotime($this->last_visit) - 60 * 60 * 6);
-        if ($lastVisit < $currentMin60Sec) {
+        if ($today_time < $expire_time) {
             $difference = 0;
         } else {
             $difference = 1;

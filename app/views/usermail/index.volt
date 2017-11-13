@@ -91,7 +91,7 @@
                                 {#<div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendarItem.getDate() }} </b> at <b> {{ calendarItem.getTime() }}</b> for: <b>{{ calendarItem.getTimeShift() }}</b>min.  {{ calendarItem.getComment() }}</a></div>#}
                                 <tr>
                                     {#id displayed#}
-                                    <td>{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getUserId() }} {% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</td>
+                                    <td>{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getId() }} {% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</td>
 
                                     <td>
                                         {#gets Recipient Name by Id#}
