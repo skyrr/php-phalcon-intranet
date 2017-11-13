@@ -41,7 +41,7 @@ class UserController extends \Phalcon\Mvc\Controller
             if ($user) {
                 if ($this->security->checkHash($password, $user->password)) {
                     $this->session->set("user_id", $user->getId());
-                    $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
+//                    $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
                     return $this->response->redirect();
                 }
             } else {
@@ -89,7 +89,7 @@ class UserController extends \Phalcon\Mvc\Controller
             $success = $user->create($data);
             if ($success) {
                 $this->session->set("user_id", $user->getId());
-                $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
+//                $this->cookies->set('remember-me', $user->getId(), time() + 15 * 86400,"/");
 
                 return $this->response->redirect("/");
 //                return $this->response->redirect("/account/show");
