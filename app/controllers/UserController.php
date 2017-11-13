@@ -15,16 +15,16 @@ class UserController extends \Phalcon\Mvc\Controller
         $unreadMessages = 5;
         $this->view->unreadMessages = $unreadMessages;
 
-        if ($this->cookies->has('remember-me')) {
-            $user_id = (string) $this->cookies->get('remember-me');
+//        if ($this->cookies->has('remember-me')) {
+//            $user_id = (string) $this->cookies->get('remember-me');
 //            $this->session->set("user_id", $user_id);
-            $this->view->cookie = (string) $this->cookies->get('remember-me');
-
-        } else {
-
-            echo "no cookie found";
-//            die();
-        }
+//            $this->view->cookie = (string) $this->cookies->get('remember-me');
+//
+//        } else {
+        $this->cookies->set('remember-me', $user_id, time() + 15 * 86400,"/");
+//            echo "no cookie found";
+////            die();
+//        }
 
     }
 
