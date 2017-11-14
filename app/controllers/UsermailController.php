@@ -12,6 +12,8 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
     public function beforeExecuteRoute()
     {
+        $this->assets->addJs('assets/build/js/custom1.js');
+
         $user_id = $this->session->get("user_id");
         $this->user = User::findFirst($user_id);
         $this->view->setVar('user', $this->user);
@@ -19,7 +21,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
             return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
         }
 
-        $userList = User::find([
+        $userList = User::find(["id > 0",
             'order' => 'id ASC']);
         $this->view->userList = $userList;
 
@@ -327,6 +329,52 @@ class UsermailController extends \Phalcon\Mvc\Controller
             $success = $usermail->create($data);
             if ($success) {
                 return $this->response->redirect("usermail/create");
+            } else {
+                $this->view->setVar("error", "Wrong password or email");
+                $messages = $user->getMessages();
+                if ($messages) {
+                    foreach ($messages as $message) {
+                        $this->flash->error($message);
+                    }
+                }
+            }
+        }
+        //$this->view->user_id = $user_id;
+    }
+
+    public function createmultiAction()
+    {
+        $user_id = $this->session->get("user_id");
+        $user = User::findFirst($user_id);
+        $this->view->setVar('user', $user);
+        $this->user = $user;
+
+        $created_at = date("Y-m-d");
+
+        if ($this->request->isPost()) {
+            $data = $this->request->getPost();
+//            $text = $this->request->getPost("text");
+//            $subject = $this->request->getPost("subject");
+//            $recipient = $this->request->getPost("recipient");
+//            $recipient = User::findFirst($recipient);
+//            $user_id = 5;
+//            $recipient_id = 8;
+//            $status = 1;
+//            $priority = 1;
+
+            $usermail = new Usermail([
+                'user_id' => $user_id,
+//                'recipient_id' => $recipient_id,
+//                'text' => $text,
+//                'subject' => $subject,
+//                'status' => $status,
+//                'priority' => $priority,
+//                'created_at' => $created_at,
+            ]);
+            $usermail->priority = '111';
+            $success = $usermail->create($data);
+            if ($success) {
+                return $this->response->redirect("usermail/createmulti");
             } else {
                 $this->view->setVar("error", "Wrong password or email");
                 $messages = $user->getMessages();

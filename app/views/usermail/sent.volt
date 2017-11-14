@@ -56,7 +56,7 @@
                     </div>
                     <!-- MAIL LIST -->
                     <div class="col-sm-3 col-xs-12">
-                        <a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>
+                        {#<a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>#}
 
                         <div align="center">
                             <input type="text" name="search" id="search" placeholder="Search User" class="form-control" />
