@@ -40,6 +40,11 @@ class UsermailController extends \Phalcon\Mvc\Controller
 ////            die();
 //        }
 
+        $usermailforall = Usermail::find(["recipient_id = '-1' AND archive<>1",
+            'order' => 'date DESC', limit => 6]);
+        $this->view->usermailforall = $usermailforall;
+
+
     }
 
     public function afterExecuteRoute()
@@ -146,7 +151,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
 //        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
 //        'order' => 'date DESC']);
-        $usermail = Usermail::find(["archive = 0 AND user_id = '$user_id'",
+        $usermail = Usermail::find(["archive = 0 AND user_id = '$user_id' AND recipient_id<>-1",
             'order' => 'date DESC']);
         $this->view->usermails = $usermail;
 
@@ -321,7 +326,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
             $usermail->priority = '111';
             $success = $usermail->create($data);
             if ($success) {
-                return $this->response->redirect("usermail/index");
+                return $this->response->redirect("usermail/create");
             } else {
                 $this->view->setVar("error", "Wrong password or email");
                 $messages = $user->getMessages();
@@ -373,6 +378,20 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
         $usermail->save();
         return $this->response->redirect("usermail/index");
+    }
+
+    public function removeFromMessageToAllAction()
+    {
+        $usermail_id = $this->dispatcher->getParam('usermailid');
+        $usermail = Usermail::findFirst($usermail_id);
+        if (!$usermail) {
+            return $this->dispatcher->forward(['controller' => 'exception', 'action' => 'notFound']);
+        }
+
+        $success = $usermail->setArchive(1);
+
+        $usermail->save();
+        return $this->response->redirect("usermail/create");
     }
 
     public function removefromsentAction()

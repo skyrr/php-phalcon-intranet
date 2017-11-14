@@ -52,7 +52,11 @@ class User extends \Phalcon\Mvc\Model
 
     public function getName()
     {
-        return $this->name;
+        if ($this->name == -1) {
+            return "admin";
+        } else {
+            return $this->name;
+        }
     }
 
     public function getEmail()

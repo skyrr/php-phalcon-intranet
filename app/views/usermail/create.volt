@@ -29,7 +29,8 @@
         <div class="row">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>New message</h2>
+                    <h2>New message
+                        <small>(will appear on the main page)</small></h2>
                     {#<small>User Mail</small>#}
                     <div class="clearfix"></div>
                 </div>
@@ -52,24 +53,73 @@
                                     {#<input name="recipient_email" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="recipient">#}
                                     {#<br/>#}
 
-                                    <select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">
-                                        <option value="">recipient..</option>
-                                        {% for user in userList %}
+                                    {#<select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">#}
+                                        {#<option value="">recipient..</option>#}
+                                        {#{% for user in userList %}#}
                                             {#selected=""#}
-                                            <option value="{{ user.getId() }}" {% if recipientid == user.getId()%} selected {% endif %}>{{ user.getName() }}</option>
-                                        {% endfor %}
-                                    </select>
-                                    <br/>
+                                            {#<option value="{{ user.getId() }}" {% if recipientid == user.getId()%} selected {% endif %}>{{ user.getName() }}</option>#}
+                                        {#{% endfor %}#}
+                                    {#</select>#}
+                                    <input type="hidden" value="-1" name="recipient_id">
+                                    {#<br/>#}
                                     <input name="archive_to_recipient" type="hidden" value="0">
                                     <input name="status_to_recipient" type="hidden" value="0">
                                     <input name="responseto" type="hidden" value="0">
-                                    <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
-                                    <input name="subject" type="text" class="form-control" placeholder="subject">
-                                    <br/>
-                                    <textarea name="text" class="form-control" rows="10" placeholder=""></textarea>
+                                    {#<span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>#}
+                                    {#<input name="subject" type="text" class="form-control" placeholder="subject">#}
+                                    {#<br/>#}
+                                    <textarea name="text" class="form-control" rows="5" placeholder=""></textarea>
                                     <br/>
                                     <button type="submit" class="btn btn-success pull-right">Send</button>
                                 </form>
+                    <!-- CONTENT MAIL -->
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="inbox-body">
+                            <div class="mail_heading row">
+                            </div>
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th style="width: 1%">#</th>
+                                    <th style="width: 20%">From</th>
+                                    <th style="width: 53%">Text</th>
+                                    <th style="width: 14%">Date</th>
+                                    <th style="width: 12%"></th>                                                                                                                                                                                                                                                                                                 </Operations></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                {% for usermail in usermailforall %}
+                                    {#<div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendarItem.getDate() }} </b> at <b> {{ calendarItem.getTime() }}</b> for: <b>{{ calendarItem.getTimeShift() }}</b>min.  {{ calendarItem.getComment() }}</a></div>#}
+                                    <tr>
+                                        {#id displayed#}
+                                        <td>{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getId() }} {% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</td>
+
+                                        <td>
+                                            {#gets Recipient Name by Id#}
+                                            <a href="{{ url.get('usermail/'~ usermail.getUserId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getUserById() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
+                                            <br>
+                                        </td>
+                                        <td>
+                                            <a href="{{ url.get('usermail/'~ usermail.getUserId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getText() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
+                                            <br>
+                                        </td>
+                                        <td>
+                                            <a>{{ usermail.getDate() }}</a>
+                                        </td>
+                                        <td>
+                                            <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>
+                                            <a href="{{ url.get('usermail/'~ usermail.getId() ~'/removeFromMessageToAll') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /CONTENT MAIL -->
+
                 </div>
 
                 {#new message#}
@@ -79,6 +129,7 @@
         </div>
     </div>
 </div>
+
 
 
 <!-- footer content -->

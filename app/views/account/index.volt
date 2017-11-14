@@ -44,26 +44,28 @@
 
                                             <table class="countries_list">
                                                 <tbody>
+                                                {% for usermail in usermailforall %}
                                                 <tr>
-                                                    <td>Message 1</td>
-                                                    <td class="fs15 fw700 text-right">33%</td>
+                                                    <td>{{ usermail.getText() }} </td>
+                                                    {#<td class="fs15 fw700 text-right">33%</td>#}
                                                 </tr>
-                                                <tr>
-                                                    <td>Message 2</td>
-                                                    <td class="fs15 fw700 text-right">27%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Message 3</td>
-                                                    <td class="fs15 fw700 text-right">16%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Message 4</td>
-                                                    <td class="fs15 fw700 text-right">11%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Message 5</td>
-                                                    <td class="fs15 fw700 text-right">10%</td>
-                                                </tr>
+                                                {% endfor %}
+                                                {#<tr>#}
+                                                    {#<td>Message 2</td>#}
+                                                    {#<td class="fs15 fw700 text-right">27%</td>#}
+                                                {#</tr>#}
+                                                {#<tr>#}
+                                                    {#<td>Message 3</td>#}
+                                                    {#<td class="fs15 fw700 text-right">16%</td>#}
+                                                {#</tr>#}
+                                                {#<tr>#}
+                                                    {#<td>Message 4</td>#}
+                                                    {#<td class="fs15 fw700 text-right">11%</td>#}
+                                                {#</tr>#}
+                                                {#<tr>#}
+                                                    {#<td>Message 5</td>#}
+                                                    {#<td class="fs15 fw700 text-right">10%</td>#}
+                                                {#</tr>#}
                                                 </tbody>
                                             </table>
                                         </div>

@@ -130,6 +130,11 @@ try {
         "action" => "removefromsent"
     ]);
 
+    $router->add("/usermail/{usermailid}/removeFromMessageToAll", [
+        "controller" => "usermail",
+        "action" => "removeFromMessageToAll"
+    ]);
+
     $router->add("/usermail/{usermailid}/removeforever", [
         "controller" => "usermail",
         "action" => "removeforever"
