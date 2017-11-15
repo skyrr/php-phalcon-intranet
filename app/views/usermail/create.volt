@@ -97,15 +97,15 @@
 
                                         <td>
                                             {#gets Recipient Name by Id#}
-                                            <a href="{{ url.get('usermail/'~ usermail.getUserId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getUserById() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
+                                            {% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getUserById() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}
                                             <br>
                                         </td>
                                         <td>
-                                            <a href="{{ url.get('usermail/'~ usermail.getUserId() ~'/show') }}">{% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getText() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}</a>
+                                            {% if  usermail.getStatusToRecipient() == '0' %} <strong> {% endif %} {{ usermail.getText() }}{% if  usermail.getStatusToRecipient() == '0' %} </strong> {% endif %}
                                             <br>
                                         </td>
                                         <td>
-                                            <a>{{ usermail.getDate() }}</a>
+                                            {{ usermail.getDate() }}
                                         </td>
                                         <td>
                                             <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>
