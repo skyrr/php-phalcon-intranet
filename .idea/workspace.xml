@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3579e6-71d5-4b75-a613-ed17ff88942b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/GroupmailController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Groupmail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AccountController.php" afterPath="$PROJECT_DIR$/app/controllers/AccountController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsermailController.php" afterPath="$PROJECT_DIR$/app/controllers/UsermailController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/index.volt" afterPath="$PROJECT_DIR$/app/views/usermail/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/sent.volt" afterPath="$PROJECT_DIR$/app/views/usermail/sent.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/trash.volt" afterPath="$PROJECT_DIR$/app/views/usermail/trash.volt" />
     </list>
     <ignored path="accounting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,13 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UsermailController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UsermailController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="324" column="38" selection-start-line="324" selection-start-column="38" selection-end-line="324" selection-end-column="38" />
+            <state relative-caret-position="198">
+              <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
               <folding>
-                <element signature="n#beforeExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#afterExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
@@ -118,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trash.volt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="trash.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/usermail/trash.volt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -128,12 +123,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+              <folding>
+                <element signature="n#afterExecuteRoute#0;n#AccountController#0;n#!!top" expanded="false" />
+                <element signature="n#indexAction#0;n#AccountController#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +189,6 @@
         <option value="$PROJECT_DIR$/app/views/account/index.volt" />
         <option value="$PROJECT_DIR$/app/models/Usermail.php" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
-        <option value="$PROJECT_DIR$/app/controllers/AccountController.php" />
         <option value="$PROJECT_DIR$/app/views/partial/sidebar.volt" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/public/assets/build/js/custom1.js" />
@@ -202,11 +199,12 @@
         <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/views/usermail/create.volt" />
         <option value="$PROJECT_DIR$/app/controllers/GroupmailController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/UsermailController.php" />
         <option value="$PROJECT_DIR$/app/models/Groupmail.php" />
         <option value="$PROJECT_DIR$/app/views/usermail/index.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/sent.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/trash.volt" />
+        <option value="$PROJECT_DIR$/app/controllers/AccountController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/UsermailController.php" />
       </list>
     </option>
   </component>
@@ -541,12 +539,12 @@
       <workItem from="1510568744977" duration="133000" />
       <workItem from="1510569440786" duration="7178000" />
       <workItem from="1510649538612" duration="13192000" />
-      <workItem from="1510734322438" duration="3518000" />
+      <workItem from="1510734322438" duration="3879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="440476000" />
+    <option name="totallyTimeSpent" value="440837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -840,18 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="n#beforeExecuteRoute#0;n#AccountController#0;n#!!top" expanded="false" />
-            <element signature="n#afterExecuteRoute#0;n#AccountController#0;n#!!top" expanded="false" />
-            <element signature="n#indexAction#0;n#AccountController#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/CalendarController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -935,27 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="324" column="38" selection-start-line="324" selection-start-column="38" selection-end-line="324" selection-end-column="38" />
-          <folding>
-            <element signature="n#beforeExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#afterExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#trashAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#createmultiAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#editAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#removefrominboxAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#removeFromMessageToAllAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#removefromsentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#removeforeverAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#showAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/usermail/create.volt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -999,6 +964,37 @@
         <state relative-caret-position="216">
           <caret line="105" column="51" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding>
+            <element signature="n#afterExecuteRoute#0;n#AccountController#0;n#!!top" expanded="false" />
+            <element signature="n#indexAction#0;n#AccountController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+          <folding>
+            <element signature="n#afterExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#trashAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#createmultiAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#editAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#removefrominboxAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#removeFromMessageToAllAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#removefromsentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#removeforeverAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#showAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

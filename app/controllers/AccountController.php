@@ -45,8 +45,8 @@ class AccountController extends \Phalcon\Mvc\Controller
             'order' => 'date DESC', limit => 10]);
         $this->view->usermails = $usermail;
 
-        $usermailforall = Usermail::find(["recipient_id = '-1' AND archive<>1",
-            'order' => 'date DESC', limit => 6]);
+        $usermailforall = Groupmail::find([
+            'order' => 'created_at DESC', limit => 6]);
         $this->view->usermailforall = $usermailforall;
 
 

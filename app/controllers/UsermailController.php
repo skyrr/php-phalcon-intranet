@@ -42,8 +42,8 @@ class UsermailController extends \Phalcon\Mvc\Controller
 ////            die();
 //        }
 
-        $usermailforall = Usermail::find(["recipient_id = '-1' AND archive<>1",
-            'order' => 'date DESC', limit => 6]);
+        $usermailforall = Groupmail::find(["user_id = $user_id",
+            'order' => 'created_at DESC', limit => 6]);
         $this->view->usermailforall = $usermailforall;
 
 
