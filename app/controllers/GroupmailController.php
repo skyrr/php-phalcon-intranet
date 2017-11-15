@@ -5,7 +5,7 @@
  * Date: 18.08.16
  * Time: 11:33
  */
-class UsermailController extends \Phalcon\Mvc\Controller
+class GroupmailController extends \Phalcon\Mvc\Controller
 {
     protected $user;
     protected $account;
@@ -303,6 +303,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $this->view->setVar('user', $user);
         $this->user = $user;
 
+        $created_at = date("Y-m-d");
 
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
@@ -315,7 +316,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //            $status = 1;
 //            $priority = 1;
 
-            $usermail = new Groupmail([
+            $usermail = new Usermail([
                 'user_id' => $user_id,
 //                'recipient_id' => $recipient_id,
 //                'text' => $text,
@@ -324,8 +325,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //                'priority' => $priority,
 //                'created_at' => $created_at,
             ]);
-            $created_at = date("Y-m-d");
-            $usermail->created_at = $created_at;
+            $usermail->priority = '111';
             $success = $usermail->create($data);
             if ($success) {
                 return $this->response->redirect("usermail/create");

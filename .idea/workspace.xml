@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3579e6-71d5-4b75-a613-ed17ff88942b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/GroupmailController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Groupmail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/create.volt" afterPath="$PROJECT_DIR$/app/views/usermail/create.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsermailController.php" afterPath="$PROJECT_DIR$/app/controllers/UsermailController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/index.volt" afterPath="$PROJECT_DIR$/app/views/usermail/index.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/sent.volt" afterPath="$PROJECT_DIR$/app/views/usermail/sent.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/trash.volt" afterPath="$PROJECT_DIR$/app/views/usermail/trash.volt" />
     </list>
     <ignored path="accounting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,19 +32,19 @@
       <file leaf-file-name="UsermailController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="344" column="39" selection-start-line="344" selection-start-column="39" selection-end-line="344" selection-end-column="39" />
+            <state relative-caret-position="253">
+              <caret line="324" column="38" selection-start-line="324" selection-start-column="38" selection-end-line="324" selection-end-column="38" />
               <folding>
                 <element signature="n#beforeExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#afterExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#trashAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#createAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#createmultiAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#editAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#removefrominboxAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#removeFromMessageToAllAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+                <element signature="n#removefromsentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#removeforeverAction#0;n#UsermailController#0;n#!!top" expanded="false" />
                 <element signature="n#showAction#0;n#UsermailController#0;n#!!top" expanded="false" />
               </folding>
@@ -47,39 +52,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/build/js/custom1.js">
+      <file leaf-file-name="Groupmail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Groupmail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="234">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createmulti.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/usermail/createmulti.volt">
+      <file leaf-file-name="GroupmailController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/GroupmailController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <marker date="1510672328359" expanded="true" signature="9371:9403" ph="..." />
-                <marker date="1510672328359" expanded="true" signature="11103:11110" ph="×" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.volt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Usermail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Usermail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="84" column="53" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/usermail/create.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="107" column="68" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="68" />
+            <state relative-caret-position="324">
+              <caret line="111" column="59" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
               <folding>
-                <marker date="1510735262997" expanded="true" signature="9229:9261" ph="..." />
-                <marker date="1510735262997" expanded="true" signature="10961:10968" ph="×" />
+                <marker date="1510735467423" expanded="true" signature="9233:9265" ph="..." />
+                <marker date="1510735467423" expanded="true" signature="10965:10972" ph="×" />
               </folding>
             </state>
           </provider>
@@ -88,8 +98,8 @@
       <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/usermail/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1116">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="224">
+              <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -98,7 +108,7 @@
       <file leaf-file-name="show.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
+            <state relative-caret-position="-2970">
               <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <marker date="1510672367884" expanded="true" signature="6849:6881" ph="..." />
@@ -108,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trash.volt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trash.volt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/usermail/trash.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="105" column="51" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -131,18 +141,8 @@
       <file leaf-file-name="sent.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/usermail/sent.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1062">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userlistformailmulti.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partial/userlistformailmulti.volt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="216">
+              <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -156,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/messages/index.volt" />
-        <option value="$PROJECT_DIR$/app/views/partial/accountindexscript.volt" />
         <option value="$PROJECT_DIR$/app/controllers/TransactionController.php" />
         <option value="$PROJECT_DIR$/app/views/menu/show.volt" />
         <option value="$PROJECT_DIR$/app/views/account/show.volt" />
@@ -196,17 +194,19 @@
         <option value="$PROJECT_DIR$/app/controllers/AccountController.php" />
         <option value="$PROJECT_DIR$/app/views/partial/sidebar.volt" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/app/controllers/UsermailController.php" />
         <option value="$PROJECT_DIR$/public/assets/build/js/custom1.js" />
         <option value="$PROJECT_DIR$/app/views/index.volt" />
         <option value="$PROJECT_DIR$/app/views/partial/userlistformailmulti.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/createmulti.volt" />
-        <option value="$PROJECT_DIR$/app/views/usermail/index.volt" />
-        <option value="$PROJECT_DIR$/app/views/usermail/sent.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/show.volt" />
-        <option value="$PROJECT_DIR$/app/views/usermail/trash.volt" />
         <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/views/usermail/create.volt" />
+        <option value="$PROJECT_DIR$/app/controllers/GroupmailController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/UsermailController.php" />
+        <option value="$PROJECT_DIR$/app/models/Groupmail.php" />
+        <option value="$PROJECT_DIR$/app/views/usermail/index.volt" />
+        <option value="$PROJECT_DIR$/app/views/usermail/sent.volt" />
+        <option value="$PROJECT_DIR$/app/views/usermail/trash.volt" />
       </list>
     </option>
   </component>
@@ -406,25 +406,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partial" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,18 +437,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/partial" />
-      <recent name="$PROJECT_DIR$/app/views/usermail" />
-      <recent name="$PROJECT_DIR$/public/assets/fonts" />
-      <recent name="$PROJECT_DIR$/public/assets/img" />
-      <recent name="$PROJECT_DIR$/public/assets/build/css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/user" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/controllers" />
+      <recent name="$PROJECT_DIR$/app/models" />
+      <recent name="$PROJECT_DIR$/app/views/partial" />
+      <recent name="$PROJECT_DIR$/app/views/usermail" />
+      <recent name="$PROJECT_DIR$/public/assets/fonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -559,16 +541,16 @@
       <workItem from="1510568744977" duration="133000" />
       <workItem from="1510569440786" duration="7178000" />
       <workItem from="1510649538612" duration="13192000" />
-      <workItem from="1510734322438" duration="1084000" />
+      <workItem from="1510734322438" duration="3518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="438042000" />
+    <option name="totallyTimeSpent" value="440476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37131473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -576,7 +558,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27244583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27244583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -609,24 +591,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/partial/printgroup.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/header.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -634,6 +603,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-715">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,6 +611,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-409">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -648,6 +619,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1422">
           <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -838,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Usermail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="84" column="53" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
@@ -900,7 +865,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -930,41 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <marker date="1510672367884" expanded="true" signature="6849:6881" ph="..." />
-            <marker date="1510672367884" expanded="true" signature="8581:8588" ph="×" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/trash.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/sent.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partial/userlistformailmulti.volt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -981,21 +911,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/GroupmailController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Usermail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="84" column="53" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Groupmail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="344" column="39" selection-start-line="344" selection-start-column="39" selection-end-line="344" selection-end-column="39" />
+        <state relative-caret-position="253">
+          <caret line="324" column="38" selection-start-line="324" selection-start-column="38" selection-end-line="324" selection-end-column="38" />
           <folding>
             <element signature="n#beforeExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#afterExecuteRoute#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#trashAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#createAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#createmultiAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#editAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#removefrominboxAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#removeFromMessageToAllAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#removefromsentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#removeforeverAction#0;n#UsermailController#0;n#!!top" expanded="false" />
             <element signature="n#showAction#0;n#UsermailController#0;n#!!top" expanded="false" />
           </folding>
@@ -1004,12 +958,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/usermail/create.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="107" column="68" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="68" />
+        <state relative-caret-position="324">
+          <caret line="111" column="59" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
           <folding>
-            <marker date="1510735262997" expanded="true" signature="9229:9261" ph="..." />
-            <marker date="1510735262997" expanded="true" signature="10961:10968" ph="×" />
+            <marker date="1510735467423" expanded="true" signature="9233:9265" ph="..." />
+            <marker date="1510735467423" expanded="true" signature="10965:10972" ph="×" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/sent.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2970">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1510672367884" expanded="true" signature="6849:6881" ph="..." />
+            <marker date="1510672367884" expanded="true" signature="8581:8588" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/trash.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="105" column="51" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>

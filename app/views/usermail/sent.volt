@@ -103,7 +103,7 @@
                                             <a>{{ usermail.getDate() }}</a>
                                         </td>
                                         <td>
-                                            <a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>
+                                            {#<a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>#}
                                             <a href="{{ url.get('usermail/'~ usermail.getId() ~'/removefromsent') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>
                                         </td>
                                     </tr>
