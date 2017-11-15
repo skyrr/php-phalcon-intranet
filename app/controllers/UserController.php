@@ -49,12 +49,12 @@ class UserController extends \Phalcon\Mvc\Controller
                 $this->view->setVar("error", "Wrong password or email");
                 $error1 = 1;
                 $this->view->error1 = $error1;
-                $messages = $user->getMessages();
-                if ($messages) {
-                    foreach ($messages as $message) {
-                        $this->flash->error($message);
-                    }
-                }
+//                $messages = $user->getMessages();
+//                if ($messages) {
+//                    foreach ($messages as $message) {
+//                        $this->flash->error($message);
+//                    }
+//                }
 
 //                $this->view->setVar("error", "Wrong password or email");
 
