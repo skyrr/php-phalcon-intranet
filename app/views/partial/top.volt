@@ -31,7 +31,7 @@
                     <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                         {% for usermailt in usermailtotop %}
                         <li>
-                            <a href="{{ url.get('usermail/'~ usermailt.getId() ~'/show') }}">
+                            <a href="{{ url.get('usermail/'~ usermailt.getUserId() ~'/show') }}">
                                 <span>
                           <span>{{ usermailt.getUserById() }}</span>
                           <span class="time">{{ usermailt.getDate() }} </span>

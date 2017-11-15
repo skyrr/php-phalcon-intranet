@@ -49,6 +49,8 @@ class AccountController extends \Phalcon\Mvc\Controller
             'order' => 'created_at DESC', limit => 6]);
         $this->view->usermailforall = $usermailforall;
 
+        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", limit =>4, order => 'date DESC',]);
+        $this->view->usermailtotop = $usermailtotop;
 
 
     }

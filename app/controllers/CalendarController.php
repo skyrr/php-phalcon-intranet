@@ -106,6 +106,9 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $this->view->todayHMList = $todayHMList;
         $this->view->calendarsFutureList = $calendarsFutureList;
 
+        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", limit =>4, order => 'date DESC',]);
+        $this->view->usermailtotop = $usermailtotop;
+
 
     }
     public function afterExecuteRoute()
