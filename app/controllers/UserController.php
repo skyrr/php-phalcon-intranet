@@ -113,4 +113,9 @@ class UserController extends \Phalcon\Mvc\Controller
         $user->save();
 
     }
+
+    public function showAction()
+    {
+
+    }
 }
