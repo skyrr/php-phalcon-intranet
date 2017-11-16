@@ -48,6 +48,11 @@ try {
         "action" => "lastvisit"
     ]);
 
+    $router->add("/user/getnotification", [
+        "controller" => "user",
+        "action" => "getnotification"
+    ]);
+
 
 //    $router->add("/transactions", [
 //        "controller" => "transaction",

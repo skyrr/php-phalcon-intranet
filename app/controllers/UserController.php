@@ -5,6 +5,9 @@
  * Date: 18.08.16
  * Time: 11:28
  */
+use Phalcon\Http\Response;
+use Phalcon\Mvc\Controller;
+
 class UserController extends \Phalcon\Mvc\Controller
 {
     public function beforeExecuteRoute()
@@ -25,6 +28,13 @@ class UserController extends \Phalcon\Mvc\Controller
 //            echo "no cookie found";
 ////            die();
 //        }
+        $user_id = $this->session->get("user_id");
+        $usermail = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0"]);
+        $unreadMessages = count($usermail);
+        $this->view->unreadMessages = $unreadMessages;
+
+        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", 'limit' =>4, 'order' => 'date DESC',]);
+        $this->view->usermailtotop = $usermailtotop;
 
     }
 
@@ -117,5 +127,50 @@ class UserController extends \Phalcon\Mvc\Controller
     public function showAction()
     {
 
+    }
+
+    public function getnotificationAction()
+    {
+        $user_id = $this->session->get("user_id");
+        $newmail = Newmail::find(["user_id = '$user_id'",
+        ]);
+        $cnt = count($newmail );
+        if ($cnt == 0) {
+            $response = new Response();
+            $response->setStatusCode(200, "OK");
+            // Set the content of the response
+            $response->setContent("from else");
+//            $response->send();
+
+            return $response;
+        } else {
+            $response = new Response();
+            $response->setStatusCode(200, "OK");
+            // Set the content of the response
+            foreach ($newmail as $newmailone ) {
+                $newmailone->delete();
+            };
+            $response->setContent("You have $cnt unread messages!");
+//            $response->send();
+            unset($newmail);
+            return $response;
+        }
+//        $response = new Response();
+//
+//
+//
+//        // Return the response
+//        return $response;
+        // Getting a response instance
+//        $response = new Response();
+//
+//// Set status code
+//        $response->setStatusCode(200, "OK");
+//
+//// Set the content of the response
+//        $response->setContent("Good job");
+//
+//// Send response to the client
+//        $response->send();
     }
 }

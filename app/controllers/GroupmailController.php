@@ -43,7 +43,7 @@ class GroupmailController extends \Phalcon\Mvc\Controller
 //        }
 
         $usermailforall = Usermail::find(["recipient_id = '-1' AND archive<>1",
-            'order' => 'date DESC', limit => 6]);
+            'order' => 'date DESC', 'limit' => 6]);
         $this->view->usermailforall = $usermailforall;
 
 
@@ -56,7 +56,7 @@ class GroupmailController extends \Phalcon\Mvc\Controller
         $unreadMessages = count($usermail);
         $this->view->unreadMessages = $unreadMessages;
 
-        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", limit =>4, order => 'date DESC',]);
+        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", 'limit' =>4, 'order' => 'date DESC',]);
         $this->view->usermailtotop = $usermailtotop;
     }
 

@@ -43,7 +43,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //        }
 
         $usermailforall = Groupmail::find(["user_id = $user_id",
-            'order' => 'created_at DESC', limit => 6]);
+            'order' => 'created_at DESC', 'limit' => 6]);
         $this->view->usermailforall = $usermailforall;
 
 
@@ -56,7 +56,7 @@ class UsermailController extends \Phalcon\Mvc\Controller
         $unreadMessages = count($usermail);
         $this->view->unreadMessages = $unreadMessages;
 
-        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", limit =>4, order => 'date DESC',]);
+        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", 'limit' =>4, 'order' => 'date DESC',]);
         $this->view->usermailtotop = $usermailtotop;
     }
 
@@ -76,7 +76,9 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //        $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
 //        'order' => 'date DESC']);
         $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
-            'order' => 'date DESC']);
+            'order' => 'date DESC',
+//            'group' => 'recipient_id',
+        ]);
         $this->view->usermails = $usermail;
 
         if ($this->request->isPost()) {
@@ -564,6 +566,10 @@ class UsermailController extends \Phalcon\Mvc\Controller
 //                'subject' => $subject,
             $success = $usermail->create($data);
             if ($success) {
+                ///////////////////// new newmail
+                $newmail = new Newmail();
+                $newmail->user_id = $recipient = $this->request->getPost("recipient_id");;
+                $newsuccess = $newmail->create();
                 return $this->response->redirect("usermail/$sender_id/show");
             } else {
                 $messages = $user->getMessages();

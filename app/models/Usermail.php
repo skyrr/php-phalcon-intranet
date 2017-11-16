@@ -127,6 +127,13 @@ class Usermail extends \Phalcon\Mvc\Model
         return $this->date;
     }
 
+    public function getDateFormatted()
+    {
+        $mydate = $this->date;
+        $mydate = date("D, H-i", strtotime($this->date));
+        return $mydate;
+    }
+
     public function getArchive()
     {
         return $this->archive;

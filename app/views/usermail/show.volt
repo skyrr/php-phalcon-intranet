@@ -87,12 +87,12 @@
                                     {#<blockquote>#}
                                     {% if (message.getUserId() == sender_id )%}
                                         <div class="col-md-12 col-sm-12 col-xs-12 pull-left">
-                                            <pre class="">{{ message.getText() }}</pre>
+                                                <pre class="">{{ message.getText() }}<small class="pull-right text-success">({{ message.getDateFormatted() }})</small></pre>
                                         </div>
                                     {% endif %}
                                     {% if (message.getUserId() ==  recipient_id) %}
                                         <div class="col-md-7 col-sm-7 col-xs-7 pull-right">
-                                            <pre class="text-muted bg-primary">{{ message.getText() }}</pre>
+                                            <pre class="text-muted bg-primary">{{ message.getText() }}<small class="pull-right ">({{ message.getDateFormatted() }})</small></pre>
                                         </div>
                                     {% endif %}
                                 </div>

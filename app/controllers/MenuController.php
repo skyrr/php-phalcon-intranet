@@ -32,7 +32,7 @@ class MenuController extends \Phalcon\Mvc\Controller
 //            echo "no cookie found";
 ////            die();
 //        }
-        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", limit =>4, order => 'date DESC',]);
+        $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", 'limit' =>4, 'order' => 'date DESC',]);
         $this->view->usermailtotop = $usermailtotop;
 
 
