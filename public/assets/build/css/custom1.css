@@ -34,3 +34,33 @@ and (max-device-width : 5500px){
   overflow:hidden;
   text-overflow:ellipsis;
 }
+
+.notifyjs-foo-base {
+  opacity: 0.95;
+  width: 200px;
+  background: #F5F5F5;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.notifyjs-foo-base .title {
+  width: 10px;
+  float: left;
+  margin: 10px 0 0 10px;
+  text-align: right;
+}
+
+.notifyjs-foo-base .buttons {
+  width: 10px;
+  float: right;
+  font-size: 9px;
+  padding: 5px;
+  margin: 2px;
+}
+
+.notifyjs-foo-base button {
+  font-size: 9px;
+  padding: 5px;
+  margin: 2px;
+  width: 30px;
+}

@@ -59,33 +59,6 @@
 <body class="nav-md">
 <audio id="xyz" src="/assets/sounds/ding.mp3" preload="auto"></audio>
 {{ content() }}
-<script>
-    var ajax_call = function() {
-        //your jQuery ajax code
-        $.get( "/user/lastvisit", function( data ) {
-            $( ".result" ).html( data );
-//            alert( "Load was performed." );
-        });
-        $.get(
-                "/user/getnotification",
-                {paramOne : 1, paramX : 'abc'},
-                function(data) {
-                    if (data == "from else") {
-                    } else
-                    {
-                        document.getElementById('xyz').play();
-                        alert(' ' + data);
-//                    alert("Thank you!");
-                    }
-                }
 
-        );
-    };
-
-    var interval = 1000 * 10 * 1; // where X is your every X minutes // middle number means seconds
-//    var interval = 1000 * 60 * 1; // where X is your every X minutes
-
-    setInterval(ajax_call, interval);
-</script>
 </body>
 </html>

@@ -40,6 +40,13 @@
 <!-- Custom Theme Scripts -->
 <script src="/assets/build/js/custom.min.js"></script>
 
+{#notification#}
+<!-- Custom Theme Style -->
+<script src="/assets/build/js/notify.js"></script>
+<script src="/assets/build/js/notify.min.js"></script>
+<script src="/assets/build/js/bootstrap-notify.js"></script>
+<script src="/assets/build/js/bootstrap-notify.min.js"></script>
+
 <!-- Flot -->
 <script>
     $(document).ready(function() {
@@ -299,6 +306,7 @@
     gauge.setTextField(document.getElementById("gauge-text"));
 </script>
 <!-- /gauge.js -->
+//script for notification
 
 <script type="text/javascript">
 
@@ -313,4 +321,89 @@
         }
     }
     setTimeout(setIframeSrc, 5);
+</script>
+<script>
+    var ajax_call = function() {
+        //your jQuery ajax code
+        $.get( "/user/lastvisit", function( data ) {
+            $( ".result" ).html( data );
+//            alert( "Load was performed." );
+        });
+        $.get(
+                "/user/getnotification",
+                {paramOne : 1, paramX : 'abc'},
+                function(data) {
+                    if (data == "from else") {
+                    } else
+                    {
+                        document.getElementById('xyz').play();
+                        alert(' ' + data);
+//                    alert("Thank you!");
+                        $.notify({
+                            title: '',
+                            button: 'Confirm'
+                        }, {
+                            style: 'foo',
+                            autoHide: false,
+                            clickToHide: true
+                        });
+                    }
+                }
+
+        );
+        $.notify('hello !!', {
+            style: 'happyblue'
+        });
+
+    };
+
+    var interval = 1000 * 10 * 1; // where X is your every X minutes // middle number means seconds
+    //    var interval = 1000 * 60 * 1; // where X is your every X minutes
+
+    setInterval(ajax_call, interval);
+</script>
+{#<script>#}
+
+    {#var ajax_call = function() {#}
+        {#//your jQuery ajax code#}
+        {#$.notify({#}
+            {#title: '',#}
+            {#button: 'Confirm'#}
+        {#}, {#}
+            {#style: 'foo',#}
+            {#autoHide: false,#}
+            {#clickToHide: true#}
+        {#});#}
+
+    {#};#}
+
+    {#var interval = 100 * 10 * 1; // where X is your every X minutes // middle number means seconds#}
+    {#//    var interval = 1000 * 60 * 1; // where X is your every X minutes#}
+
+    {#setInterval(ajax_call, interval);#}
+{#</script>#}
+
+
+<script>
+    //add a new style 'foo'
+    $.notify.addStyle('foo', {
+        html:
+        "<div>" +
+        "<div class='clearfix'>" +
+        "<button class='no pull-right fa fa-close'></button>" +
+        "<h4><a href=/usermail/index>view incoming mail</a> </h4>" +
+        "</div>"
+    });
+
+    //listen for click events from this style
+    $(document).on('click', '.notifyjs-foo-base .no', function() {
+        //programmatically trigger propogating hide event
+        $(this).trigger('notify-hide');
+    });
+    $(document).on('click', '.notifyjs-foo-base .yes', function() {
+        //show button text
+        alert($(this).text() + " clicked!");
+        //hide notification
+        $(this).trigger('notify-hide');
+    });
 </script>
