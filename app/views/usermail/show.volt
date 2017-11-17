@@ -71,7 +71,20 @@
                                     {#<span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>#}
                                     <textarea name="text" class="form-control" rows="5" placeholder=""></textarea>
                                     <br/>
-                                    <button type="submit" class="btn btn-success pull-right">Reply</button>
+                                    <div class="pull-right">
+                                            <button type="submit" class="btn btn-success pull-right">Reply</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="pull-right">
+                                        <p>
+                                            <a href="{{ url.get('usermail/'~usermessage.getId()~'/show')}}" type="button" class="btn btn-default btn-xs  pull-right">
+                                                <span class="glyphicon glyphicon-refresh"></span> Refresh
+                                            </a>
+                                        </p>
+                                    </div>
+
                                 </form>
                             </div>
 
@@ -79,9 +92,12 @@
                 {#new message#}
 
                 {#read mail#}
+
+
                 <table class="col-md-10 col-sm-10 col-xs-12">
                     <tr>
                         <td>
+
                             {% for message in usermessages %}
                                 <div class="col-md-12 col-sm-12 col-xs-12 mail_list_column">
                                     {#<blockquote>#}
