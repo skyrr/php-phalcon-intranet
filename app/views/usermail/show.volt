@@ -69,7 +69,7 @@
                                     {#</select>#}
 
                                     {#<span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>#}
-                                    <textarea name="text" class="form-control" rows="5" placeholder=""></textarea>
+                                    <textarea name="text" class="form-control" required="required" rows="5" placeholder=""></textarea>
                                     <br/>
                                     <div class="pull-right">
                                             <button type="submit" class="btn btn-success pull-right">Reply</button>

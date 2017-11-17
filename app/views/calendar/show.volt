@@ -24,6 +24,7 @@
 <!-- /top navigation -->
 
 <!-- page content -->
+{{ partial('formaddingevent') }}
 <div class="right_col" role="main">
     <div class="">
 
@@ -37,7 +38,6 @@
                             <th style="width: 1%">#</th>
                             <th style="width: 35%">Comment</th>
                             <th style="width: 24%">Date/Time</th>
-                            <th style="width: 20%">User</th>
                             <th style="width: 20%">#Edit</th>
                         </tr>
                         </thead>
@@ -52,13 +52,6 @@
                                 </td>
                                 <td>
                                     <a>{{ calendarItem.getDate() }} at {{ calendarItem.getTime() }}</a>
-                                </td>
-                                <td>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <img src="/assets/images/user.png" class="avatar" alt="Avatar">
-                                        </li>
-                                    </ul>
                                 </td>
                                 <td>
                                     <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit </a>
@@ -77,7 +70,7 @@
             <div class="col-md-12">
                 <div class="col-md-4">
                     <div class="x_panel">
-                        {{ partial('formaddingevent') }}
+                        {{ partial('formaddingeventnotmodal') }}
                     </div>
                 </div>
 

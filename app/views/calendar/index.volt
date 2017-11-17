@@ -23,6 +23,7 @@
 <!-- /top navigation -->
 
 <!-- page content -->
+{{ partial('formaddingevent') }}
 <div class="right_col" role="main">
     <div class="">
 
@@ -30,7 +31,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="x_panel">
-                    {{ partial('formaddingevent') }}
+                    {{ partial('formaddingeventnotmodal') }}
                 </div>
             </div>
             <div class="col-md-4">

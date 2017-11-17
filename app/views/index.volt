@@ -32,8 +32,8 @@
     <link href="/assets/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
     <!-- bootstrap-progressbar -->
     <link href="/assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
-    <!-- JQVMap -->
-    <link href="/assets/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    {#<!-- JQVMap -->#}
+    {#<link href="/assets/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>#}
 
     <!-- Custom Theme Style -->
     <link href="/assets/build/css/custom.min.css" rel="stylesheet">
@@ -47,8 +47,8 @@
 
     {#<link href="/assets/temp/bootstrap/css/bootstrap.min1.css" rel="stylesheet" media="screen">#}
     <link href="/assets/temp/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
-    <!-- bootstrap-daterangepicker -->
-    <link href="/assets/temp/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    {#<!-- bootstrap-daterangepicker -->#}
+    {#<link href="/assets/temp/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">#}
     <!-- bootstrap-datetimepicker -->
     <link href="/assets/temp/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
 

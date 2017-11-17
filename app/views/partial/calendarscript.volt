@@ -7,6 +7,15 @@
 <script src="/assets/vendors/fastclick/lib/fastclick.js"></script>
 <!-- NProgress -->
 <script src="/assets/vendors/nprogress/nprogress.js"></script>
+<!-- bootstrap-datetimepicker -->
+<script src="/assets/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<!-- jquery.inputmask -->
+<script src="/assets/vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<!-- jQuery Knob -->
+<script src="/assets/vendors/jquery-knob/dist/jquery.knob.min.js"></script>
+<!-- Cropper -->
+<script src="/assets/vendors/cropper/dist/cropper.min.js"></script>
+
 <!-- FullCalendar -->
 <script src="/assets/vendors/moment/min/moment.min.js"></script>
 <script src="/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
@@ -142,7 +151,15 @@
         format: 'YYYY-MM-DD'
     });
 
+    $('#myDatepicker22').datetimepicker({
+        format: 'YYYY-MM-DD'
+    });
+
     $('#myDatepicker3').datetimepicker({
+        format: 'HH:mm'
+    });
+
+    $('#myDatepicker33').datetimepicker({
         format: 'HH:mm'
     });
 
