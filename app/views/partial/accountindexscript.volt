@@ -181,6 +181,7 @@
                         document.getElementById('xyz').play();
 //                        alert(' ' + data);
 //                    alert("Thank you!");
+                        $( "#here" ).load(window.location.href + " #here" );
                         $.notify({
                             title: '',
                             button: 'Confirm'

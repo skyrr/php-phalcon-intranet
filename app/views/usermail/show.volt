@@ -35,7 +35,7 @@
                 </div>
                 {#mail list#}
 
-                <div class="col-md-2 col-sm-2 col-xs-12 mail_list_column">
+                <div class="col-md-2 col-sm-2 col-xs-12 mail_list_column desktopShow">
                     {#<a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>#}
 
                     <div align="center">
@@ -77,13 +77,13 @@
                                     <br>
                                     <br>
                                     <br>
-                                    <div class="pull-right">
-                                        <p>
-                                            <a href="{{ url.get('usermail/'~usermessage.getId()~'/show')}}" type="button" class="btn btn-default btn-xs  pull-right">
-                                                <span class="glyphicon glyphicon-refresh"></span> Refresh
-                                            </a>
-                                        </p>
-                                    </div>
+                                    {#<div class="pull-right">#}
+                                        {#<p>#}
+                                            {#<a href="{{ url.get('usermail/'~usermessage.getId()~'/show')}}" type="button" class="btn btn-default btn-xs  pull-right">#}
+                                                {#<span class="glyphicon glyphicon-refresh"></span> Refresh#}
+                                            {#</a>#}
+                                        {#</p>#}
+                                    {#</div>#}
 
                                 </form>
                             </div>
@@ -94,31 +94,33 @@
                 {#read mail#}
 
 
-                <table class="col-md-10 col-sm-10 col-xs-12">
-                    <tr>
-                        <td>
+                <div id="here">
+                    <table class="col-md-10 col-sm-10 col-xs-12">
+                        <tr>
+                            <td>
 
-                            {% for message in usermessages %}
-                                <div class="col-md-12 col-sm-12 col-xs-12 mail_list_column">
-                                    {#<blockquote>#}
-                                    {% if (message.getUserId() == sender_id )%}
-                                        <div class="col-md-12 col-sm-12 col-xs-12 pull-left">
+                                {% for message in usermessages %}
+                                    <div class="col-md-12 col-sm-12 col-xs-12 mail_list_column">
+                                        {#<blockquote>#}
+                                        {% if (message.getUserId() == sender_id )%}
+                                            <div class="col-md-12 col-sm-12 col-xs-12 pull-left">
                                                 <pre class="">{{ message.getText() }}<small class="pull-right text-success">({{ message.getDateFormatted() }})</small></pre>
-                                        </div>
-                                    {% endif %}
-                                    {% if (message.getUserId() ==  recipient_id) %}
-                                        <div class="col-md-7 col-sm-7 col-xs-7 pull-right">
-                                            <pre class="text-muted bg-primary">{{ message.getText() }}<small class="pull-right ">({{ message.getDateFormatted() }})</small></pre>
-                                        </div>
-                                    {% endif %}
-                                </div>
-                            {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        {% if (message.getUserId() ==  recipient_id) %}
+                                            <div class="col-md-7 col-sm-7 col-xs-7 pull-right">
+                                                <pre class="text-muted bg-primary">{{ message.getText() }}<small class="pull-right ">({{ message.getDateFormatted() }})</small></pre>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                {% endfor %}
 
-                        </td>
+                            </td>
 
                         </tr>
 
                     </table>
+                </div>
 
                 {#end read mail#}
                 {#<div class="pull-right"></div>#}
