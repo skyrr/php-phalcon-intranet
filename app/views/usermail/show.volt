@@ -38,10 +38,14 @@
                 <div class="col-md-2 col-sm-2 col-xs-12 mail_list_column desktopShow">
                     {#<a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>#}
 
-                    <div align="center">
-                        <input type="text" name="search" id="search" placeholder="Search User" class="form-control" />
+                    <div class="container">
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="input" class="form-control" id="txt-search" placeholder="Type your search character">
+                            </div>
+                        </form>
+                        <div id="filter-records"></div>
                     </div>
-                    <ul class="list-group" id="result"></ul>
                     {#{{ json_encoded_from_model }}#}
                     {{ partial("userlistformail") }}
                 </div>

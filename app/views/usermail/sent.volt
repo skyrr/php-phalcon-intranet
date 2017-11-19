@@ -58,10 +58,14 @@
                     <div class="col-sm-3 col-xs-12">
                         {#<a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>#}
 
-                        <div align="center">
-                            <input type="text" name="search" id="search" placeholder="Search User" class="form-control" />
+                        <div class="container">
+                            <form role="form">
+                                <div class="form-group">
+                                    <input type="input" class="form-control" id="txt-search" placeholder="Type your search character">
+                                </div>
+                            </form>
+                            <div id="filter-records"></div>
                         </div>
-                        <ul class="list-group" id="result"></ul>
                         {#{{ json_encoded_from_model }}#}
                         {{ partial("userlistformail") }}
                     </div>
@@ -100,12 +104,12 @@
                                             <br>
                                         </td>
                                         <td>
-                                            <a>{{ usermail.getDate() }}</a>
+                                            <a>{{ usermail.getDateFormatted() }}</a>
                                         </td>
-                                        <td>
+                                        {#<td>#}
                                             {#<a href="{{ url.get('usermail/'~ usermail.getId() ~'/show') }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>  </a>#}
-                                            <a href="{{ url.get('usermail/'~ usermail.getId() ~'/removefromsent') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>
-                                        </td>
+                                            {#<a href="{{ url.get('usermail/'~ usermail.getId() ~'/removefromsent') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>  </a>#}
+                                        {#</td>#}
                                     </tr>
                                 {% endfor %}
 
