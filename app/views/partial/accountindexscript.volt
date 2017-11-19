@@ -148,7 +148,7 @@
     gauge.setTextField(document.getElementById("gauge-text"));
 </script>
 <!-- /gauge.js -->
-//script for notification
+{#//script for notification#}
 
 <script type="text/javascript">
 
@@ -170,6 +170,8 @@
         $.get( "/user/lastvisit", function( data ) {
             $( ".result" ).html( data );
 //            alert( "Load was performed." );
+            $( "#userlist" ).load(window.location.href + " #userlist" );
+
         });
         $.get(
                 "/user/getnotification",

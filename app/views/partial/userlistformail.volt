@@ -1,3 +1,5 @@
+<div id="userlist">
+
 {% for user in userList %}
     {#<p>{{ user.getLastVisitMinusValue() }}</p>#}
     {% if user.getLastVisitMinusValue() == 1 %}
@@ -30,3 +32,4 @@
     {% endif %}
     {#<p>{{ user.getLastVisitMinusValue() }}</p>#}
 {% endfor %}
+</div>
