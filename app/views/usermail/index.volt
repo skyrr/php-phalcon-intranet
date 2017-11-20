@@ -61,14 +61,7 @@
                     <div class="col-sm-3 col-xs-12">
                         {#<a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>#}
 
-                        <div class="container">
-                            <form role="form">
-                                <div class="form-group">
-                                    <input type="input" class="form-control" id="txt-search" placeholder="Type your search character">
-                                </div>
-                            </form>
-                            <div id="filter-records"></div>
-                        </div>
+                        {{ partial("usersearch") }}
                         {#{{ json_encoded_from_model }}#}
                         {#{{ json_encoded_from_model }}#}
                         {{ partial("userlistformail") }}
@@ -77,9 +70,9 @@
 
                     <!-- CONTENT MAIL -->
                     <div class="col-sm-9 col-xs-12">
-                        <div class="inbox-body">
-                            <div class="mail_heading row">
-                            </div>
+                        <div class="inbox-body"  id="userlisttable">
+                            {#<div class="mail_heading row">#}
+                            {#</div>#}
                             <table class="table table-hover">
                             <thead>
                             <tr>

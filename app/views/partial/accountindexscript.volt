@@ -171,6 +171,7 @@
             $( ".result" ).html( data );
 //            alert( "Load was performed." );
             $( "#userlist" ).load(window.location.href + " #userlist" );
+            $( "#here" ).load(window.location.href + " #here" );
 
         });
         $.get(
@@ -183,7 +184,8 @@
                         document.getElementById('xyz').play();
 //                        alert(' ' + data);
 //                    alert("Thank you!");
-                        $( "#here" ).load(window.location.href + " #here" );
+                        $( "#userlisttable" ).load(window.location.href + " #userlisttable" );
+
                         $.notify({
                             title: '',
                             button: 'Confirm'
@@ -243,15 +245,16 @@
         }
 
         var regex = new RegExp(searchField, "i");
-        var output = '<div class="row">';
+        var output = '<div class="bg-success" style="height: 10px">';
         var count = 1;
         $.each(data, function(key, val){
             if ((val.name.search(regex) != -1) || (val.email.search(regex) != -1)) {
-                output += '<div class="col-md-7">';
-                output += '<a href="{{ url.get('usermail/') }}' + val.id + '/show">' + val.name + '</a>';
-                output += '</div>';
+                output += '<div class="h-25 d-inline-block" >';
+                output += '<a class="list-group-item" href="{{ url.get('usermail/') }}' + val.id + '/show">' + val.name + '</a>';
+//                output += '</li>';
+                output += '</div>'
                 if(count%2 == 0){
-                    output += '</div><div class="row">'
+
                 }
                 count++;
             }

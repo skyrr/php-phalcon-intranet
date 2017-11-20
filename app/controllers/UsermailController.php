@@ -46,7 +46,10 @@ class UsermailController extends \Phalcon\Mvc\Controller
             'order' => 'created_at DESC', 'limit' => 6]);
         $this->view->usermailforall = $usermailforall;
 
-        $json_encoded_from_model = json_encode(User::find()->toArray(), JSON_NUMERIC_CHECK);
+//        $phql = "SELECT id, name, email FROM USER";
+//        $users = $this->manager->executeQuery($phql);
+        $userJson = User::find(['columns' => 'id, name, email'])->toArray();
+        $json_encoded_from_model = json_encode($userJson, JSON_NUMERIC_CHECK);
         $this->view->json_encoded_from_model = $json_encoded_from_model;
 
     }

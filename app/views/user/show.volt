@@ -59,10 +59,10 @@
                                     <img class="img-responsive avatar-view" src="/assets/images/img.jpg" alt="Avatar" title="Change the avatar">
                                 </div>
                             </div>
-                            <h3>Samuel Doe</h3>
+                            <h3>{{ user.name }}</h3>
 
                             <ul class="list-unstyled user_data">
-                                <li><i class="fa fa-map-marker user-profile-icon"></i> San Francisco, California, USA
+                                <li><i class="fa fa-map-marker user-profile-icon"></i> Mlada Boleslav, Czech Republic
                                 </li>
 
                                 <li>
@@ -71,7 +71,7 @@
 
                                 <li class="m-top-xs">
                                     <i class="fa fa-external-link user-profile-icon"></i>
-                                    <a href="http://www.kimlabs.com/profile/" target="_blank">www.kimlabs.com</a>
+                                    <a href="{{ url.get("/") }}" target="_blank">eLED</a>
                                 </li>
                             </ul>
 
