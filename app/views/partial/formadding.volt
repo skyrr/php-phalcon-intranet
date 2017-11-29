@@ -30,10 +30,11 @@
             <table>
                 <tr>
                     <td>
-                        <select name="floor_id" class="form-control">
-                            <option value=1>1 floor</option>
-                            <option value=2>2 floor</option>
-                        </select>
+                        {#<select name="floor_id" class="form-control">#}
+                            {#<option value="">select floor</option>#}
+                            {#<option value=1>1 floor</option>#}
+                            {#<option value=2>2 floor</option>#}
+                        {#</select>#}
 
                     </td>
                     <td>

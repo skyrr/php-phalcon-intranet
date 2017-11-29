@@ -2,276 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3579e6-71d5-4b75-a613-ed17ff88942b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/fonts/star.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/fonts/star.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/fonts/star.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/bar/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/bar/bullets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/bar/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/dark/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/dark/bullets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/dark/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/default/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/default/bullets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/default/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/light/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/light/bullets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/light/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.video.play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/coloredbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/gridtile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/gridtile_3x3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/gridtile_3x3_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/gridtile_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/fb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/fr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/ig.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/post.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/revolution_slide1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/revolution_slide2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/tw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/vm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/wc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/yt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/closedhand.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/openhand.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/revicons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/revicons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/revicons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/fonts/Simple-Line-Icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/fonts/Simple-Line-Icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/mbmainpage.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/menuR10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/fonts/star.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-8.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-digital-agency.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-hosting.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme-animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme-blog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme-elements.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme-shop.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/examples/examples.carousels.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/examples/examples.gallery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/examples/examples.lightboxes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/theme.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/theme.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/views/view.contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/views/view.home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/views/view.hosting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap-rtl/bootstrap-rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/circle-flip-slideshow/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/circle-flip-slideshow/css/component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/circle-flip-slideshow/js/jquery.flipshow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/common/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/excanvas/excanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/HELP-US-OUT.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/css/font-awesome.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/isotope/jquery.isotope.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery-cookie/jquery-cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.appear/jquery.appear.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.easing/jquery.easing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.gmap/jquery.gmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.lazyload/jquery.lazyload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.lazyload/jquery.scrollstop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.stellar/jquery.stellar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.validation/jquery.validation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/magnific-popup/jquery.magnific-popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/magnific-popup/magnific-popup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/modernizr/modernizr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/bar/bar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/dark/dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/default/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/jquery.nivo.slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/light/light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/nivo-slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.carousel.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.theme.default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.theme.default.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.theme.green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.theme.green.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/owl.carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/owl.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/requirejs/requirejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/respond/respond.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/layers.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/ares.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/dione.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/erinyen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/gyges.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hades.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hebe.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hephaistos.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hermes.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hesperiden.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/metis.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/persephone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/uranus.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/zeus.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/settings.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/css/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/css/helper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/css/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/revicons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.actions.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.kenburn.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.migration.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.navigation.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.parallax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.slideanims.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.video.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.actions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.kenburn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.layeranimation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.migration.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.navigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.parallax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.slideanims.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.video.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/jquery.themepunch.enablelog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/jquery.themepunch.tools.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/source/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/source/jquery.themepunch.enablelog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/source/jquery.themepunch.revolution.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/source/jquery.themepunch.tools.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/facebook/class-facebook.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/flickr/class-flickr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/instagram/class-instagram.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/RestApi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/class-twitter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/connection/Application.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/connection/ConnectionAbstract.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/connection/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/vimeo/class-vimeo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/youtube/class-youtube.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/css/simple-line-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/fonts/Simple-Line-Icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/less/simple-line-icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/scss/simple-line-icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/vide/vide.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/account/create.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/account/edit.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/menu/show.volt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AccountController.php" afterPath="$PROJECT_DIR$/app/controllers/AccountController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/CalendarController.php" afterPath="$PROJECT_DIR$/app/controllers/CalendarController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsermailController.php" afterPath="$PROJECT_DIR$/app/controllers/UsermailController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Groupmail.php" afterPath="$PROJECT_DIR$/app/models/Groupmail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Usermail.php" afterPath="$PROJECT_DIR$/app/models/Usermail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/index.volt" afterPath="$PROJECT_DIR$/app/views/account/index.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calendar/index.volt" afterPath="$PROJECT_DIR$/app/views/calendar/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calendar/show.volt" afterPath="$PROJECT_DIR$/app/views/calendar/show.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.volt" afterPath="$PROJECT_DIR$/app/views/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/menu/index.volt" afterPath="$PROJECT_DIR$/app/views/menu/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/accountindexscript.volt" afterPath="$PROJECT_DIR$/app/views/partial/accountindexscript.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/calendarscript.volt" afterPath="$PROJECT_DIR$/app/views/partial/calendarscript.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/formadding.volt" afterPath="$PROJECT_DIR$/app/views/partial/formadding.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/formaddingeventnotmodal.volt" afterPath="$PROJECT_DIR$/app/views/partial/formaddingeventnotmodal.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/sidebar.volt" afterPath="$PROJECT_DIR$/app/views/partial/sidebar.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/sidebarstart.volt" afterPath="$PROJECT_DIR$/app/views/partial/sidebarstart.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/sidebarstartforshow.volt" afterPath="$PROJECT_DIR$/app/views/partial/sidebarstartforshow.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/create.volt" afterPath="$PROJECT_DIR$/app/views/usermail/create.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/createmulti.volt" afterPath="$PROJECT_DIR$/app/views/usermail/createmulti.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/index.volt" afterPath="$PROJECT_DIR$/app/views/usermail/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/sent.volt" afterPath="$PROJECT_DIR$/app/views/usermail/sent.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/show.volt" afterPath="$PROJECT_DIR$/app/views/usermail/show.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/trash.volt" afterPath="$PROJECT_DIR$/app/views/usermail/trash.volt" />
     </list>
     <ignored path="accounting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -292,17 +25,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.volt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="69" column="62" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formadding.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/partial/formadding.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="36" column="35" selection-start-line="32" selection-start-column="26" selection-end-line="36" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -320,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.volt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
@@ -382,24 +125,13 @@
       <file leaf-file-name="CalendarController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/CalendarController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+            <state relative-caret-position="198">
+              <caret line="110" column="38" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="38" />
               <folding>
-                <element signature="n#indexAction#0;n#CalendarController#0;n#!!top" expanded="false" />
                 <element signature="n#createAction#0;n#CalendarController#0;n#!!top" expanded="false" />
                 <element signature="n#editAction#0;n#CalendarController#0;n#!!top" expanded="false" />
                 <element signature="n#removeAction#0;n#CalendarController#0;n#!!top" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebarstart.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partial/sidebarstart.volt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -466,18 +198,18 @@
         <option value="$PROJECT_DIR$/app/views/index.volt" />
         <option value="$PROJECT_DIR$/app/views/partial/calendarscript.volt" />
         <option value="$PROJECT_DIR$/app/views/partial/sidebarstart.volt" />
-        <option value="$PROJECT_DIR$/app/views/partial/formadding.volt" />
         <option value="$PROJECT_DIR$/app/views/partial/formaddingeventnotmodal.volt" />
         <option value="$PROJECT_DIR$/app/views/partial/sidebarstartforshow.volt" />
         <option value="$PROJECT_DIR$/app/views/calendar/show.volt" />
-        <option value="$PROJECT_DIR$/app/controllers/CalendarController.php" />
-        <option value="$PROJECT_DIR$/app/views/calendar/index.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/sent.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/trash.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/create.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/index.volt" />
         <option value="$PROJECT_DIR$/app/views/account/index.volt" />
         <option value="$PROJECT_DIR$/app/views/usermail/show.volt" />
+        <option value="$PROJECT_DIR$/app/views/partial/formadding.volt" />
+        <option value="$PROJECT_DIR$/app/controllers/CalendarController.php" />
+        <option value="$PROJECT_DIR$/app/views/calendar/index.volt" />
       </list>
     </option>
   </component>
@@ -760,28 +492,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="account" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -926,12 +636,12 @@
       <workItem from="1511439848514" duration="8500000" />
       <workItem from="1511813997262" duration="958000" />
       <workItem from="1511869073657" duration="2214000" />
-      <workItem from="1511872473031" duration="28748000" />
+      <workItem from="1511872473031" duration="30700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="554125000" />
+    <option name="totallyTimeSpent" value="556077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1275,14 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/formadding.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partial/sidebarstart.volt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1308,32 +1010,6 @@
             <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/CalendarController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
-          <folding>
-            <element signature="n#indexAction#0;n#CalendarController#0;n#!!top" expanded="false" />
-            <element signature="n#createAction#0;n#CalendarController#0;n#!!top" expanded="false" />
-            <element signature="n#editAction#0;n#CalendarController#0;n#!!top" expanded="false" />
-            <element signature="n#removeAction#0;n#CalendarController#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1402,6 +1078,39 @@
           <folding>
             <marker date="1511951407497" expanded="true" signature="6117:6149" ph="..." />
             <marker date="1511951407497" expanded="true" signature="7849:7856" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/formadding.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="35" selection-start-line="32" selection-start-column="26" selection-end-line="36" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CalendarController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="110" column="38" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="38" />
+          <folding>
+            <element signature="n#createAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+            <element signature="n#editAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+            <element signature="n#removeAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="69" column="62" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -105,6 +105,14 @@ class CalendarController extends \Phalcon\Mvc\Controller
 //        $json_encoded_from_model = json_encode(Calendar::find()->toArray(), JSON_NUMERIC_CHECK);
 //        $this->view->json_encoded_from_model = $json_encoded_from_model;
 
+        $floor_id = $this->dispatcher->getParam('id');
+        $this->view->floor_id = $floor_id;
+        if ($floor_id == 1) {
+            $this->view->calendar_name = "calendar1";
+        } else {
+            $this->view->calendar_name = "calendar2";
+        }
+
         // sending vars to view
         $this->view->urlForEdit = $urlForEdit;
         $this->view->floor = $floor;
@@ -137,29 +145,11 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
-//        if (!$this->session->has("user_id")) {
-//            return $this->dispatcher->forward(["controller" => "user", "action" => "login"]);
-//        }
-//        if ($this->request->isPost()) {
-//            $data = $this->request->getPost();
-//            //$user = new User($data);
-//            $success = $user->update($data);
-//            if ($success) {
-//                return $this->response->redirect();
-//            } else {
-//                $messages = $user->getMessages();
-//                if ($messages) {
-//                    foreach ($messages as $message) {
-//                        $this->flash->error($message);
-//                    }
-//                }
-//            }
-//        }
         if ($this->request->ispost()) {
             $data = $this->request->getPost();
             $user_id = $this->user->getId();
             $id = $this->dispatcher->getParam('id');
-//            $floor_id = $id;
+            $floor_id = $id;
             $date = $this->request->getPost("date");
             $time = $this->request->getPost("time");
 
@@ -172,7 +162,7 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
             $calendar = new Calendar([
                 'user_id' => $user_id,
-//                'floor_id' => $floor_id,
+                'floor_id' => $floor_id,
                 'year' => $year,
                 'month' => $month,
                 'day' => $day,
