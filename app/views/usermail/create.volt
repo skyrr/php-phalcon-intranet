@@ -34,21 +34,8 @@
                     {#<small>User Mail</small>#}
                     <div class="clearfix"></div>
                 </div>
-                {#mail list#}
-                <div class="col-sm-3 mail_list_column">
-                    <a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">Message to everybody</a>
-
-                    <div align="center">
-                        <input type="text" name="search" id="search" placeholder="Search User" class="form-control" />
-                    </div>
-                    <ul class="list-group" id="result"></ul>
-                    {#{{ json_encoded_from_model }}#}
-                    {{ partial("userlistformail") }}
-                </div>
-                {#end mail list#}
-
                 {#new message#}
-                <div class="col-md-9 col-sm-9 col-xs-12 mail_list_column">
+                <div class="col-md-12 col-sm-12 col-xs-12 mail_list_column">
                                 <form method="post">
                                     {#<input name="recipient_email" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="recipient">#}
                                     {#<br/>#}

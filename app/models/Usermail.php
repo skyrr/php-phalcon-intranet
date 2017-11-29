@@ -185,8 +185,8 @@ class Usermail extends \Phalcon\Mvc\Model
 
     public function getUsermailSymbols($symbolNumber)
     {
-        $subString = substr($this->subject, 0, $symbolNumber);
-        if (!(strlen($this->subject) < $symbolNumber)) {
+        $subString = substr($this->text, 0, $symbolNumber);
+        if (!(strlen($this->text) < $symbolNumber)) {
             $subString = $subString."...";
         }
         return $subString;

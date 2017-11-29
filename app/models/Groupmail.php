@@ -21,7 +21,7 @@ class Groupmail extends \Phalcon\Mvc\Model
     }
     public function beforeCreate()
     {
-        $date = date("Y-m-d H-i-s");
+        $date = date('Y-m-d H-i-s');
         if (!$this->created_at) { // use default value if the value is not set
             $this->created_at = $date;
         }
@@ -29,15 +29,6 @@ class Groupmail extends \Phalcon\Mvc\Model
     }
     protected function beforeUpdate()
     {
-//        if ($this->hasChanged('currency_id')) {
-//            $transactions = $this->getTransaction();
-//            foreach ($transactions as $transaction) {
-//                $old_currency = $this->getCurrency();
-//                $coefficient = $old_currency->getCoefficientByCurrencyId($this->currency_id);
-//                $transaction->setAmount($transaction->getAmount() * $coefficient);
-//                $transaction->update();
-//            }
-//        }
     }
 
     public function getId()
@@ -96,64 +87,5 @@ class Groupmail extends \Phalcon\Mvc\Model
     {
         return $this->date;
     }
-
-    public function getArchive()
-    {
-        return $this->archive;
-    }
-    public function getArchiveToRecipient()
-    {
-        return $this->archiveToRecipient;
-    }
-
-    public function getResponseTo()
-    {
-        return $this->responseto;
-    }
-
-    public function setArchive($archive)
-    {
-        $this->archive = $archive;
-    }
-
-    public function getRemoveForever()
-    {
-        return $this->remove_forever;
-    }
-
-    public function setRemoveForever($archive)
-    {
-        $this->remove_forever = $archive;
-    }
-
-    public function setArchiveToRecipient($archiveToRecipient)
-    {
-        $this->archive_to_recipient = $archiveToRecipient;
-    }
-
-    public function setStatus($status)
-    {
-        $this->status = $status;
-    }
-    public function setStatusToRecipient($status)
-    {
-        $this->status_to_recipient = $status;
-    }
-
-    public function getUsermailCount()
-    {
-        $usermail = Usermail::find(["status_to_recipient > '0'"]);
-        return count($usermail);
-    }
-
-    public function getUsermailSymbols($symbolNumber)
-    {
-        $subString = substr($this->subject, 0, $symbolNumber);
-        if (!(strlen($this->subject) < $symbolNumber)) {
-            $subString = $subString."...";
-        }
-        return $subString;
-    }
-
 
 }

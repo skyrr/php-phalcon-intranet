@@ -55,16 +55,6 @@
                         <div class="clearfix"></div>
                     </div>
 
-
-                    <!-- /MAIL LIST -->
-                    <div class="col-sm-3 mail_list_column">
-                        {#<a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>#}
-
-                        {{ partial("usersearch") }}
-                        {#{{ json_encoded_from_model }}#}
-                        {{ partial("userlistformail") }}
-                    </div>
-                    <!-- /MAIL LIST -->
                     <!-- CONTENT MAIL -->
                     <div class="col-sm-9">
                         <div class="inbox-body">
@@ -111,6 +101,16 @@
 
                     </div>
                     <!-- /CONTENT MAIL -->
+
+                    <!-- /MAIL LIST -->
+                    <div class="col-sm-3 mail_list_column">
+                        {#<a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>#}
+
+                        {{ partial("usersearch") }}
+                        {#{{ json_encoded_from_model }}#}
+                        {{ partial("userlistformail") }}
+                    </div>
+                    <!-- /MAIL LIST -->
 
                 </div>
             </div>

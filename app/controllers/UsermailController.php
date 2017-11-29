@@ -313,25 +313,11 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
-//            $text = $this->request->getPost("text");
-//            $subject = $this->request->getPost("subject");
-//            $recipient = $this->request->getPost("recipient");
-//            $recipient = User::findFirst($recipient);
-//            $user_id = 5;
-//            $recipient_id = 8;
-//            $status = 1;
-//            $priority = 1;
 
             $usermail = new Groupmail([
                 'user_id' => $user_id,
-//                'recipient_id' => $recipient_id,
-//                'text' => $text,
-//                'subject' => $subject,
-//                'status' => $status,
-//                'priority' => $priority,
-//                'created_at' => $created_at,
             ]);
-            $created_at = date("Y-m-d");
+            $created_at = date("Y-m-d H-i-s");
             $usermail->created_at = $created_at;
             $success = $usermail->create($data);
             if ($success) {
@@ -360,37 +346,52 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
-//            $text = $this->request->getPost("text");
-//            $subject = $this->request->getPost("subject");
-//            $recipient = $this->request->getPost("recipient");
-//            $recipient = User::findFirst($recipient);
-//            $user_id = 5;
-//            $recipient_id = 8;
-//            $status = 1;
-//            $priority = 1;
 
-            $usermail = new Usermail([
-                'user_id' => $user_id,
-//                'recipient_id' => $recipient_id,
-//                'text' => $text,
-//                'subject' => $subject,
-//                'status' => $status,
-//                'priority' => $priority,
-//                'created_at' => $created_at,
-            ]);
-            $usermail->priority = '111';
-            $success = $usermail->create($data);
-            if ($success) {
-                return $this->response->redirect("usermail/createmulti");
+            $mail = new PHPMailer;
+
+            //$mail->SMTPDebug = 3;                               // Enable verbose debug output
+
+            $mail->isSMTP();                                      // Set mailer to use SMTP
+            $mail->Host = 'smtp-relay.gmail.com';                   // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                               // Enable SMTP authentication
+            $mail->Username = 'sky.crc@gmail.com';                 // SMTP username
+            $mail->Password = '159487/;p.lo';                           // SMTP password
+            $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = 587;                                    // TCP port to connect to
+
+            $mail->setFrom('sky.crc@gmail.com', 'Mailer');
+            $mail->addAddress('sky.crc@gmail.com', 'Joe User');     // Add a recipient
+//            $mail->addAddress('ellen@example.com');               // Name is optional
+            $mail->addReplyTo('sky.crc@gmail.com', 'Information');
+//            $mail->addCC('cc@example.com');
+//            $mail->addBCC('bcc@example.com');
+
+//            $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+//            $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+            $mail->isHTML(true);                                  // Set email format to HTML
+
+            $mail->Subject = 'Here is the subject';
+            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+            if(!$mail->send()) {
+                echo 'Message could not be sent.';
+                echo 'Mailer Error: ' . $mail->ErrorInfo;
             } else {
-                $this->view->setVar("error", "Wrong password or email");
-                $messages = $user->getMessages();
-                if ($messages) {
-                    foreach ($messages as $message) {
-                        $this->flash->error($message);
-                    }
-                }
+                echo 'Message has been sent';
             }
+//            $success = $usermail->create($data);
+//            if ($success) {
+//                return $this->response->redirect("usermail/createmulti");
+//            } else {
+//                $this->view->setVar("error", "Wrong password or email");
+//                $messages = $user->getMessages();
+//                if ($messages) {
+//                    foreach ($messages as $message) {
+//                        $this->flash->error($message);
+//                    }
+//                }
+//            }
         }
         //$this->view->user_id = $user_id;
     }
@@ -520,32 +521,8 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
 
         if ($this->request->isPost()) {
-//            $data = $this->request->getPost();
-//            //$user = new User($data);
-//            $success = $user->update($data);
-//            if ($success) {
-//                return $this->response->redirect();
-//            } else {
-//                $messages = $user->getMessages();
-//                if ($messages) {
-//                    foreach ($messages as $message) {
-//                        $this->flash->error($message);
-//                    }
-//                }
-//            }
             $data = $this->request->getPost();
-//            $text = $this->request->getPost("text");
-//            $subject = $this->request->getPost("subject");
-//            $recipient = $this->request->getPost("recipient");
-//            $recipient = User::findFirst($recipient);
-//            $user_id = 5;
-//            $recipient_id = 8;
-//            $status = 1;
-//            $priority = 1;
             $user_id = $this->user->getId();
-//            $recipient_id = 8;
-//            $status = 1;
-//            $priority = 1;
             $date = date("Y-m-d H-i-s");
             $status_to_recipient = 0;
             $archive_to_recipient = 0;
@@ -553,22 +530,8 @@ class UsermailController extends \Phalcon\Mvc\Controller
 
 
             $usermail = new Usermail([
-//                'user_id' => $user_id,
-//                'recipient_id' => $recipient_id,
-//                'status' => $status,
-//                'priority' => $priority,
-//                'date' => $date,
-//                'archive' => '0',
             ]);
             $usermail->user_id = $user_id;
-//            $usermail->recipient_id = $recipient_id;
-//            $usermail->subject = $status;
-//            $usermail->priority = $priority;
-//            $usermail->date = $date;
-//            $usermail->archive = '0';
-
-//                'text' => $text,
-//                'subject' => $subject,
             $success = $usermail->create($data);
             if ($success) {
                 ///////////////////// new newmail

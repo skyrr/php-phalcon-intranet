@@ -61,10 +61,17 @@ class CalendarController extends \Phalcon\Mvc\Controller
         // getting calendar items for index
         $today = date("Y-m-d");
         $todayHM = date("H:i:s");
-        $calendars = Calendar::find(
+        $calendars1 = Calendar::find(
             [
 //                "date >= $today",
-                "floor_id = $floor_id",
+                "floor_id = 1",
+                'order' => 'date',
+//                'limit' => 5
+            ]);
+        $calendars2 = Calendar::find(
+            [
+//                "date >= $today",
+                "floor_id = 2",
                 'order' => 'date',
 //                'limit' => 5
             ]);
@@ -81,13 +88,19 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
         //getting calendar items for future events
         $futureList = date("Ymd");
-        $calendarsFutureList = Calendar::find(
+        $calendarsFutureList1 = Calendar::find(
             [
-                "date >= $futureList AND floor_id = $floor_id",
+                "date >= $futureList AND floor_id = '1'",
                 'order' => 'date',
-                'limit' => 5
+                'limit' => 10
             ]);
-        $count = count($calendars);
+        $calendarsFutureList2 = Calendar::find(
+            [
+                "date >= $futureList AND floor_id = '2'",
+                'order' => 'date',
+                'limit' => 10
+            ]);
+        $count = count($calendars1);
 
 //        $json_encoded_from_model = json_encode(Calendar::find()->toArray(), JSON_NUMERIC_CHECK);
 //        $this->view->json_encoded_from_model = $json_encoded_from_model;
@@ -98,13 +111,15 @@ class CalendarController extends \Phalcon\Mvc\Controller
         $this->view->floor_id = $floor_id;
         $this->view->count = $count;
 
-        $this->view->calendars = $calendars;
+        $this->view->calendars1 = $calendars1;
+        $this->view->calendars2 = $calendars2;
         $this->view->today = $today;
         $this->view->todayHM = $todayHM;
         $this->view->calendarsList = $calendarsList;
         $this->view->todayList = $todayList;
         $this->view->todayHMList = $todayHMList;
-        $this->view->calendarsFutureList = $calendarsFutureList;
+        $this->view->calendarsFutureList1 = $calendarsFutureList1;
+        $this->view->calendarsFutureList2 = $calendarsFutureList2;
 
         $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", 'limit' =>4, 'order' => 'date DESC',]);
         $this->view->usermailtotop = $usermailtotop;
@@ -144,7 +159,7 @@ class CalendarController extends \Phalcon\Mvc\Controller
             $data = $this->request->getPost();
             $user_id = $this->user->getId();
             $id = $this->dispatcher->getParam('id');
-            $floor_id = $id;
+//            $floor_id = $id;
             $date = $this->request->getPost("date");
             $time = $this->request->getPost("time");
 
@@ -157,7 +172,7 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
             $calendar = new Calendar([
                 'user_id' => $user_id,
-                'floor_id' => $floor_id,
+//                'floor_id' => $floor_id,
                 'year' => $year,
                 'month' => $month,
                 'day' => $day,
@@ -310,7 +325,7 @@ class CalendarController extends \Phalcon\Mvc\Controller
             $data = $this->request->getPost();
             $user_id = $this->user->getId();
             $id = $this->dispatcher->getParam('id');
-            $floor_id = $id;
+//            $floor_id = $id;
             $date = $this->request->getPost("date");
             $time = $this->request->getPost("time");
 
@@ -323,7 +338,7 @@ class CalendarController extends \Phalcon\Mvc\Controller
 
             $calendar = new Calendar([
                 'user_id' => $user_id,
-                'floor_id' => $floor_id,
+//                'floor_id' => $floor_id,
                 'year' => $year,
                 'month' => $month,
                 'day' => $day,

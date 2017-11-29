@@ -43,34 +43,7 @@
         </div>
 
         <div class="clearfix"></div>
-            <div class="mobileShow">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="x_panel">
-                            <div class="x_content">
-                                {#<embed src="/menu/menu.pdf" width="100%" height="1170" alt="pdf" type='application/pdf'>#}
-                                <iframe id="miiframe" src="https://drive.google.com/viewerng/viewer?
-url=http://skyrr.space/menu/menu.pdf?
-pid=explorer&efh=false&a=v&chrome=false&embedded=true" style="width:100%; height:400px;" frameborder="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="desktopShow">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="x_panel">
-                            <div class="x_content" >
-                                {#<embed src="/menu/menu.pdf" width="100%" height="1170" alt="pdf" type='application/pdf'>#}
-                                <iframe id="miiframe" src="https://drive.google.com/viewerng/viewer?
-url=http://skyrr.space/menu/menu.pdf?
-pid=explorer&efh=false&a=v&chrome=false&embedded=true" style="width:100%; height:1170px;" frameborder="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <img class="img-responsive" src="/assets/img/menuR10.jpg" alt="Menu">
         </div>
     </div>
 </div>

@@ -26,101 +26,67 @@
 <div class="right_col" role="main">
     <div class="">
         <div class="clearfix"></div>
-        <div class="row">
-            <div class="x_panel">
-                <div class="x_title">
-                    <h2>Conversation with {{ usermessage.getName() }} and {{ usermailidforupdate }}</h2>
-                    {#<small>User Mail</small>#}
-                    <div class="clearfix"></div>
-                </div>
+            <div class="row">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Conversation with {{ usermessage.getName() }} and {{ usermailidforupdate }}</h2>
+                         {#<small>User Mail</small>#}
+                        <div class="clearfix"></div>
+                    </div>
+                    {#new message#}
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <form method="post">
+                            <input name="responseto" type="hidden" value="{{ usermessage.getId() }}">
+                            <input name="recipient_id" type="hidden" value="{{ sendto }}">
+                            <input name="archive_to_recipient" type="hidden" value="0">
+                            <input name="status_to_recipient" type="hidden" value="0">
+                            <textarea name="text" class="form-control" required="required" rows="5" placeholder=""></textarea>
+                            <br/>
+                            <div class="pull-right">
+                                <button type="submit" class="btn btn-success pull-right">Reply</button>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                        </form>
+                        {#read mail#}
+                        <div id="here" class="col-md-12 col-sm-12 col-xs-12">
+                            <table class="col-md-12 col-sm-12 col-xs-12">
+                                <tr>
+                                    <td>
+                                        {% for message in usermessages %}
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                {#<blockquote>#}
+                                                {% if (message.getUserId() == sender_id )%}
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 pull-left">
+                                                        <pre class="">{{ message.getText() }}<small class="pull-right text-success">({{ message.getDateFormatted() }})</small></pre>
+                                                    </div>
+                                                {% endif %}
+                                                {% if (message.getUserId() ==  recipient_id) %}
+                                                    <div class="col-md-7 col-sm-7 col-xs-7 pull-right">
+                                                        <pre class="text-muted bg-primary">{{ message.getText() }}<small class="pull-right ">({{ message.getDateFormatted() }})</small></pre>
+                                                    </div>
+                                                {% endif %}
+                                            </div>
+                                        {% endfor %}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        {#end read mail#}
+
+                    </div>
+                    {#new message#}
+
                 {#mail list#}
-
-                <div class="col-md-2 col-sm-2 col-xs-12 mail_list_column desktopShow">
-                    {#<a href="{{  url.get('usermail/create')  }}" id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</a>#}
-
+                <div class="col-md-3 col-sm-3 col-xs-12 desktopShow">
                     {{ partial("usersearch") }}
-                    {#{{ json_encoded_from_model }}#}
                     {{ partial("userlistformail") }}
                 </div>
                 {#end mail list#}
 
-                {#new message#}
-
-                            <div class="col-md-10 col-sm-10 col-xs-12 mail_list_column pull-right">
-
-                                <form method="post">
-                                    {#{{ partial('printgroup') }}#}
-
-                                    {#<input name="recipient_email" type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="recipient">#}
-                                    {#<br/>#}
-
-                                    <input name="responseto" type="hidden" value="{{ usermessage.getId() }}">
-                                    <input name="recipient_id" type="hidden" value="{{ sendto }}">
-                                    <input name="archive_to_recipient" type="hidden" value="0">
-                                    <input name="status_to_recipient" type="hidden" value="0">
-                                    {#<select name="recipient_id" id="inputSuccess4"  class="form-control has-feedback-left" required="">#}
-                                    {#<option value="">recipient..</option>#}
-                                    {#{% for user in userList %}#}
-                                    {#<option value="{{ user.getId() }}">{{ user.getName() }}</option>#}
-                                    {#{% endfor %}#}
-                                    {#</select>#}
-
-                                    {#<span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>#}
-                                    <textarea name="text" class="form-control" required="required" rows="5" placeholder=""></textarea>
-                                    <br/>
-                                    <div class="pull-right">
-                                            <button type="submit" class="btn btn-success pull-right">Reply</button>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    {#<div class="pull-right">#}
-                                        {#<p>#}
-                                            {#<a href="{{ url.get('usermail/'~usermessage.getId()~'/show')}}" type="button" class="btn btn-default btn-xs  pull-right">#}
-                                                {#<span class="glyphicon glyphicon-refresh"></span> Refresh#}
-                                            {#</a>#}
-                                        {#</p>#}
-                                    {#</div>#}
-
-                                </form>
-                            </div>
 
 
-                {#new message#}
-
-                {#read mail#}
-
-
-                <div id="here">
-                    <table class="col-md-10 col-sm-10 col-xs-12">
-                        <tr>
-                            <td>
-
-                                {% for message in usermessages %}
-                                    <div class="col-md-12 col-sm-12 col-xs-12 mail_list_column">
-                                        {#<blockquote>#}
-                                        {% if (message.getUserId() == sender_id )%}
-                                            <div class="col-md-12 col-sm-12 col-xs-12 pull-left">
-                                                <pre class="">{{ message.getText() }}<small class="pull-right text-success">({{ message.getDateFormatted() }})</small></pre>
-                                            </div>
-                                        {% endif %}
-                                        {% if (message.getUserId() ==  recipient_id) %}
-                                            <div class="col-md-7 col-sm-7 col-xs-7 pull-right">
-                                                <pre class="text-muted bg-primary">{{ message.getText() }}<small class="pull-right ">({{ message.getDateFormatted() }})</small></pre>
-                                            </div>
-                                        {% endif %}
-                                    </div>
-                                {% endfor %}
-
-                            </td>
-
-                        </tr>
-
-                    </table>
-                </div>
-
-                {#end read mail#}
-                {#<div class="pull-right"></div>#}
             </div>
 
         </div>

@@ -30,8 +30,13 @@
 
         <div class="clearfix"></div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div class="x_panel">
+                    <div class="x_title">
+                        <h2>1st floor</h2>
+                        {#<small>Sessions</small>#}
+                        <div class="clearfix"></div>
+                    </div>
                     <table class="table table-striped projects">
                         <thead>
                         <tr>
@@ -42,7 +47,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        {% for calendarItem in calendarsFutureList %}
+                        {% for calendarItem in calendarsFutureList1 %}
                             {#<div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendarItem.getDate() }} </b> at <b> {{ calendarItem.getTime() }}</b> for: <b>{{ calendarItem.getTimeShift() }}</b>min.  {{ calendarItem.getComment() }}</a></div>#}
                             <tr>
                                 <td>{{ calendarItem.getId() }}</td>
@@ -54,7 +59,44 @@
                                     <a>{{ calendarItem.getDate() }} at {{ calendarItem.getTime() }}</a>
                                 </td>
                                 <td>
-                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit </a>
+                                    <a href="{{ url.get('calendar/'~calendarItem.getFloorId()~'/'~ calendarItem.getId() ~'/remove') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>2nd floor</h2>
+                        {#<small>Sessions</small>#}
+                        <div class="clearfix"></div>
+                    </div>
+                    <table class="table table-striped projects">
+                        <thead>
+                        <tr>
+                            <th style="width: 1%">#</th>
+                            <th style="width: 35%">Comment</th>
+                            <th style="width: 24%">Date/Time</th>
+                            <th style="width: 20%">#Edit</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for calendarItem in calendarsFutureList2 %}
+                            {#<div align="left"><a href="{{ url.get(urlForEdit) }}">  <b> {{ calendarItem.getDate() }} </b> at <b> {{ calendarItem.getTime() }}</b> for: <b>{{ calendarItem.getTimeShift() }}</b>min.  {{ calendarItem.getComment() }}</a></div>#}
+                            <tr>
+                                <td>{{ calendarItem.getId() }}</td>
+                                <td>
+                                    <a>{{ calendarItem.getComment() }}</a>
+                                    <br>
+                                </td>
+                                <td>
+                                    <a>{{ calendarItem.getDate() }} at {{ calendarItem.getTime() }}</a>
+                                </td>
+                                <td>
                                     <a href="{{ url.get('calendar/'~calendarItem.getFloorId()~'/'~ calendarItem.getId() ~'/remove') }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
                                 </td>
                             </tr>
@@ -66,34 +108,9 @@
             </div>
 
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col-md-4">
-                    <div class="x_panel">
-                        {{ partial('formaddingeventnotmodal') }}
-                    </div>
-                </div>
 
 
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="x_panel">
-                    <div class="x_title">
-                        <h2>{{ floor }} floor conference room scheduler </h2>
-
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-
-                        <div id='calendar'></div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <!-- /page content -->

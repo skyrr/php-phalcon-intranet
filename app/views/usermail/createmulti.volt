@@ -57,8 +57,9 @@
                                             {#<option value="{{ user.getId() }}" {% if recipientid == user.getId()%} selected {% endif %}>{{ user.getName() }}</option>#}
                                         {#{% endfor %}#}
                                     {#</select>#}
-                                    <input type="hidden" value="-1" name="recipient_id">
-                                    {#<br/>#}
+                                    <input type="text" name="recipient_id">
+                                    <br/>
+                                    <br/>
                                     <input name="archive_to_recipient" type="hidden" value="0">
                                     <input name="status_to_recipient" type="hidden" value="0">
                                     <input name="responseto" type="hidden" value="0">

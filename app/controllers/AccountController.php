@@ -25,16 +25,6 @@ class AccountController extends \Phalcon\Mvc\Controller
         $success = $user->setLastVisit();
         $user->save();
 
-//        if ($this->cookies->has('remember-me')) {
-//            $user_id = (string) $this->cookies->get('remember-me');
-//            $this->session->set("user_id", $user_id);
-//            $this->view->cookie = (string) $this->cookies->get('remember-me');
-//
-//        } else {
-//            $this->cookies->set('remember-me', $user_id, time() + 15 * 86400,"/");
-//            echo "no cookie found";
-////            die();
-//        }
         $this->view->setVar('user', $this->user);
 
 
@@ -42,17 +32,22 @@ class AccountController extends \Phalcon\Mvc\Controller
             'order' => 'date DESC', 'limit' => 11]);
         $this->view->tasks = $tasks;
         $usermail = Usermail::find(["archive_to_recipient = 0 AND recipient_id = '$user_id'",
-            'order' => 'date DESC', 'limit' => 10]);
+            'order' => 'date DESC', 'limit' => 8]);
         $this->view->usermails = $usermail;
 
         $usermailforall = Groupmail::find([
-            'order' => 'created_at DESC', 'limit' => 6]);
+            'order' => 'created_at DESC', 'limit' => 1]);
         $this->view->usermailforall = $usermailforall;
 
         $usermailtotop = Usermail::find(["status_to_recipient = 0 AND recipient_id = '$user_id' AND archive_to_recipient = 0", 'limit' =>4, 'order' => 'date DESC',]);
         $this->view->usermailtotop = $usermailtotop;
 
-
+        $request = new \Phalcon\Http\Request('https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyArcU4Dp3OCdlgcg7Kmo6EQ6cp2NtbEpwM');
+        $data = $request->getJsonRawBody();
+        $response = json_encode($data);
+//        $response = http_get("http://www.skyrr.space/", array("timeout"=>1), $info);
+//        $data = $this->request->getPost('https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyArcU4Dp3OCdlgcg7Kmo6EQ6cp2NtbEpwM');
+//        $this->view->data = $info;
     }
     public function afterExecuteRoute()
     {
@@ -93,65 +88,6 @@ class AccountController extends \Phalcon\Mvc\Controller
                 }
             }
         }
-
-    }
-
-    public function createAction()
-    {
-
-        if ($this->request->isPost()) {
-            $data = $this->request->getPost();
-            $user_id = $this->user->getId();
-            $currency_id = $this->request->getPost("currency_id");
-            $account = new Account(['user_id' => $user_id, 'currency_id' => $currency_id]);
-            $success = $account->create($data);
-            if ($success) {
-                $this->user->update(['selected_account_id' => $account->getId()]);
-            } else {
-                $messages = $account->getMessages();
-                if ($messages) {
-                    foreach ($messages as $message) {
-                        $this->flash->error($message);
-                    }
-                }
-            }
-            return $this->response->redirect("/account/show");
-        }
-        $currency = Currency::find();
-        $this->view-> currency = $currency;
-
-
-        //$this->view->user_id = $user_id;
-    }
-
-    public function editAction()
-    {
-        $id = $this->dispatcher->getParam('id');
-        $account = Account::findFirst($id);
-        $currency = Currency::find();
-        $this->view->currency = $currency;
-        if (!$account) {
-            return $this->dispatcher->forward(["controller" => "exception", "action" => "notFound"]);
-        }
-
-        if ($this->request->isPost()){
-            $data = $this->request->getPost();
-            $success = $account->update($data);
-            if (!$success) {
-                $messages = $account->getMessages();
-                if ($messages) {
-                    foreach ($messages as $message) {
-                        $this->flash->error($message);
-                    }
-                }
-            }
-        }
-
-        $this->view->account = $account;
-    }
-
-    public function removeAction()
-    {
 
     }
 

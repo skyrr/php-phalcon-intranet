@@ -2,15 +2,271 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3579e6-71d5-4b75-a613-ed17ff88942b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/boy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/fem.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partial/usersearch.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/img.jpg" afterPath="$PROJECT_DIR$/public/assets/images/img.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/fonts/star.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/fonts/star.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/fonts/star.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/bar/arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/bar/bullets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/bar/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/dark/arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/dark/bullets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/dark/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/default/arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/default/bullets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/default/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/light/arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/light/bullets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/light/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/ajax-loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.video.play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/coloredbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/gridtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/gridtile_3x3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/gridtile_3x3_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/gridtile_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/fb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/fr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/ig.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/post.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/revolution_slide1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/revolution_slide2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/tw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/vm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/wc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/assets/sources/yt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/closedhand.cur" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/openhand.cur" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/revicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/revicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/revicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/fonts/Simple-Line-Icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/fonts/Simple-Line-Icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/mbmainpage.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/menuR10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/fonts/star.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-digital-agency.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/skins/skin-corporate-hosting.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme-animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme-blog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme-elements.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme-shop.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/css/theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/examples/examples.carousels.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/examples/examples.gallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/examples/examples.lightboxes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/theme.init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/theme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/views/view.contact.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/views/view.home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/js/views/view.hosting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap-rtl/bootstrap-rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/bootstrap/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/circle-flip-slideshow/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/circle-flip-slideshow/css/component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/circle-flip-slideshow/js/jquery.flipshow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/common/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/excanvas/excanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/HELP-US-OUT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/css/font-awesome.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/font-awesome/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/isotope/jquery.isotope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery-cookie/jquery-cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.appear/jquery.appear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.easing/jquery.easing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.gmap/jquery.gmap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.lazyload/jquery.lazyload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.lazyload/jquery.scrollstop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.stellar/jquery.stellar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery.validation/jquery.validation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/magnific-popup/jquery.magnific-popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/magnific-popup/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/modernizr/modernizr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/bar/bar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/dark/dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/default/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/jquery.nivo.slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/light/light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/nivo-slider/nivo-slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.carousel.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.theme.default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.theme.default.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.theme.green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/assets/owl.theme.green.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/owl.carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/owl.carousel/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/requirejs/requirejs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/respond/respond.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/layers.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/ares.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/dione.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/erinyen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/gyges.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hades.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hebe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hephaistos.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hermes.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/hesperiden.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/metis.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/persephone.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/uranus.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation-skins/zeus.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/css/settings.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/css/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/fonts/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/font-awesome/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/css/helper.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/css/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/fonts/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/pe-icon-7-stroke/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/fonts/revicons/revicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.actions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.kenburn.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.migration.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.navigation.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.parallax.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.slideanims.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/revolution.extension.video.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.kenburn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.layeranimation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.migration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.navigation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.parallax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.slideanims.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/extensions/source/revolution.extension.video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/jquery.themepunch.enablelog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/jquery.themepunch.tools.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/source/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/source/jquery.themepunch.enablelog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/source/jquery.themepunch.revolution.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/js/source/jquery.themepunch.tools.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/facebook/class-facebook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/flickr/class-flickr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/instagram/class-instagram.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/RestApi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/class-twitter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/connection/Application.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/connection/ConnectionAbstract.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/twitter/connection/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/vimeo/class-vimeo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/rs-plugin/php/youtube/class-youtube.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/css/simple-line-icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/fonts/Simple-Line-Icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/less/simple-line-icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/simple-line-icons/scss/simple-line-icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/build/currency/vendor/vide/vide.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/account/create.volt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/account/edit.volt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/menu/show.volt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AccountController.php" afterPath="$PROJECT_DIR$/app/controllers/AccountController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/CalendarController.php" afterPath="$PROJECT_DIR$/app/controllers/CalendarController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsermailController.php" afterPath="$PROJECT_DIR$/app/controllers/UsermailController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Groupmail.php" afterPath="$PROJECT_DIR$/app/models/Groupmail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Usermail.php" afterPath="$PROJECT_DIR$/app/models/Usermail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/index.volt" afterPath="$PROJECT_DIR$/app/views/account/index.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calendar/index.volt" afterPath="$PROJECT_DIR$/app/views/calendar/index.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calendar/show.volt" afterPath="$PROJECT_DIR$/app/views/calendar/show.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.volt" afterPath="$PROJECT_DIR$/app/views/index.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/menu/index.volt" afterPath="$PROJECT_DIR$/app/views/menu/index.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/accountindexscript.volt" afterPath="$PROJECT_DIR$/app/views/partial/accountindexscript.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user/show.volt" afterPath="$PROJECT_DIR$/app/views/user/show.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/calendarscript.volt" afterPath="$PROJECT_DIR$/app/views/partial/calendarscript.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/formadding.volt" afterPath="$PROJECT_DIR$/app/views/partial/formadding.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/formaddingeventnotmodal.volt" afterPath="$PROJECT_DIR$/app/views/partial/formaddingeventnotmodal.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/sidebar.volt" afterPath="$PROJECT_DIR$/app/views/partial/sidebar.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/sidebarstart.volt" afterPath="$PROJECT_DIR$/app/views/partial/sidebarstart.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partial/sidebarstartforshow.volt" afterPath="$PROJECT_DIR$/app/views/partial/sidebarstartforshow.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/create.volt" afterPath="$PROJECT_DIR$/app/views/usermail/create.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/createmulti.volt" afterPath="$PROJECT_DIR$/app/views/usermail/createmulti.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/index.volt" afterPath="$PROJECT_DIR$/app/views/usermail/index.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/usermail/sent.volt" afterPath="$PROJECT_DIR$/app/views/usermail/sent.volt" />
@@ -36,34 +292,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="accountindexscript.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partial/accountindexscript.volt">
+      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="251" column="58" selection-start-line="251" selection-start-column="58" selection-end-line="251" selection-end-column="58" />
+            <state relative-caret-position="262">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
-                <marker date="1511197586226" expanded="true" signature="9194:9206" ph="..." />
+                <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partial/top.volt">
+      <file leaf-file-name="create.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/usermail/create.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="80" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="80" />
+            <state relative-caret-position="217">
+              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+              <folding>
+                <marker date="1511947148962" expanded="true" signature="8577:8609" ph="..." />
+                <marker date="1511947148962" expanded="true" signature="10309:10316" ph="×" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.volt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
+              <folding>
+                <marker date="1511951407497" expanded="true" signature="6117:6149" ph="..." />
+                <marker date="1511951407497" expanded="true" signature="7849:7856" ph="×" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/account/index.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usersearch.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partial/usersearch.volt">
+      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/usermail/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="190">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <folding>
+                <element signature="e#1090#4646#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,63 +358,62 @@
       <file leaf-file-name="sent.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/usermail/sent.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsermailController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+            <state relative-caret-position="201">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
-                <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#trashAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#createAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#createmultiAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#editAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#removefrominboxAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#removeFromMessageToAllAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#removefromsentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <element signature="n#removeforeverAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-                <marker date="1511190793986" expanded="true" signature="1589:1621" ph="SELECT id, n... USER" />
+                <element signature="e#1887#5230#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <file leaf-file-name="trash.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/usermail/trash.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2304">
-              <caret line="152" column="49" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.volt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/user/show.volt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="73" column="58" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createmulti.volt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/usermail/createmulti.volt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding>
-                <marker date="1511191023618" expanded="true" signature="9171:9203" ph="..." />
-                <marker date="1511191023618" expanded="true" signature="10903:10910" ph="×" />
+                <element signature="e#1878#5169#0#HTML" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalendarController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/CalendarController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+              <folding>
+                <element signature="n#indexAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+                <element signature="n#createAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+                <element signature="n#editAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+                <element signature="n#removeAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebarstart.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/partial/sidebarstart.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/calendar/show.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,32 +427,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/partial/printgroup.volt" />
         <option value="$PROJECT_DIR$/app/views/task/create.volt" />
         <option value="$PROJECT_DIR$/app/views/task/index.volt" />
         <option value="$PROJECT_DIR$/app/models/Task.php" />
-        <option value="$PROJECT_DIR$/app/views/menu/index.volt" />
-        <option value="$PROJECT_DIR$/app/views/partial/sidebarstartforshow.volt" />
-        <option value="$PROJECT_DIR$/app/views/partial/formadding.volt" />
         <option value="$PROJECT_DIR$/app/views/partial/bodystart.volt" />
         <option value="$PROJECT_DIR$/app/views/user/login.volt" />
         <option value="$PROJECT_DIR$/app/controllers/TaskController.php" />
-        <option value="$PROJECT_DIR$/app/views/partial/sidebarstart.volt" />
         <option value="$PROJECT_DIR$/public/assets/build/css/custom.min.css" />
         <option value="$PROJECT_DIR$/public/assets/build/css/custom.css" />
-        <option value="$PROJECT_DIR$/app/views/account/index.volt" />
-        <option value="$PROJECT_DIR$/app/views/partial/sidebar.volt" />
         <option value="$PROJECT_DIR$/public/assets/build/js/custom1.js" />
         <option value="$PROJECT_DIR$/app/views/partial/userlistformailmulti.volt" />
-        <option value="$PROJECT_DIR$/app/views/usermail/create.volt" />
-        <option value="$PROJECT_DIR$/app/models/Groupmail.php" />
         <option value="$PROJECT_DIR$/app/views/user/getnotificaiton.volt" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/app/models/Usermail.php" />
         <option value="$PROJECT_DIR$/app/views/user/getnotification.volt" />
         <option value="$PROJECT_DIR$/app/models/Newmail.php" />
-        <option value="$PROJECT_DIR$/app/controllers/AccountController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/CalendarController.php" />
         <option value="$PROJECT_DIR$/app/controllers/GroupmailController.php" />
         <option value="$PROJECT_DIR$/app/controllers/MenuController.php" />
         <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
@@ -174,24 +448,36 @@
         <option value="$USER_HOME$/Documents/gantellela2/gentelella-master/production/calendar.html" />
         <option value="$PROJECT_DIR$/public/assets/build/css/custom1.css" />
         <option value="$PROJECT_DIR$/app/views/partial/formaddingevent.volt" />
-        <option value="$PROJECT_DIR$/app/views/calendar/index.volt" />
-        <option value="$PROJECT_DIR$/app/views/partial/calendarscript.volt" />
-        <option value="$PROJECT_DIR$/app/views/partial/formaddingeventnotmodal.volt" />
-        <option value="$PROJECT_DIR$/app/views/calendar/show.volt" />
-        <option value="$PROJECT_DIR$/app/views/index.volt" />
         <option value="$PROJECT_DIR$/app/views/partial/userlistformail.volt" />
         <option value="$PROJECT_DIR$/public/assets/data.json" />
-        <option value="$PROJECT_DIR$/app/controllers/UsermailController.php" />
-        <option value="$PROJECT_DIR$/app/views/usermail/index.volt" />
-        <option value="$PROJECT_DIR$/app/views/usermail/show.volt" />
-        <option value="$PROJECT_DIR$/app/views/usermail/trash.volt" />
-        <option value="$PROJECT_DIR$/app/views/usermail/sent.volt" />
-        <option value="$PROJECT_DIR$/app/views/usermail/createmulti.volt" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/views/partial/usersearch.volt" />
-        <option value="$PROJECT_DIR$/app/views/partial/accountindexscript.volt" />
         <option value="$PROJECT_DIR$/app/views/partial/top.volt" />
         <option value="$PROJECT_DIR$/app/views/user/show.volt" />
+        <option value="$PROJECT_DIR$/app/views/usermail/createmulti.volt" />
+        <option value="$PROJECT_DIR$/app/models/Groupmail.php" />
+        <option value="$PROJECT_DIR$/app/views/partial/sidebar.volt" />
+        <option value="$PROJECT_DIR$/app/controllers/UsermailController.php" />
+        <option value="$PROJECT_DIR$/app/views/menu/index.volt" />
+        <option value="$PROJECT_DIR$/app/models/Usermail.php" />
+        <option value="$PROJECT_DIR$/app/controllers/AccountController.php" />
+        <option value="$USER_HOME$/Documents/Porto 4/HTML/index.html" />
+        <option value="$PROJECT_DIR$/app/views/partial/accountindexscript.volt" />
+        <option value="$PROJECT_DIR$/app/views/index.volt" />
+        <option value="$PROJECT_DIR$/app/views/partial/calendarscript.volt" />
+        <option value="$PROJECT_DIR$/app/views/partial/sidebarstart.volt" />
+        <option value="$PROJECT_DIR$/app/views/partial/formadding.volt" />
+        <option value="$PROJECT_DIR$/app/views/partial/formaddingeventnotmodal.volt" />
+        <option value="$PROJECT_DIR$/app/views/partial/sidebarstartforshow.volt" />
+        <option value="$PROJECT_DIR$/app/views/calendar/show.volt" />
+        <option value="$PROJECT_DIR$/app/controllers/CalendarController.php" />
+        <option value="$PROJECT_DIR$/app/views/calendar/index.volt" />
+        <option value="$PROJECT_DIR$/app/views/usermail/sent.volt" />
+        <option value="$PROJECT_DIR$/app/views/usermail/trash.volt" />
+        <option value="$PROJECT_DIR$/app/views/usermail/create.volt" />
+        <option value="$PROJECT_DIR$/app/views/usermail/index.volt" />
+        <option value="$PROJECT_DIR$/app/views/account/index.volt" />
+        <option value="$PROJECT_DIR$/app/views/usermail/show.volt" />
       </list>
     </option>
   </component>
@@ -233,6 +519,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,6 +548,108 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="currency" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -287,7 +676,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
+              <option name="myItemId" value="usermail" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,6 +699,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="partial" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,7 +807,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,11 +815,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/build/currency" />
+      <recent name="$PROJECT_DIR$/public/assets/build/css/currency" />
+      <recent name="$PROJECT_DIR$/public/assets/build/js/currency" />
+      <recent name="$PROJECT_DIR$/public/assets/img" />
       <recent name="$PROJECT_DIR$/public/assets/images" />
-      <recent name="$PROJECT_DIR$/app/views/partial" />
-      <recent name="$PROJECT_DIR$/public/assets/build/js" />
-      <recent name="$PROJECT_DIR$/app/models" />
-      <recent name="$PROJECT_DIR$/public/assets/sounds" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/assets" />
@@ -468,24 +922,28 @@
       <workItem from="1510821579088" duration="21585000" />
       <workItem from="1510907347610" duration="7227000" />
       <workItem from="1510945073813" duration="22522000" />
-      <workItem from="1511182551933" duration="12504000" />
+      <workItem from="1511182551933" duration="12571000" />
+      <workItem from="1511439848514" duration="8500000" />
+      <workItem from="1511813997262" duration="958000" />
+      <workItem from="1511869073657" duration="2214000" />
+      <workItem from="1511872473031" duration="28748000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="513638000" />
+    <option name="totallyTimeSpent" value="554125000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39681274" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23904383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27708977" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22755417" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -514,33 +972,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/TransactionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="103" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user/login.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/sidebarend.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/build/css/custom.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11538">
@@ -552,13 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/sidebarstart.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -576,32 +1005,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/sidebar.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="65" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partial/userlistformailmulti.volt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Groupmail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/create.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="111" column="59" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -616,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,26 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="41" column="42" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="42" />
-          <folding>
-            <element signature="n#afterExecuteRoute#0;n#AccountController#0;n#!!top" expanded="false" />
-            <element signature="n#indexAction#0;n#AccountController#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/CalendarController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="68" column="24" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,13 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/gantellela2/gentelella-master/production/calendar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -714,74 +1093,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/formadding.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/formaddingevent.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/build/css/custom1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/calendar/show.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/formaddingeventnotmodal.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/calendarscript.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Usermail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="129" column="36" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,23 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/sent.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,37 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/trash.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <marker date="1511190959222" expanded="true" signature="7743:7775" ph="..." />
-            <marker date="1511190959222" expanded="true" signature="9475:9482" ph="×" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/usermail/createmulti.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <marker date="1511191023618" expanded="true" signature="9171:9203" ph="..." />
-            <marker date="1511191023618" expanded="true" signature="10903:10910" ph="×" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -858,51 +1125,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partial/accountindexscript.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="251" column="58" selection-start-line="251" selection-start-column="58" selection-end-line="251" selection-end-column="58" />
-          <folding>
-            <marker date="1511197586226" expanded="true" signature="9194:9206" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partial/top.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="180">
           <caret line="10" column="80" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
-          <folding>
-            <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#trashAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#createAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#createmultiAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#editAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#removefrominboxAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#removeFromMessageToAllAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#removefromsentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <element signature="n#removeforeverAction#0;n#UsermailController#0;n#!!top" expanded="false" />
-            <marker date="1511190793986" expanded="true" signature="1589:1621" ph="SELECT id, n... USER" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
+        <state relative-caret-position="2628">
           <caret line="152" column="49" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
           <folding />
         </state>
@@ -910,9 +1146,263 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user/show.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
+        <state relative-caret-position="1314">
           <caret line="73" column="58" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/createmulti.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding>
+            <marker date="1511441286136" expanded="true" signature="9196:9228" ph="..." />
+            <marker date="1511441286136" expanded="true" signature="10928:10935" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Groupmail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1396">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/menu/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Usermail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="188" column="32" selection-start-line="188" selection-start-column="32" selection-end-line="188" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/build/css/custom1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <folding>
+            <element signature="n#afterExecuteRoute#0;n#AccountController#0;n#!!top" expanded="false" />
+            <element signature="n#indexAction#0;n#AccountController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UsermailController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="534" column="0" selection-start-line="534" selection-start-column="0" selection-end-line="534" selection-end-column="0" />
+          <folding>
+            <element signature="n#indexAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#sentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#trashAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#createmultiAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#editAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#removefrominboxAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#removeFromMessageToAllAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#removefromsentAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <element signature="n#removeforeverAction#0;n#UsermailController#0;n#!!top" expanded="false" />
+            <marker date="1511875085820" expanded="true" signature="1589:1621" ph="SELECT id, n... USER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Porto 4/HTML/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="648" column="63" selection-start-line="648" selection-start-column="36" selection-end-line="648" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/accountindexscript.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3698">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <marker date="1511891642517" expanded="true" signature="9227:9239" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/sidebar.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/calendarscript.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/formaddingevent.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/formaddingeventnotmodal.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/formadding.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/sidebarstart.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partial/sidebarstartforshow.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/calendar/show.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CalendarController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+          <folding>
+            <element signature="n#indexAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+            <element signature="n#createAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+            <element signature="n#editAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+            <element signature="n#removeAction#0;n#CalendarController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/calendar/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/sent.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="e#1887#5230#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/trash.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding>
+            <element signature="e#1878#5169#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/create.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+          <folding>
+            <marker date="1511947148962" expanded="true" signature="8577:8609" ph="..." />
+            <marker date="1511947148962" expanded="true" signature="10309:10316" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="e#1090#4646#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/usermail/show.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
+          <folding>
+            <marker date="1511951407497" expanded="true" signature="6117:6149" ph="..." />
+            <marker date="1511951407497" expanded="true" signature="7849:7856" ph="×" />
+          </folding>
         </state>
       </provider>
     </entry>

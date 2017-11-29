@@ -10,7 +10,7 @@
                     <li><a href="{{ url.get('usermail/index') }}">Inbox</a></li>
                     <li><a href="{{ url.get('usermail/sent') }}">Sent</a></li>
                     <li><a href="{{ url.get('usermail/trash') }}">Trash</a></li>
-                    <li><a href="{{ url.get('usermail/createmulti') }}">Multiple messages</a></li>
+                    {#<li><a href="{{ url.get('usermail/createmulti') }}">Multiple messages</a></li>#}
                     <li><a href="{{ url.get('usermail/create') }}">Message to all</a></li>
                 </ul>
             </li>

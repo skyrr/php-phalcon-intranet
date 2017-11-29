@@ -235,6 +235,7 @@
 </script>
 
 <script>
+    var json_encoded_from_model;
     var data = {{ json_encoded_from_model }};
 
     $('#txt-search').keyup(function(){
