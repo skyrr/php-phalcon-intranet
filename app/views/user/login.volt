@@ -27,18 +27,18 @@
 
                     <div class="clearfix"></div>
 
-                    <div class="separator">
-                        <p class="change_link">New to site?
-                            <a href="{{ url.get("/user/signin") }}" class="to_register"> Create Account </a>
-                        </p>
+                    {#<div class="separator">#}
+                        {#<p class="change_link">New to site?#}
+                            {#<a href="{{ url.get("/user/signin") }}" class="to_register"> Create Account </a>#}
+                        {#</p>#}
 
-                        <div class="clearfix"></div>
-                        <br />
+                        {#<div class="clearfix"></div>#}
+                        {#<br />#}
 
-                        <div>
-                            <p>©2017 All Rights Reserved. eLED DESIGN s.r.o. </p>
-                        </div>
-                    </div>
+                        {#<div>#}
+                            {#<p>©2017 All Rights Reserved. eLED DESIGN s.r.o. </p>#}
+                        {#</div>#}
+                    {#</div>#}
                 </form>
             </section>
         </div>

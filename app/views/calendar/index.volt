@@ -72,29 +72,6 @@
                         </div>
                     </div>
                 </div>
-                    {#<div class="col-md-6">#}
-                        {#<div class="x_title">#}
-                            {#<h2>1st floor</h2>#}
-                            {#<small>Sessions</small>#}
-                            {#<div class="clearfix"></div>#}
-                        {#</div>#}
-                        {#<div class="x_content">#}
-                            {#<div id='calendar1'></div>#}
-                        {#</div>#}
-                    {#</div>#}
-                    {#<div class="col-md-6">#}
-                        {#<div class="x_title">#}
-                            {#<h2>2nd floor</h2>#}
-                            {#<small>Sessions</small>#}
-                            {#<div class="clearfix"></div>#}
-                        {#</div>#}
-                        {#<div class="x_content">#}
-
-                            {#<div id='calendar2'></div>#}
-
-                        {#</div>#}
-                    {#</div>#}
-
             </div>
         </div>
     </div>

@@ -12,6 +12,8 @@ class User extends \Phalcon\Mvc\Model
     public $email;
     public $password;
     public $last_visit;
+    public $role;
+    public $password_changed;
 //    protected $selected_account_id;
     public function beforeCreate()
     {
@@ -69,9 +71,29 @@ class User extends \Phalcon\Mvc\Model
         return $this->password;
     }
 
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
     public function getLastVisit()
     {
         return $this->last_visit;
+    }
+
+    public function getRole()
+    {
+        return $this->role;
+    }
+
+    public function getPasswordChanged()
+    {
+        return $this->password_changed;
+    }
+
+    public function setPasswordChanged()
+    {
+        $this->password_changed = '1';
     }
 
     public function getLastVisitMinusValue()

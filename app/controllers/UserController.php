@@ -126,7 +126,26 @@ class UserController extends \Phalcon\Mvc\Controller
 
     public function showAction()
     {
+        if ($this->request->isPost()) {
+            $data = $this->request->getPost();
 
+            $user_id = $this->session->get("user_id");
+            $user = User::findFirst($user_id);
+
+            $old_password = $this->request->getPost("old_password");
+            $password = $this->request->getPost("password");
+            $password_repeat = $this->request->getPost("password_repeat");
+
+            if ($password == $password_repeat && ($this->security->checkHash($old_password, $this->user->password))) { //
+//                $user = User::findFirst($user_id);
+                $user->setPassword($this->security->hash($password));
+                $success = $user->setPasswordChanged();
+                $user->save();
+                return $this->response->redirect();
+            }else {
+                $this->view->setVar("error", "Wrong password or passwords not match");
+            }
+        }
     }
 
     public function getnotificationAction()

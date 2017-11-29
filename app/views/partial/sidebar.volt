@@ -11,7 +11,9 @@
                     <li><a href="{{ url.get('usermail/sent') }}">Sent</a></li>
                     <li><a href="{{ url.get('usermail/trash') }}">Trash</a></li>
                     {#<li><a href="{{ url.get('usermail/createmulti') }}">Multiple messages</a></li>#}
+                    {% if user.getRole() == 1 %}
                     <li><a href="{{ url.get('usermail/create') }}">Message to all</a></li>
+                    {% endif %}
                 </ul>
             </li>
             {#<li><a><i class="fa fa-sitemap"></i> Tasks <span class="fa fa-chevron-down"></span></a>#}

@@ -65,9 +65,9 @@
                                 <li><i class="fa fa-map-marker user-profile-icon"></i> Mlada Boleslav, Czech Republic
                                 </li>
 
-                                <li>
-                                    <i class="fa fa-briefcase user-profile-icon"></i> Software Engineer
-                                </li>
+                                {#<li>#}
+                                    {#<i class="fa fa-briefcase user-profile-icon"></i> Software Engineer#}
+                                {#</li>#}
 
                                 <li class="m-top-xs">
                                     <i class="fa fa-external-link user-profile-icon"></i>
@@ -75,51 +75,49 @@
                                 </li>
                             </ul>
 
-                            <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
-                            <br />
+                            {#<a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>#}
+                            {#<br />#}
 
                             <!-- start skills -->
-                            <h4>Skills</h4>
-                            <ul class="list-unstyled user_data">
-                                <li>
-                                    <p>Web Applications</p>
-                                    <div class="progress progress_sm">
-                                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p>Website Design</p>
-                                    <div class="progress progress_sm">
-                                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p>Automation & Testing</p>
-                                    <div class="progress progress_sm">
-                                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p>UI / UX</p>
-                                    <div class="progress progress_sm">
-                                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
-                                    </div>
-                                </li>
-                            </ul>
+                            {#<h4>Skills</h4>#}
+                            {#<ul class="list-unstyled user_data">#}
+                                {#<li>#}
+                                    {#<p>Web Applications</p>#}
+                                    {#<div class="progress progress_sm">#}
+                                        {#<div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>#}
+                                    {#</div>#}
+                                {#</li>#}
+                                {#<li>#}
+                                    {#<p>Website Design</p>#}
+                                    {#<div class="progress progress_sm">#}
+                                        {#<div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>#}
+                                    {#</div>#}
+                                {#</li>#}
+                                {#<li>#}
+                                    {#<p>Automation & Testing</p>#}
+                                    {#<div class="progress progress_sm">#}
+                                        {#<div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30"></div>#}
+                                    {#</div>#}
+                                {#</li>#}
+                                {#<li>#}
+                                    {#<p>UI / UX</p>#}
+                                    {#<div class="progress progress_sm">#}
+                                        {#<div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>#}
+                                    {#</div>#}
+                                {#</li>#}
+                            {#</ul>#}
                             <!-- end of skills -->
 
                         </div>
                         <div class="col-md-9 col-sm-9 col-xs-12">
+{{ error }}
+                            {% if user.getPasswordChanged() == 0 %}
+                                {{ partial("userform") }}
+                            {% endif %}
 
                             <div class="profile_title">
                                 <div class="col-md-6">
                                     <h2>User Activity Report</h2>
-                                </div>
-                                <div class="col-md-6">
-                                    <div id="reportrange" class="pull-right" style="margin-top: 5px; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #E6E9ED">
-                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                                        <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                                    </div>
                                 </div>
                             </div>
                             <!-- start of user-activity-graph -->
@@ -273,8 +271,7 @@
 
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-                                        <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui
-                                            photo booth letterpress, commodo enim craft beer mlkshk </p>
+                                        {{ partial("userform") }}
                                     </div>
                                 </div>
                             </div>
