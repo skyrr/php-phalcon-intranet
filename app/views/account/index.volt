@@ -41,9 +41,9 @@
                 {% if user.getPasswordChanged() == 0 %}
                 <div class="col-md-12 col-sm-12 col-xs-12 bg-danger text-white text-center">
                     {#<pre class="bg-success col-xs-12" width="10%">#}
-                    <h3>
+                    <h5>
                          <a href="{{ url.get("user/show") }}">Please, change password here</a>
-                    </h3>
+                    </h5>
                     {#</pre>#}
                 </div>
                 {% endif %}
