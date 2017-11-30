@@ -150,19 +150,10 @@
 <!-- /gauge.js -->
 {#//script for notification#}
 
-<script type="text/javascript">
+<script>
 
-    function setIframeSrc() {
-        var s = "http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true";
-        var iframe1 = document.getElementById('miiframe');
-        if ( -1 == navigator.userAgent.indexOf("MSIE") ) {
-            iframe1.src = s;
-        }
-        else {
-            iframe1.location = s;
-        }
-    }
-    setTimeout(setIframeSrc, 5);
+
+
 </script>
 <script>
     var ajax_call = function() {
