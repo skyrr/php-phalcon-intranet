@@ -57,24 +57,24 @@
                                     <div class="x_content counters counters-text-dark">
                                         <div class="col-md-4 col-sm-4 col-xs-4 text-center">
                                             <div class="counter appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-                                                <h2>21.40
-                                                <small> / <i class="fa fa-usd"></i></small></h2>
+                                                <h2 id="curUSD1">
+                                                </h2>
 
                                                 {#<p class="text-color-primary mb-xl">to CZK</p>#}
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-4 col-xs-4 text-center">
                                             <div class="counter appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="600">
-                                                <h2>25.46
-                                                <small> / <i class="fa fa-eur"></i></small></h2>
+                                                <h2 id="curEUR1">
+                                                </h2>
 
                                                 {#<p class="text-color-primary mb-xl">to CZK</p>#}
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-4 col-xs-4 text-center">
                                             <div class="counter appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="900">
-                                                <h2>28.43
-                                                <small> / <i class="fa fa-gbp"></i></small></h2>
+                                                <h2 id="curGBP1">
+                                                </h2>
 
                                                 {#<p class="text-color-primary mb-xl">to CZK</p>#}
                                             </div>
@@ -122,13 +122,6 @@
 
                         {#</div>#}
                     </div>
-                    <style>
-                        #box {
-                            height: 510px;
-                            overflow: hidden;
-                        }
-                    </style>
-
                 </div>
                 <!-- Start weather -->
                 <!-- Start usermail list -->

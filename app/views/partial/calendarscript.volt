@@ -267,18 +267,3 @@
         forceParse: 0
     });
 </script>
-
-<script type="text/javascript">
-
-    function setIframeSrc() {
-        var s = "http://docs.google.com/gview?url=http://skyrr.space/menu/menu.pdf&embedded=true";
-        var iframe1 = document.getElementById('miiframe');
-        if ( -1 == navigator.userAgent.indexOf("MSIE") ) {
-            iframe1.src = s;
-        }
-        else {
-            iframe1.location = s;
-        }
-    }
-    setTimeout(setIframeSrc, 5);
-</script>

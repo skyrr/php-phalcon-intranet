@@ -189,9 +189,7 @@
                 }
 
         );
-        $.notify('hello !!', {
-            style: 'happyblue'
-        });
+
 
     };
 
@@ -254,4 +252,25 @@
         output += '</div>';
         $('#filter-records').html(output);
     });
+</script>
+<script>
+    var url = "https://api.fixer.io/latest?base=CZK";
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            var curEUR = 1/myObj.rates.EUR;
+            var curGBP = 1/myObj.rates.GBP;
+            var curUSD = 1/myObj.rates.USD;
+            var curEUR1 = curEUR.toFixed(2);
+            var curGBP1 = curGBP.toFixed(2);
+            var curUSD1 = curUSD.toFixed(2);
+            document.getElementById("curEUR1").innerHTML += curEUR1 + '<small> / <i class="fa fa-usd"></i></small>';
+            document.getElementById("curGBP1").innerHTML += curGBP1 + '<small> / <i class="fa fa-usd"></i></small>';
+            document.getElementById("curUSD1").innerHTML += curUSD1 + '<small> / <i class="fa fa-usd"></i></small>';
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
 </script>
